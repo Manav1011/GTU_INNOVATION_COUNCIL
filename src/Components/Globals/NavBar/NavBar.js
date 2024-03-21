@@ -6,7 +6,8 @@ import NavLink from "./NavLink";
 function NavBar() {
   return (
     <nav
-      className="w-full fixed top-0 z-10 "
+      className="w-full fixed top-0 z-10 text-slate-800"
+      id="navbar-main"
       style={{ fontFamily: "dosislight",fontWeight:'bolder'}}
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -31,38 +32,38 @@ function NavBar() {
               <div className="flex space-x-4">
                 <NavLink
                   classList={
-                    "text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                    "rounded-md px-3 py-2 text-sm font-semibold"
                   }
                   id={"clientssection"}
                   title={"GIC Verticals"}
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="servicescontainer"
                   title="Our Support"
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="teamdetailscontainer"
                   title="GIC Startup"
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="projectssection"
                   title="Resource Bank"
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="aboutussection"
                   title="Latest"
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="aboutussection"
                   title="Reach US"
                 />
                 <NavLink
-                  classList="text-slate-800 rounded-md px-3 py-2 text-sm font-semibold"
+                  classList="rounded-md px-3 py-2 text-sm font-semibold"
                   id="aboutussection"
                   title="Apply"
                 />
@@ -87,27 +88,27 @@ function NavBar() {
       <div className="lg:hidden hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <NavLink
-            classList="block text-slate-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            classList="block hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="clientssection"
             title="Clients"
           />
           <NavLink
-            classList="block text-slate-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            classList="block hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="servicescontainer"
             title="Services"
           />
           <NavLink
-            classList="block text-slate-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            classList="block hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="teamdetailscontainer"
             title="Team"
           />
           <NavLink
-            classList="block text-slate-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            classList="block hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="projectssection"
             title="Projects"
           />
           <NavLink
-            classList="block text-slate-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            classList="block hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="aboutussection"
             title="About us"
           />

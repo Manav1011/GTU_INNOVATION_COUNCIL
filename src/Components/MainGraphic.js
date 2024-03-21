@@ -1,7 +1,7 @@
 export default function MainGraphic() {
     return (
-      <>          
-      <div className="flex flex-col lg:hidden" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_POTRAIT_2.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
+      <div id="firstfold"> 
+      <div className="flex flex-col sm:hidden" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_POTRAIT_2.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
         <div className="h-full w-full flex flex-col bg-gray-900  backdrop-filter bg-opacity-30" style={{backdropFilter:'blur(1px)'}}>                    
             <div className="slide-right bg-gray-900 mt-40 mr-10 text-left bg-clip-padding bg-clip-padding backdrop-filter rounded-r-full bg-opacity-75 p-5">
                 <h1 className="text-orange-500 my-2 leading-10 sm:leading-1 text-2xl font-bold" style={{fontFamily:'Azonix'}}>Igniting Innovation</h1>        
@@ -16,7 +16,7 @@ export default function MainGraphic() {
             </div>
             </div>        
       </div>
-      <div className="hidden lg:flex backdrop-filter bg-opacity-5" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_6.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
+      <div className="hidden sm:flex backdrop-filter bg-opacity-5" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_6.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
         <div className="h-full w-full flex flex-col bg-gray-900  backdrop-filter bg-opacity-20  justify-end items-start" style={{backdropFilter:'blur(1px)'}}>            
         <div className="slide-right bg-gray-900 mb-2 text-left bg-clip-padding backdrop-filter rounded-r-full backdrop-blur-sm bg-opacity-75 p-10">
             <h1 className="text-orange-500 my-2 leading-10 sm:leading-1 text-4xl font-bold" style={{fontFamily:'Azonix'}}>Igniting Innovation</h1>
@@ -27,7 +27,7 @@ export default function MainGraphic() {
         </div>
         </div>        
       </div>
-      </>
+      </div>
     );
   }
   
