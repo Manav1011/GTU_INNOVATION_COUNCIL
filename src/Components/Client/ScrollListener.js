@@ -38,7 +38,8 @@ function ScrollListener() {
            
         const callbackSecondFold = (entries, observer) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {                     
+                if (entry.isIntersecting) { 
+                    entry.target.addEventListener('wheel',reverseScrollEventListener)
                     const navbar = document.getElementById('navbar-main')
                     // navbar.classList.remove('text-slate-800')                    
                     navbar.classList.add('bg-clip-padding','backdrop-filter','backdrop-blur-sm')

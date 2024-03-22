@@ -28,11 +28,11 @@ const Page = ({
     </ParallaxLayer>
     <ParallaxLayer
       offset={offset}
-      speed={0.3}
+      speed={0.5}
       className={`${styles.text}`}
       id="secondfolds"
     >
-      <div className="mt-20 sm:mt-0 flex justify-start flex-col sm:flex-row items-center h-screen">
+      <div className="sm:mt-0 flex justify-center flex-col sm:flex-row items-center h-screen">
         <div className="w-full h-48  sm:w-1/4 text-center ">
           <img
             src={logo}
@@ -66,12 +66,14 @@ export default function SecondFold() {
   };
 
   return (
-    <div>
+    <>
+    <div className="h-screen" id='secondfolddiv'>
       <Parallax
         ref={parallax}
         pages={4}
-        horizontal
         id="secondfold"
+        horizontal
+        className="mt-20"
         style={{
           backgroundAttachment: "fixed",
           backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
@@ -128,6 +130,7 @@ export default function SecondFold() {
           }
         />
       </Parallax>
-    </div>
+    </div>    
+    </>
   );
 }

@@ -1,7 +1,7 @@
 export default function MainGraphic() {
     return (
       <div id="firstfold"> 
-      <div className="flex flex-col sm:hidden" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_POTRAIT_2.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
+      <div className="flex flex-col sm:hidden" style={{backgroundAttachment:'fixed',backgroundImage:"url('/images/backgrounds/GTU_CAMPUS_POTRAIT_4.jpg')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "100%", height: "100vh"}}>
         <div className="h-full w-full flex flex-col backdrop-filter" style={{backdropFilter:'blur(1px)'}}>                    
             <div className="slide-right bg-gray-900 mt-32 mr-10 text-left bg-clip-padding bg-clip-padding backdrop-filter rounded-r-full bg-opacity-75 p-5">
                 <h1 className="text-orange-500 my-2 leading-10 sm:leading-1 text-2xl font-bold" style={{fontFamily:'Azonix'}}>Igniting Innovation</h1>        
