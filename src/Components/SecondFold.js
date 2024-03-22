@@ -32,7 +32,7 @@ const Page = ({
       className={`${styles.text}`}
       id="secondfolds"
     >
-      <div className="mt-10 sm:mt-0 flex justify-center flex-col sm:flex-row items-center h-screen">
+      <div className="mt-20 sm:mt-0 flex justify-start flex-col sm:flex-row items-center h-screen">
         <div className="w-full h-48  sm:w-1/4 text-center ">
           <img
             src={logo}
@@ -86,11 +86,7 @@ export default function SecondFold() {
           header={"The Student Startup and Innovation Policy"}
           content={
             <>
-              The SSIP policy aims to create an innovation-driven ecosystem in
-              the state and develop a culture of entrepreneurship among
-              students. <br />
-              <br /> GTU has been at forefront in the sphere of student
-              innovation start-up ecosystem development.
+              GTU has been at forefront in the sphere of student innovation start-up ecosystem development.
             </>
           }
         />
@@ -102,11 +98,7 @@ export default function SecondFold() {
           header={"Intellectual property right"}
           content={
             <>
-              Is playing a key role in the current Knowledge based economy of
-              any country. In the last year, from India 45,000 patents have been
-              filed. <br />
-              <br /> GTU IPR Cell was constituted under the aegies of GTU
-              Innovation Council (GIC) since 3rd September 2011.
+             GTU IPR Cell was constituted under the aegies of GTU Innovation Council (GIC) since 3rd September 2011.
             </>
           }
         />
@@ -118,8 +110,7 @@ export default function SecondFold() {
           header={"Nodal Institutes"}
           content={
             <>
-              Assistance to Startups/Innovation scheme’s operative period is 01
-              January, 2015 to 31 December, 2019
+              Assistance to Startups/Innovation scheme’s operative period is 01 January, 2015 to 31 December, 2019
             </>
           }
         />
@@ -132,13 +123,7 @@ export default function SecondFold() {
           header={"Design Innovation Centre"}
           content={
             <>
-              Is a project of the Gujarat Technological University (GTU) funded
-              by Department of Higher Education, Ministry of Education,
-              Government of India in May 2018. <br />
-              <br />
-              The Gujarat Technological University, Design Innovation Centre is
-              to provide a platform to students, faculty members and researcher
-              to convert their ideas into design innovations.
+              MHRD Design-centred innovation is a force multiplier that can help the country move up the value chain, making Indian industry globally competitive.
             </>
           }
         />

@@ -17,7 +17,7 @@ const reverseScrollEventListener = (event) => {
                 const scrollAmount = event.deltaY * 0.8;      
                 document.getElementById('secondfold').scrollLeft += scrollAmount
             }
-        }else{            
+        }else{                        
             event.preventDefault();
             const scrollAmount = event.deltaY * 0.8;      
             document.getElementById('secondfold').scrollLeft += scrollAmount
@@ -38,11 +38,10 @@ function ScrollListener() {
            
         const callbackSecondFold = (entries, observer) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) { 
-                    entry.target.addEventListener('wheel',reverseScrollEventListener)
+                if (entry.isIntersecting) {                     
                     const navbar = document.getElementById('navbar-main')
                     // navbar.classList.remove('text-slate-800')                    
-                    navbar.classList.add('bg-clip-padding','backdrop-filter','bg-opacity-0','backdrop-blur-sm')
+                    navbar.classList.add('bg-clip-padding','backdrop-filter','backdrop-blur-sm')
                 }else{
                     entry.target.removeEventListener('wheel',reverseScrollEventListener)
                 }
