@@ -2,7 +2,7 @@ const WhyGIC = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-start text-justify max-w-2xl p-10 bg-gray-900 backdrop-filter bg-opacity-60 border border-gray-900">
       <a href="#">
-        <h5 className="sm:mb-20 text-green-500 sm:text-6xl font-semibold tracking-tight">
+        <h5 className="sm:mb-20 mb-10 text-green-500 sm:text-6xl text-3xl font-semibold tracking-tight">
           WHY GIC ?
         </h5>
       </a>

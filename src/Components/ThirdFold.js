@@ -20,7 +20,7 @@ function ThirdFold() {
       <Parallax
         pages={3}
         className=""
-        style={{height:'101vh'}}
+        style={{height:'100vh'}}
       >
         <ParallaxLayer
           sticky={{ start: 0, end: 2 }}

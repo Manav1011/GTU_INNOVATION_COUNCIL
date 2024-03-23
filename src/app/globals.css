@@ -8,13 +8,15 @@ html {
   /* overflow-y: hidden; */
 }
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
+  width: 0;  
+  height: 0;/* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   height: 0;
-  background: transparent;
+  width: 0;
+  background: black;
 }
 @keyframes typing {
   from { width: 0 }
