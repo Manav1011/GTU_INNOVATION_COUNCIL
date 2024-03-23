@@ -21,6 +21,10 @@ html {
   to { width: 100% }
 }
 
+.text {
+  font-family: 'Kanit', sans-serif;  
+}  
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -35,10 +39,10 @@ html {
       transform: translateX(0);
     }
 }
-
+/* 
 .slide-right{
     animation: slideRight 2s forwards;
-}
+} */
 
 @keyframes slideLeft {
     from {

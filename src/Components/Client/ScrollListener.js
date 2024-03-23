@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from "react";
-const reverseScrollEventListener = (event) => {        
+const reverseScrollEventListener = (event) => {
     // Check if the user is scrolling vertically
     if(event.deltaY !== 0){
         if(document.getElementById('secondfold').scrollLeft == 0){            
@@ -26,32 +26,47 @@ const reverseScrollEventListener = (event) => {
 }
 function ScrollListener() {    
     useEffect(() => {     
-        const callbackFirstFold = (entries, observer) => {
+        const callbackFirstFold = async (entries, observer) => {
             entries.forEach(entry => {                
                 if (entry.isIntersecting) {
                     const navbar = document.getElementById('navbar-main')
-                    navbar.classList.remove('bg-clip-padding','backdrop-filter','bg-opacity-0','backdrop-blur-sm','text-white')          
+                    navbar.classList.remove('bg-clip-padding','shadow','bg-slate-100','backdrop-filter','bg-opacity-0','backdrop-blur-sm','text-white')          
                     navbar.classList.add('text-slate-800')
+                    if(window.innerWidth > 1024){                        
+                        document.getElementById('nav-menus-desktop').classList.add('lg:flex',)
+                        document.getElementById('nav-menus-desktop').classList.remove('hidden','bg-slate-100')
+                        document.getElementById('togglenavbutton').classList.add('lg:hidden')
+                    }
+                }else{
+                    document.getElementById('nav-menus-desktop').classList.remove('lg:flex')
+                    document.getElementById('nav-menus-desktop').classList.add('hidden')
+                    document.getElementById('togglenavbutton').classList.remove('lg:hidden')
                 }
             });
         };                    
            
-        const callbackSecondFold = (entries, observer) => {
+        const callbackSecondFold = async (entries, observer) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) { 
-                    entry.target.addEventListener('wheel',reverseScrollEventListener)
+                if (entry.isIntersecting) {
                     const navbar = document.getElementById('navbar-main')
-                    // navbar.classList.remove('text-slate-800')                    
-                    navbar.classList.add('bg-clip-padding','backdrop-filter','backdrop-blur-sm')
-                }else{
-                    entry.target.removeEventListener('wheel',reverseScrollEventListener)
+                    // navbar.classList.remove('text-slate-800')
+                    navbar.classList.add('bg-clip-padding','shadow','backdrop-filter','bg-slate-100','backdrop-blur-sm')
                 }
             });
         };
+        // const callbackThirdFold = async (entries, observer) => {
+        //     entries.forEach(entry => {
+        //         if (entry.isIntersecting) { 
+        //             const navbar = document.getElementById('navbar-main')                    
+        //             navbar.classList.remove('bg-clip-padding','backdrop-filter','backdrop-blur-sm')
+        //             navbar.classList.add('bg-slate-200')
+        //         }
+        //     });
+        // };
        
         const options = {  
             root:null,          
-            threshold: 1,            
+            threshold: 0.5,  
         }
 
         const observerFirstFold = new IntersectionObserver(callbackFirstFold,options);
@@ -65,7 +80,11 @@ function ScrollListener() {
         if (targetElementSecondFOld) {
             observerSecondFold.observe(targetElementSecondFOld);
         }
-
+        // const observerThirdFold = new IntersectionObserver(callbackThirdFold,options);
+        // const targetElementThirdFOld = document.getElementById('thirdfold');
+        // if (targetElementThirdFOld) {
+        //     observerThirdFold.observe(targetElementThirdFOld);
+        // }
     }, []);
 
     return null; // Return null or any other content as needed

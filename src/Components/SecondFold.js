@@ -45,7 +45,7 @@ const Page = ({
           <div className="container mx-auto h-full sm:p-10">
             <header className="container px-4 lg:flex mt-2 items-center h-full lg:mt-0">
               <div className="w-full">
-                <h1 className="uppercase text-2xl lg:text-6xl sm:text-3xl font-bold">{header}</h1>
+                <h1 className="uppercase text-2xl lg:text-4xl sm:text-3xl font-bold">{header}</h1>
                 <div className="w-20 h-2 bg-green-700 my-4" />
                 <p className="text-lg lg:text-xl mb-10">{content}</p>
               </div>
@@ -53,10 +53,11 @@ const Page = ({
           </div>
         </div>
           <div className="order-3 flex flex-row justify-center cursor-pointer items-center"  onClick={onClick}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+          <span className="inline mr-2">view more</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-activity" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
           </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-caret-right" viewBox="0 0 16 16">
             <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
           </svg>
           </div>
@@ -75,13 +76,13 @@ export default function SecondFold() {
 
   return (
     <>
-    <div className="h-screen" id='secondfolddiv'>
+    <div className="h-screen bg-slate-100 bg-opacity-70" id='secondfolddiv' style={{backgroundAttachment:'fixed'}}>
       <Parallax
         ref={parallax}
         pages={4}
         id="secondfold"
         horizontal
-        className="mt-20"
+        className=""
         // style={{
         //   backgroundAttachment: "fixed",
         //   backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,

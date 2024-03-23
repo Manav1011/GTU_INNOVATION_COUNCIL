@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function MainGraphic() {
   return (
     <div id="firstfold">
@@ -14,11 +15,12 @@ export default function MainGraphic() {
           height: "100vh",
         }}
       >
+      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_POTRAIT_4.jpg" as="image" />
         <div
           className="h-full w-full flex flex-col backdrop-filter"
           style={{ backdropFilter: "blur(1px)",}}
         >
-          <div className="pt-40 pb-40 bg-white slide-right mb-2 text-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30" style={{clipPath:'circle(50% at 50% 50%)',backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>          
+          <div className="pt-40 z-10 bg-white slide-right mb-2 text-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30" style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
             <h1
               className=" text-orange-500 my-2 leading-10 sm:leading-1 font-bold"
               style={{ fontFamily: "Azonix" ,fontSize:'2em'}}
@@ -52,6 +54,7 @@ export default function MainGraphic() {
           height: "100vh",
         }}
       >
+      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_6.jpg" as="image" />
         <div
           className="h-full w-full flex flex-col bg-gray-900  backdrop-filter bg-opacity-20  justify-end items-start"
           style={{ backdropFilter: "blur(1px)" }}
