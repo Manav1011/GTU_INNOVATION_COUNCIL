@@ -1,29 +1,5 @@
 'use client'
-
 import { useEffect } from "react";
-const reverseScrollEventListener = (event) => {
-    // Check if the user is scrolling vertically
-    if(event.deltaY !== 0){
-        if(document.getElementById('secondfold').scrollLeft == 0){            
-            if(event.deltaY > 0){                
-                event.preventDefault();
-                const scrollAmount = event.deltaY * 0.8;      
-                document.getElementById('secondfold').scrollLeft += scrollAmount
-            }
-        }
-        else if(document.getElementById('secondfold').scrollWidth - document.getElementById('secondfold').clientWidth == Math.ceil(document.getElementById('secondfold').scrollLeft)){            
-            if(event.deltaY < 0){                
-                event.preventDefault();
-                const scrollAmount = event.deltaY * 0.8;      
-                document.getElementById('secondfold').scrollLeft += scrollAmount
-            }
-        }else{                        
-            event.preventDefault();
-            const scrollAmount = event.deltaY * 0.8;      
-            document.getElementById('secondfold').scrollLeft += scrollAmount
-        }
-    }            
-}
 function ScrollListener() {    
     useEffect(() => {     
         const callbackFirstFold = async (entries, observer) => {
@@ -63,15 +39,6 @@ function ScrollListener() {
                 }
             });
         };
-        // const callbackThirdFold = async (entries, observer) => {
-        //     entries.forEach(entry => {
-        //         if (entry.isIntersecting) { 
-        //             const navbar = document.getElementById('navbar-main')                    
-        //             navbar.classList.remove('bg-clip-padding','backdrop-filter','backdrop-blur-sm')
-        //             navbar.classList.add('bg-slate-200')
-        //         }
-        //     });
-        // };
        
         const options = {  
             root:null,          
@@ -89,18 +56,6 @@ function ScrollListener() {
         if (targetElementSecondFOld) {
             observerSecondFold.observe(targetElementSecondFOld);
         }        
-        // const observerwhyGICparallaxlayer = new IntersectionObserver(callbackwhyGICparallaxlayer,options);
-        // const targetElementwhyGICparallaxlayer = document.getElementById('ourGoals');
-        // console.log(targetElementwhyGICparallaxlayer);
-        // if (targetElementwhyGICparallaxlayer) {
-        //     observerwhyGICparallaxlayer.observe(targetElementwhyGICparallaxlayer);
-        // }
-        
-        // const observerThirdFold = new IntersectionObserver(callbackThirdFold,options);
-        // const targetElementThirdFOld = document.getElementById('thirdfold');
-        // if (targetElementThirdFOld) {
-        //     observerThirdFold.observe(targetElementThirdFOld);
-        // }
     }, []);
 
     return null; // Return null or any other content as needed
