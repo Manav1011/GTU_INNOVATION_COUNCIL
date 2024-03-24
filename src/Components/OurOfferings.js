@@ -1,6 +1,6 @@
 const OurOfferings = () => {
   return (
-    <section className="flex flex-col justify-around antialiased text-gray-600 p-4">      
+    <section className="flex flex-col  antialiased text-gray-600">
         {/* Card */}
         <div className="max-w-2xl mb-3 bg-sky-100 bg-opacity-20 shadow-lg rounded-lg">
           <div className="px-6 py-5">

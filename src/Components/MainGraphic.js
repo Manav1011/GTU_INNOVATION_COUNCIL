@@ -7,7 +7,7 @@ export default function MainGraphic() {
         style={{
           backgroundAttachment: "fixed",
           backgroundImage:
-            "url('/images/backgrounds/GTU_CAMPUS_POTRAIT_4.jpg')",
+            "url('/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -15,7 +15,7 @@ export default function MainGraphic() {
           height: "100vh",
         }}
       >
-      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_POTRAIT_4.jpg" as="image" />
+      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp" as="image" />
         <div
           className="h-full w-full flex flex-col backdrop-filter"
           style={{ backdropFilter: "blur(1px)",}}
@@ -54,7 +54,7 @@ export default function MainGraphic() {
           height: "100vh",
         }}
       >
-      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_6.jpg" as="image" />
+      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_6.webp" as="image" />
         <div
           className="h-full w-full flex flex-col bg-gray-900  backdrop-filter bg-opacity-20  justify-end items-start"
           style={{ backdropFilter: "blur(1px)" }}
