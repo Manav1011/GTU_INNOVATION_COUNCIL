@@ -41,6 +41,20 @@ html {
       transform: translateX(0);
     }
 }
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topToBottom {
+  animation: topToBottom 1s ease forwards;
+}
 /* 
 .slide-right{
     animation: slideRight 2s forwards;

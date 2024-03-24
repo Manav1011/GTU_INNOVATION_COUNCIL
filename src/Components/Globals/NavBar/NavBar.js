@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 function NavBar() {
   return (
     <nav
-      className="w-full fixed top-0 z-10"
+      className="w-full fixed top-0 z-10 backdrop-filter bg-opacity-80 topToBottom  rounded-2xl"
       id="navbar-main"
       style={{ fontFamily: "dosislight",fontWeight:'bolder',backgroundAttachment:'fixed'}}
     >
@@ -85,7 +85,7 @@ function NavBar() {
         </div>
       </div>
       {/* Mobile menu, show/hide based on menu state. */}
-      <div className="hidden" id="mobile-menu">
+      <div className="hidden topToBottom text-slate-50" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"

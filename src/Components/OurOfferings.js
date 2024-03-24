@@ -30,7 +30,7 @@ const OurOfferings = () => {
                 {/* Card header */}
                 <div className="w-full sm:flex justify-between items-center mb-3">
                   {/* Title */}
-                  <h2 className="text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">
+                  <h2 className="text-sm:text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">
                     ALL-IN-ONE PLACE
                   </h2>
                   {/* Like and comment buttons */}

@@ -30,11 +30,13 @@ function ScrollListener() {
             entries.forEach(entry => {                
                 if (entry.isIntersecting) {
                     const navbar = document.getElementById('navbar-main')
-                    navbar.classList.remove('bg-clip-padding','shadow','bg-slate-100','backdrop-filter','bg-opacity-0','backdrop-blur-sm','text-white')          
+                    navbar.classList.remove('bg-clip-padding','shadow','backdrop-filter','bg-opacity-0','backdrop-blur-sm','text-white')          
                     navbar.classList.add('text-slate-800')
-                    if(window.innerWidth > 1024){                        
+                    document.getElementById("navbar-main").classList.remove("bg-black");
+                    if(window.innerWidth > 1024){
+                        document.getElementById('mobile-menu').classList.add('hidden')                    
                         document.getElementById('nav-menus-desktop').classList.add('lg:flex',)
-                        document.getElementById('nav-menus-desktop').classList.remove('hidden','bg-slate-100')
+                        document.getElementById('nav-menus-desktop').classList.remove('hidden')
                         document.getElementById('togglenavbutton').classList.add('lg:hidden')
                     }
                 }else{
@@ -50,7 +52,14 @@ function ScrollListener() {
                 if (entry.isIntersecting) {
                     const navbar = document.getElementById('navbar-main')
                     // navbar.classList.remove('text-slate-800')
-                    navbar.classList.add('bg-clip-padding','shadow','backdrop-filter','bg-slate-100','backdrop-blur-sm')
+                    navbar.classList.add('bg-clip-padding','shadow','backdrop-filter','backdrop-blur-sm')
+                }
+            });
+        };
+        const callbackwhyGICparallaxlayer = async (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                   console.log('here');
                 }
             });
         };
@@ -79,7 +88,14 @@ function ScrollListener() {
         const targetElementSecondFOld = document.getElementById('secondfold');
         if (targetElementSecondFOld) {
             observerSecondFold.observe(targetElementSecondFOld);
-        }
+        }        
+        // const observerwhyGICparallaxlayer = new IntersectionObserver(callbackwhyGICparallaxlayer,options);
+        // const targetElementwhyGICparallaxlayer = document.getElementById('ourGoals');
+        // console.log(targetElementwhyGICparallaxlayer);
+        // if (targetElementwhyGICparallaxlayer) {
+        //     observerwhyGICparallaxlayer.observe(targetElementwhyGICparallaxlayer);
+        // }
+        
         // const observerThirdFold = new IntersectionObserver(callbackThirdFold,options);
         // const targetElementThirdFOld = document.getElementById('thirdfold');
         // if (targetElementThirdFOld) {

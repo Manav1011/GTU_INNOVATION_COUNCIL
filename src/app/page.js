@@ -11,7 +11,8 @@ export default function Home() {
       <MainGraphic/> 
       <>
       <SecondFold/>
-      <ThirdFold/>            
+      <ThirdFold/>  
+      <FourthFold/>          
       </>
     </>
   );

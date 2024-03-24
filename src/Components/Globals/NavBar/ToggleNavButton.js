@@ -1,13 +1,16 @@
 'use client'
 function ToggleNavButton() {    
-    const toggleMenuMobile = () => {
-      // document.getElementsByTagName('nav')[0].classList.toggle('bg-slate-100');      
+    const toggleMenuMobile = () => {      
+      document.getElementById("navbar-main").classList.toggle("bg-black");
         document.getElementById("mobile-menu").classList.toggle("hidden");
+        document.getElementById("toggle-nav-button").classList.toggle("text-slate-800");
+        document.getElementById("toggle-nav-button").classList.toggle("text-slate-50");
     };
     return (
         <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-slate-800 text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              id="toggle-nav-button"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => toggleMenuMobile()}
