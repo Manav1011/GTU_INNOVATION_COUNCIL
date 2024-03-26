@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 function NavBar() {
   return (
     <nav
-      className="w-full fixed top-0 z-10 backdrop-filter bg-opacity-80 topToBottom  rounded-2xl"
+      className="w-full fixed top-0 z-10 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl"
       id="navbar-main"
       style={{ fontFamily: "dosislight",fontWeight:'bolder',backgroundAttachment:'fixed'}}
     >

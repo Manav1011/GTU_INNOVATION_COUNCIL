@@ -1,5 +1,19 @@
 'use client'
 import { useEffect } from "react";
+const addFullScreen= (event) => {
+    event.stopPropagation()    
+    document.getElementById('whyGICParallaxDiv').classList.add('h-screen')
+    document.getElementById('whyGICParallaxDiv').classList.remove('h-1/4','overflow-y-hidden')
+    document.getElementById('expand-span').classList.remove('flex')
+    document.getElementById('expand-span').classList.add('hidden')
+}
+const ourGoalsScroll = () => {
+    if(document.getElementById('expand-span').classList.contains('hidden')){
+        document.getElementById('whyGICParallaxDiv').classList.add('h-1/4','overflow-y-hidden')
+        document.getElementById('expand-span').classList.toggle('hidden')
+        document.getElementById('expand-span').classList.toggle('flex')
+    }
+}
 function ScrollListener() {    
     useEffect(() => {     
         const callbackFirstFold = async (entries, observer) => {
@@ -55,7 +69,11 @@ function ScrollListener() {
         const targetElementSecondFOld = document.getElementById('secondfold');
         if (targetElementSecondFOld) {
             observerSecondFold.observe(targetElementSecondFOld);
-        }        
+        }
+        setTimeout(() => {
+            document.getElementById('ourGoals').addEventListener('scroll',ourGoalsScroll)
+            document.getElementById('expand-span').addEventListener('click',addFullScreen)             
+        }, 2000);     
     }, []);
 
     return null; // Return null or any other content as needed
