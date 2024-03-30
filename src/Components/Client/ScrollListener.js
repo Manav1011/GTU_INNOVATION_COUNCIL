@@ -71,10 +71,17 @@ function ScrollListener() {
         if (targetElementSecondFOld) {
             observerSecondFold.observe(targetElementSecondFOld);
         }
-        setTimeout(() => {
-            document.getElementById('ourGoals').addEventListener('scroll',ourGoalsScroll)
-            document.getElementById('expand-span').addEventListener('click',addFullScreen)             
-        }, 2000);     
+        const whyGICParallaxDivOptions = {
+            root:null,
+            threshold:1
+        }
+        // setTimeout(() => {
+        //     const whyGICParallaxDivObserver = new IntersectionObserver(() => {
+        //         document.getElementById('ourGoals').addEventListener('scroll',ourGoalsScroll)
+        //         document.getElementById('expand-span').addEventListener('click',addFullScreen)             
+        //     },whyGICParallaxDivOptions);
+        //     observerSecondFold.observe(targetElementSecondFOld);
+        // }, 2000);     
     }, []);
 
     return null; // Return null or any other content as needed

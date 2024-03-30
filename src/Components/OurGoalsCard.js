@@ -11,7 +11,7 @@ const OurGoalsCard = ({ content }) => {
         ></path>
       </svg>
       <div className="space-y-2">
-        <p className="text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">{content}</p>
+        <p className="text-xl leading-snug font-extrabold text-black truncate mb-1 sm:mb-0">{content}</p>
       </div>
     </div>
   );

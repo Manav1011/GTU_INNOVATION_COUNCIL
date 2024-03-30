@@ -30,7 +30,7 @@ const OurOfferings = () => {
                 {/* Card header */}
                 <div className="w-full sm:flex justify-between items-center mb-3">
                   {/* Title */}
-                  <h2 className="text-sm:text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">
+                  <h2 className="text-sm:text-xl leading-snug font-extrabold text-black truncate mb-1 sm:mb-0">
                     ALL-IN-ONE PLACE
                   </h2>
                   {/* Like and comment buttons */}
@@ -38,7 +38,7 @@ const OurOfferings = () => {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-100 font-medium">
+                  <div className="max-w-md text-slate-500 font-medium">
                     <p className="mb-2">
                       We support to student for patent filling. Meet up with Industry collaboration
                     </p>
@@ -77,7 +77,7 @@ const OurOfferings = () => {
                 {/* Card header */}
                 <div className="w-full sm:flex justify-between items-center mb-3">
                   {/* Title */}
-                  <h2 className="text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">
+                  <h2 className="text-xl leading-snug font-extrabold text-black truncate mb-1 sm:mb-0">
                     INTERNSHIP WITH STUDENT STARTUP
                   </h2>
                   {/* Like and comment buttons */}
@@ -85,7 +85,7 @@ const OurOfferings = () => {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-100 font-medium">
+                  <div className="max-w-md text-slate-500 font-medium">
                     <p className="mb-2">
                       Its very important for students to work with Startup for understanding ground reality of research and project work.
                     </p>
@@ -124,7 +124,7 @@ const OurOfferings = () => {
                 {/* Card header */}
                 <div className="w-full sm:flex justify-between items-center mb-3">
                   {/* Title */}
-                  <h2 className="text-xl leading-snug font-extrabold text-white truncate mb-1 sm:mb-0">
+                  <h2 className="text-xl leading-snug font-extrabold text-black truncate mb-1 sm:mb-0">
                     EVENT PARTICIPATION
                   </h2>
                   {/* Like and comment buttons */}
@@ -132,7 +132,7 @@ const OurOfferings = () => {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-100 font-medium">
+                  <div className="max-w-md text-slate-500 font-medium">
                     <p className="mb-2">
                     We arrange events at GIC where students can be benefited by attending expert mentor lecturer.
                     </p>
