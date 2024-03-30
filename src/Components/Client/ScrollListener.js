@@ -9,6 +9,7 @@ const addFullScreen= (event) => {
 }
 const ourGoalsScroll = () => {
     if(document.getElementById('expand-span').classList.contains('hidden')){
+        document.getElementById('whyGICParallaxDiv').classList.remove('h-screen')
         document.getElementById('whyGICParallaxDiv').classList.add('h-1/4','overflow-y-hidden')
         document.getElementById('expand-span').classList.toggle('hidden')
         document.getElementById('expand-span').classList.toggle('flex')
