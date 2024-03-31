@@ -1,5 +1,4 @@
-import React from 'react'
-
+import Image from "next/image"
 function QuoteCard({content,author,designation,hidden}) {
   return (
     <figure className={`px-5 fade-in-out quote-card text-center ${hidden && 'hidden'}`}>
@@ -18,9 +17,11 @@ function QuoteCard({content,author,designation,hidden}) {
       </p>
     </blockquote>
     <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-      <img
+      <Image
+        height={30}
+        width={30}
         className="w-6 h-6 rounded-full"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+        src="/images/logos/michael-gouch.png"
         alt="profile picture"
       />
       <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
