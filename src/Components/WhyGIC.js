@@ -21,7 +21,7 @@ const WhyGIC = () => {
           <span id="expand-span" className="hidden sm:hidden text-lg mt-2 text-center w-full justify-center cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-arrow-bar-down" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/></svg></span>
           <br />          
           <br /> 
-          <p className="text-xl">
+          <span className="text-xl">
             So we at GIC nurture the soft skills and talent of the students to
             lead their imagination in a proper way. <br /><br />
             GIC has been designed to establish close bonding between industries,
@@ -33,7 +33,7 @@ const WhyGIC = () => {
             education and develops quality research at the University and helps
             create a culture of design, new and improved products and processes in
             our industry.
-          </p>
+          </span>
           </>
       </p>
       </div>

@@ -14,8 +14,7 @@ export default function MainGraphic() {
           width: "100%",
           height: "100vh",
         }}
-      >
-      <link rel="preload" href="/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp" as="image" />
+      >    
         <div
           className="h-full w-full flex flex-col backdrop-filter"
           style={{ backdropFilter: "blur(1px)",}}
@@ -46,7 +45,7 @@ export default function MainGraphic() {
         className="hidden sm:flex backdrop-filter bg-opacity-5"
         style={{
           backgroundAttachment: "fixed",
-          backgroundImage: "url('/images/backgrounds/GTU_CAMPUS_6.jpg')",
+          backgroundImage: "url('/images/backgrounds/GTU_CAMPUS_6.webp')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",

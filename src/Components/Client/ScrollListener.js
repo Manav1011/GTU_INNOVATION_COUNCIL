@@ -1,20 +1,6 @@
 'use client'
 import { useEffect } from "react";
-const addFullScreen= (event) => {
-    event.stopPropagation()    
-    document.getElementById('whyGICParallaxDiv').classList.add('h-screen')
-    document.getElementById('whyGICParallaxDiv').classList.remove('h-1/4','overflow-y-hidden')
-    document.getElementById('expand-span').classList.remove('flex')
-    document.getElementById('expand-span').classList.add('hidden')
-}
-const ourGoalsScroll = () => {
-    if(document.getElementById('expand-span').classList.contains('hidden')){
-        document.getElementById('whyGICParallaxDiv').classList.remove('h-screen')
-        document.getElementById('whyGICParallaxDiv').classList.add('h-1/4','overflow-y-hidden')
-        document.getElementById('expand-span').classList.toggle('hidden')
-        document.getElementById('expand-span').classList.toggle('flex')
-    }
-}
+
 function ScrollListener() {    
     useEffect(() => {     
         const callbackFirstFold = async (entries, observer) => {
@@ -81,7 +67,26 @@ function ScrollListener() {
         //         document.getElementById('expand-span').addEventListener('click',addFullScreen)             
         //     },whyGICParallaxDivOptions);
         //     observerSecondFold.observe(targetElementSecondFOld);
-        // }, 2000);     
+        // }, 2000);  
+        
+            const quoteContainer = document.getElementById("quote-container");
+            const quoteCards = quoteContainer.getElementsByClassName("quote-card");
+            let currentIndex = 0;
+          
+            function showNextQuote() {
+              // Hide current quote
+              quoteCards[currentIndex].classList.add("hidden");
+              // Calculate index of next quote
+              currentIndex = (currentIndex + 1) % quoteCards.length;
+              // Show next quote
+              quoteCards[currentIndex].classList.remove("hidden");
+            }
+          
+            // Initially show the first quote
+            quoteCards[currentIndex].classList.remove("hidden");
+          
+            // Set up timer to switch quotes every 3 seconds
+            setInterval(showNextQuote, 3000);    
     }, []);
 
     return null; // Return null or any other content as needed

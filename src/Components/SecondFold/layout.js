@@ -1,16 +1,9 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
-const callbackSecondFoldFirstView = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      console.log("here");
-    }
-  });
-};
 
 const Page = ({
   ref,
@@ -34,7 +27,9 @@ const Page = ({
     >
       <div className="flex justify-center flex-col sm:flex-row items-center h-screen">
         {logo && <div className="w-full h-48  sm:w-1/4 text-center ">
-          <img
+          <Image
+            height={300}
+            width={300}
             src={logo}
             alt="Leafs"
             className="mx-auto"

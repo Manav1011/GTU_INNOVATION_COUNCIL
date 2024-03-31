@@ -65,10 +65,32 @@ html {
       transform: translateX(100%);
     }
     to {
-      transform: translateX(0);
+      transform: translateX(-100%);
     }
 }
 
 .slide-left{
-    animation: slideLeft 2s forwards;
+    animation: slideLeft 3s ease-in-out;
+}
+
+.truncate-100 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+}
+.fade-in-out {
+  opacity: 0;
+  animation: fadeInOutAnimation 3s ease-in;
+}
+
+@keyframes fadeInOutAnimation {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
 }

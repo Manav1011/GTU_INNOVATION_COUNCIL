@@ -1,7 +1,7 @@
 'use client'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import OurSupport from "./OurSupport";
-import WhyGIC from "./WhyGIC";
+import WhyGIC from "../WhyGIC";
 import OurGoalsCard from "./OurGoalsCard";
 import OurOfferings from "./OurOfferings";
 
