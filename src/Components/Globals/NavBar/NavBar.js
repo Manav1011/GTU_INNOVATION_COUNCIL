@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 function NavBar() {
   return (
     <nav
-      className="w-full fixed top-0 z-10 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl"
+      className="w-full fixed top-0 z-40 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl"
       id="navbar-main"
       style={{ fontFamily: "dosislight",fontWeight:'bolder',backgroundAttachment:'fixed'}}
     >
@@ -19,8 +19,8 @@ function NavBar() {
                   width={300}
                   height={192}
                   priority={true}
-                  className="h-auto w-14"
-                  src="/images/logos/GTU.png"
+                  className="h-auto w-20"
+                  src="/images/logos/GISC.png"
                   alt="Your Company"
                 />
               </Link>

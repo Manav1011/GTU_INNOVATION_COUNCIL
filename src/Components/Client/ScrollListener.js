@@ -87,6 +87,9 @@ function ScrollListener() {
           
             // Set up timer to switch quotes every 3 seconds
             setInterval(showNextQuote, 3000);    
+
+            const marquees = document.getElementsByClassName('marquee-reports-circulars')
+            console.log(marquees);
     }, []);
 
     return null; // Return null or any other content as needed
