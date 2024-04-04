@@ -1,6 +1,7 @@
 import "./globals.css";
 import './fonts.css'
 import NavBar from "@/Components/Globals/NavBar/NavBar";
+import Footer from "@/Components/Globals/Footer/Footer";
 
 export const metadata = {
   title: "GTU Innovation Council",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <div style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
           <NavBar/>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

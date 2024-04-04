@@ -89,28 +89,38 @@ function NavBar() {
         <div className="space-y-1 px-2 pb-3 pt-2">
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
-            id="clientssection"
-            title="Clients"
+            id={"clientssection"}
+            title={"GIC Verticals"}
           />
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="servicescontainer"
-            title="Services"
+            title="Our Support"
           />
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="teamdetailscontainer"
-            title="Team"
+            title="GIC Startup"
           />
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="projectssection"
-            title="Projects"
+            title="Resource Bank"
           />
           <NavLink
             classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
             id="aboutussection"
-            title="About us"
+            title="Latest"
+          />
+          <NavLink
+            classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            id="aboutussection"
+            title="Reach US"
+          />
+          <NavLink
+            classList="block text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+            id="aboutussection"
+            title="Apply"
           />
         </div>
       </div>

@@ -1,10 +1,10 @@
 async function SeventhFold() {
   return (
-    <section className="relative pt-24 pb-36 bg-white overflow-hidden">
+    <section className="relative pt-12 overflow-hidden">
       <div className="relative z-10 container px-4 mx-auto">
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-1/3 p-3">
-            <div className="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+            <div className="p-11 h-full text-center  bg-opacity-20 border border-blueGray-100 rounded-xl ">
                 <div className="mb-6 relative mx-auto w-16 h-16  border border-blueGray-200 rounded-full">
                 <a href="mailto:info_gisc@gtu.edu.in">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 cursor-pointer">
@@ -29,13 +29,13 @@ async function SeventhFold() {
               <h3 className="mb-3 text-xl font-bold font-heading leading-snug">
                 Send Email
               </h3>
-              <p className="font-medium leading-relaxed">
+              <p className="font-medium  text-xl leading-relaxed">
                 info_gisc@gtu.edu.in
               </p>
             </div>
           </div>
           <div className="w-full md:w-1/3 p-3">
-            <div className="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+          <div className="p-11 h-full text-center bg-opacity-20 border border-blueGray-100 rounded-xl">
             <div className="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
                 <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                   <svg
@@ -60,7 +60,7 @@ async function SeventhFold() {
             </div>
           </div>
           <div className="w-full md:w-1/3 p-3">
-            <div className="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+          <div className="p-11 h-full text-center bg-opacity-20 border border-blueGray-100 rounded-xl">
               <div className="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
                 <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                   <svg

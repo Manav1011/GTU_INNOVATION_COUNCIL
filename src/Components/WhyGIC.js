@@ -8,7 +8,7 @@ const WhyGIC = () => {
           }}
       id='whyGICParallaxDiv'
     >
-    <div className="p-5 pt-20 sm:pt-10 sm:p-10 h-full w-full flex flex-col justify-start sm:justify-center items-start text-justify bg-black backdrop-filter bg-opacity-60" style={{backdropFilter: "blur(1px)"}}>      
+    <div className="p-5 pt-12 sm:pt-10 sm:p-10 h-full w-full flex flex-col justify-start sm:justify-center items-start text-justify bg-black backdrop-filter bg-opacity-60" style={{backdropFilter: "blur(1px)"}}>      
         <h5 className="sm:mb-20 mb-5 text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-teal-200 sm:text-6xl text-5xl font-semibold tracking-tight" style={{fontFamily:'oswald'}}>
           WHY GIC ?
         </h5>      
