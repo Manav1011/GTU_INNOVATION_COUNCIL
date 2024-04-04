@@ -5,7 +5,7 @@ function Footer() {
         <div className="flex flex-wrap  lg:text-left">
           <div className="w-full px-4 flex justify-center flex-row sm:flex-col items-center">
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
-              Let's keep in touch!
+              Let&apos;s keep in touch!
             </h4>            
             <div className="mt-6 lg:mb-0 mb-6 flex flex-row">              
                 <svg
