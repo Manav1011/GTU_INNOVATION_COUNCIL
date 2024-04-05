@@ -1,6 +1,6 @@
 function page() {
   return (
-    <>Manav</>
+    <div className="w-full bg-black">Manav</div>
   )
 }
 
