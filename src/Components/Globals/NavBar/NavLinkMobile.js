@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-function NavLink({ classList, title, href, dropdown,isChildDropdown }) {  
+function NavLinkMobile({ classList, title, href, dropdownLinkClass,isChildDropdown }) {
   if (href) {
     return (
       <Link className={classList} href={href}>
@@ -12,12 +12,15 @@ function NavLink({ classList, title, href, dropdown,isChildDropdown }) {
       <button
         className={classList}
         onClick={() => {
-          document.querySelectorAll(".navdropdowns").forEach((item) => {
-            if(!isChildDropdown){ 
-              item.id !== dropdown ? item.classList.add("hidden") : null;
+          document.querySelectorAll(".dropdownlinksmobile").forEach((item) => {
+            if (!item.classList.contains(dropdownLinkClass)) {
+                if(!isChildDropdown){
+                    item.classList.add("hidden");
+                }
+            } else {
+              item.classList.toggle("hidden");
             }
           });
-          document.getElementById(dropdown).classList.toggle("hidden");
         }}
       >
         {title}
@@ -36,4 +39,4 @@ function NavLink({ classList, title, href, dropdown,isChildDropdown }) {
   }
 }
 
-export default NavLink;
+export default NavLinkMobile;

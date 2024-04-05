@@ -73,7 +73,7 @@ function ScrollListener() {
             const quoteCards = quoteContainer.getElementsByClassName("quote-card");
             let currentIndex = 0;
           
-            function showNextQuote() {
+            function showNextQuote() {                
               // Hide current quote
               quoteCards[currentIndex].classList.add("hidden");
               // Calculate index of next quote
@@ -87,6 +87,11 @@ function ScrollListener() {
           
             // Set up timer to switch quotes every 3 seconds
             setInterval(showNextQuote, 3000);            
+            document.querySelectorAll('marquee').forEach(item => {
+                item.addEventListener('mouseover',() => {item.stop()})
+                item.addEventListener('mouseout',() => item.start())
+            })
+
     }, []);
 
     return null; // Return null or any other content as needed
