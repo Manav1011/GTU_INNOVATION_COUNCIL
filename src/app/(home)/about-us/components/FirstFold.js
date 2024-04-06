@@ -20,7 +20,7 @@ async function FirstFold() {
             Imagination is the base of innovation.
             <br />
             <br />
-            At GIC, we cultivate students' soft skills and talents to guide
+            At GIC, we cultivate students&apos; soft skills and talents to guide
             their creativity effectively. We foster collaboration among
             industries, entrepreneurs, and students to ensure university
             research aligns with national and global industry requirements.<br />

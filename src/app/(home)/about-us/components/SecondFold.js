@@ -19,7 +19,7 @@ async function SecondFold() {
           className="bottomUPContent lg:text-3xl sm:text-xl text-2xl px-5 sm:px-20 pt-28 sm:pt-10 text-center"
           style={{ fontFamily: "variable" }}
         >
-          The council's goal is to streamline management systems, leveraging
+          The council&apos;s goal is to streamline management systems, leveraging
           existing infrastructure for innovation.<br /> <br /> Documenting successes boosts
           stakeholder confidence. With a focus on fostering national and
           international collaborations in Science, Engineering, Technology, and
