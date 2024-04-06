@@ -22,54 +22,34 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                GIC Club
-              </a>
+              <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'GIC Club'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Sankuls
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Sankuls'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Design Thinking
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Design Thinking'}/>              
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                CiC3
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'CiC3'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                IPR
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'IPR'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Ideathon21
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Ideathon21'}/> 
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                GTU Motorsports
-              </a>
+              <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'GTU Motorsports'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Incubator
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Incubator'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Awards
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Awards'}/>
             </li>
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Student Associateship Program
-              </a>
+            <NavLink parentDiv={'GICVerticalsDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Student Associateship Program'}/>              
             </li>
           </ul>
         </div>
@@ -91,9 +71,7 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Allied Support
-              </a>
+              <NavLink parentDiv={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Allied Support'}/>
             </li>
             <li>
               <div>
@@ -113,29 +91,19 @@ async function DesktopNav() {
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
-                      <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md ">
-                        SSIP
-                      </a>
+                    <NavLink parentDiv={'FundingDropdown'} SecondParent={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'SSIP'}/>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                        Nodal Institute
-                      </a>
+                    <NavLink parentDiv={'FundingDropdown'} SecondParent={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Nodal Institute'}/>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                        DIC
-                      </a>
+                    <NavLink parentDiv={'FundingDropdown'} SecondParent={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'DIC'}/>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                        AIC
-                      </a>
+                    <NavLink parentDiv={'FundingDropdown'} SecondParent={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'AIC'}/>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                        TBI
-                      </a>
+                    <NavLink parentDiv={'FundingDropdown'} SecondParent={'OurSupportDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'TBI'}/>                      
                     </li>
                   </ul>
                 </div>
@@ -160,24 +128,16 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md ">
-                GIC Startup Mart
-              </a>
+            <NavLink parentDiv={'GICStartupDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'GIC Startup Mart'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Startup Stories
-              </a>
+            <NavLink parentDiv={'GICStartupDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Startup Stories'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                SSIP Startup List
-              </a>
+            <NavLink parentDiv={'GICStartupDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'SSIP Startup List'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Nodal Institute Startup
-              </a>
+            <NavLink parentDiv={'GICStartupDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Nodal Institute Startup'}/>
             </li>
           </ul>
         </div>
@@ -199,34 +159,22 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md ">
-                MOOCs
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'MOOCs'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                MSTE
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'MSTE'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                OSTE
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'OSTE'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Case Studies
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Case Studies'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                BLOG
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'BLOG'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Books Generals
-              </a>
+            <NavLink parentDiv={'ResourceBankDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Books Generals'}/>
             </li>
           </ul>
         </div>
@@ -247,34 +195,22 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md ">
-                Career
-              </a>
+              <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Career'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Upcoming Event List
-              </a>
+            <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Upcoming Event List'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Upcoming Classic Event
-              </a>
+            <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Upcoming Classic Event'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Circulars
-              </a>
+            <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Circulars'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Reports
-              </a>
+            <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Reports'}/>
             </li>
-            <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Utility Forms
-              </a>
+            <li>            
+            <NavLink parentDiv={'LatestDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Utility Forms'}/>
             </li>
           </ul>
         </div>
@@ -295,33 +231,28 @@ async function DesktopNav() {
             aria-labelledby="dropdownLargeButton"
           >
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md ">
-                Incubation Form
-              </a>
+              <NavLink parentDiv={'StartupApplyDropdown'} href={"/incubation"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Incubation Form'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Apply Under Nodal Institute
-              </a>
+              <NavLink parentDiv={'StartupApplyDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Apply Under Nodal Institute'}/>              
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Apply Under SSIP
-              </a>
+            <NavLink newPage={true} parentDiv={'StartupApplyDropdown'} href={"https://docs.google.com/forms/d/e/1FAIpQLScXect1CjLrHwE20g4umPqjBNNpA9RoO5CrIEy1R25zxhdgYQ/viewform"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Apply Under SSIP'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Apply Under TBI
-              </a>
+            <NavLink newPage={true} parentDiv={'StartupApplyDropdown'} href={"https://web.archive.org/web/20210629165925/https://docs.google.com/forms/d/1vUVBc2XchnSE94IMAWq16t8c25v7Mpr1Y-nXZh7uiJA/viewform?edit_requested=true"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Apply Under TBI'}/>
             </li>
             <li>
-              <a href="#" className="block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md">
-                Startup Gallery
-              </a>
+            <NavLink parentDiv={'StartupApplyDropdown'} href={"/"} classList={'block px-4  py-3 hover:bg-slate-200 hover:text-black rounded-md '} title={'Startup Gallery'}/>
             </li>
           </ul>
         </div>
       </div>
+      <NavLink
+        classList="text-slate-800 rounded-md  text-md font-semibold"
+        title={"About"}
+        href={'/about-us'}                  
+      />
       <NavLink
         classList="text-slate-800 rounded-md  text-md font-semibold"
         title={"Reach US"}

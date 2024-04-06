@@ -68,6 +68,15 @@
     }
 }
 
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .slide-left{
     animation: slideLeft 3s ease-in-out;
 }
@@ -142,4 +151,22 @@
   .button-51 {
     padding: 16px 32px;
   }
+}
+
+@keyframes bottomToUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bottomUPTitle {
+  animation: slideRightToLeft 0.5s ease forwards;
+}
+.bottomUPContent {
+  animation: slideRightToLeft 1.5s ease forwards;
 }

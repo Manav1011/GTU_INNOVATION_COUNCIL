@@ -245,7 +245,12 @@ async function MobileNav() {
           title={"Startup Gallery"}
           href={"/"}
         />
-
+<NavLinkMobile
+          classList="my-1 text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
+          id="aboutussection"
+          title="About"
+          href={"/about-us"}
+        />
 
         
         <NavLinkMobile

@@ -1,19 +1,38 @@
 "use client";
 import Link from "next/link";
-function NavLink({ classList, title, href, dropdown,isChildDropdown }) {  
-  if (href) {
-    return (
-      <Link className={classList} href={href}>
-        {title}
-      </Link>
-    );
+function NavLink({
+  newPage,
+  classList,
+  title,
+  href,
+  dropdown,
+  isChildDropdown,
+  parentDiv,
+  SecondParent,
+}) {
+  if (href) {        
+      return (
+        <Link
+          className={classList}
+          target={newPage ? '_blank':'_self'}
+          href={href}
+          onClick={() => {
+            document.getElementById(parentDiv).classList.add("hidden");
+            SecondParent
+              ? document.getElementById(SecondParent).classList.add("hidden")
+              : null;
+          }}
+        >
+          {title}
+        </Link>
+      );    
   } else {
     return (
       <button
         className={classList}
         onClick={() => {
           document.querySelectorAll(".navdropdowns").forEach((item) => {
-            if(!isChildDropdown){ 
+            if (!isChildDropdown) {
               item.id !== dropdown ? item.classList.add("hidden") : null;
             }
           });
