@@ -8,7 +8,7 @@ async function FourthFold() {
     >
     <div className="" id="about-us-fourthfold-content">
       <div
-        className="bottomUPTitle  xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-5xl sm:pt-28 lg:pt-40 pt-28 sm:px-10 text-center"
+        className="bottomUPTitle  xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-5xl sm:pt-28 lg:pt-32 pt-28 sm:px-10 text-center"
         style={{ fontFamily: "Baskerville" }}
       >
         SUPPORTED STARTUPS

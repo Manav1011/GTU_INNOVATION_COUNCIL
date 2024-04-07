@@ -9,7 +9,7 @@ async function ThirdFold() {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <p
-            className="bottomUPTitle xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-4xl sm:pt-20 lg:pt-40 pt-28 sm:px-10 text-center"
+            className="bottomUPTitle xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-4xl sm:pt-20 lg:pt-32 pt-28 sm:px-10 text-center"
             style={{ fontFamily: "Baskerville" }}
           >
             OUR MISSION

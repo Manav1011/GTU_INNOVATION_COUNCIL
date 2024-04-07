@@ -17,10 +17,8 @@ function NavLink({
           target={newPage ? '_blank':'_self'}
           href={href}
           onClick={() => {
-            document.getElementById(parentDiv).classList.add("hidden");
-            SecondParent
-              ? document.getElementById(SecondParent).classList.add("hidden")
-              : null;
+            parentDiv ? document.getElementById(parentDiv).classList.add("hidden") : null
+            SecondParent ? document.getElementById(SecondParent).classList.add("hidden"): null;
           }}
         >
           {title}

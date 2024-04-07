@@ -1,7 +1,4 @@
-import React from "react";
-import TitleToast from "./components/TitleToast";
-
-function IncubationForm() {
+async function IncubationForm() {
   return (
     <div className="h-full mt-12 ">
       <div className="mx-5 pt-12 text-center">

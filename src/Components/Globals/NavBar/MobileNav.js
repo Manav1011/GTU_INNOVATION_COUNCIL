@@ -257,7 +257,7 @@ async function MobileNav() {
           classList="my-1 text-slate- hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-semibold"
           id="aboutussection"
           title="Reach US"
-          href={"/"}
+          href={"/reach-us"}
         />
       </div>
     </div>

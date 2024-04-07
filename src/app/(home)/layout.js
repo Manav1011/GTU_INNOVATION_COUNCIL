@@ -3,6 +3,7 @@ import '@/static/fonts.css'
 import NavBar from "@/Components/Globals/NavBar/NavBar";
 import Footer from "@/Components/Globals/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
+import NavScrollListener from "@/Components/Client/NavScrollListener";
 
 export const metadata = {
   title: "GTU Innovation Council",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
             <NavBar/>
             <div className="flex-1">{children}</div>
             <Footer/>            
+            <NavScrollListener/>
           </div>
         </div>
       </body>

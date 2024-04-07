@@ -10,7 +10,7 @@ async function SecondFold() {
         className="flex flex-col items-center justify-start"
       >
         <div
-          className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl xs:text-5xl xs:pt-28 text-4xl sm:pt-28 lg:pt-40 pt-20 sm:px-10 text-center"
+          className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl xs:text-5xl xs:pt-28 text-4xl sm:pt-28 lg:pt-32 pt-20 sm:px-10 text-center"
           style={{ fontFamily: "Baskerville" }}
         >
           HOW DO WE OPERATE
