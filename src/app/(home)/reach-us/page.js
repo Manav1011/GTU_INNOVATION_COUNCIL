@@ -3,7 +3,7 @@ import ReginalCenter from "./components/ReginalCenter";
 async function page() {
   return (
     <>
-      <div className="flex justify-center flex-col items-center  sm:pt-20 pt-12">
+      <div className="flex justify-center flex-col items-center  sm:pt-12 pt-12">
         {/* COMPONENT CODE */}
         <div className="container min-h-screen sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
           <div className="w-full sm:p-8 p-4 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
@@ -61,10 +61,10 @@ async function page() {
             </form>
             
           </div>
-          <div className="bottomUPContent w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-slate-900 rounded-2xl">
+          <div className="bottomUPContent w-full lg:-mt-96 lg:w-2/6 px-8 py-10 ml-auto bg-slate-900 rounded-2xl">
             <div className="flex flex-col text-white">
               <h1 className="font-bold uppercase text-4xl my-4">
-                Liasoning Officer
+                Licensing Officer
               </h1>
               <span className="text-2xl">GTU Innovation & Startup Center</span>
               <div>

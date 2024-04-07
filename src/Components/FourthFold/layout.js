@@ -5,7 +5,7 @@ async function FourthFold() {
   return (
     <>
     <div className="min-h-screen h-full w-full" >
-    <div className='min-h-screen h-full sm:h-screen sm:overflow-hidden z-0 flex pt-20 justify-between flex-col lg:flex-row' style={{backgroundAttachment:'fixed',background:'linear-gradient(to right, #f5f5f5, #F1E4E8)'}}>
+    <div className='min-h-screen h-full sm:h-screen sm:overflow-hidden z-0 flex pt-20 justify-between flex-col lg:flex-row' style={{backgroundAttachment:'fixed'}}>
     <div className='w-full text-center h-screen pt-12'>
       <h2 className="text-4xl font-medium uppercase" style={{ fontFamily: 'oswald' }}>CIRCULARS</h2>
       <marquee direction="up" className="marquee-reports-circulars h-4/5" behaviour='scroll'>
