@@ -9,7 +9,7 @@ async function ThirdFold() {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <p
-            className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl  text-5xl sm:pt-28 lg:pt-40 pt-28 sm:px-10 text-center"
+            className="bottomUPTitle xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-4xl sm:pt-20 lg:pt-40 pt-28 sm:px-10 text-center"
             style={{ fontFamily: "Baskerville" }}
           >
             OUR MISSION
@@ -18,7 +18,7 @@ async function ThirdFold() {
       </div>
       <div className="flex flex-col items-center">
       <p
-        className="flex flex-row  bottomUPContent lg:text-3xl sm:text-xl text-lg px-10 sm:px-20 pt-28 sm:pt-10 sm:text-center text-justify"
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-20 lg:text-3xl sm:text-xl text-2xl px-10 sm:px-20 pt-10 sm:pt-10 sm:text-center text-justify"
         style={{ fontFamily: "variable" }}
       >
         <svg
@@ -34,7 +34,7 @@ async function ThirdFold() {
         To nurture creativity and innovation within the university community.
       </p>
       <p
-        className="flex flex-row  bottomUPContent sm:text-xl lg:text-3xl text-lg px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
         style={{ fontFamily: "variable" }}
       >
         <svg
@@ -51,7 +51,7 @@ async function ThirdFold() {
         innovation campaign.
       </p>
       <p
-        className="flex flex-row  bottomUPContent sm:text-xl lg:text-3xl text-lg px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
         style={{ fontFamily: "variable" }}
       >
         <svg

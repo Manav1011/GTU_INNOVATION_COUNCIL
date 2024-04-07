@@ -2,17 +2,7 @@
 
 import { useEffect } from "react";
 
-const callBackSecondFoldAboutUs = async (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.scrollIntoView();
-      document
-        .getElementById("about-us-secondfold-content")
-        .classList.remove("hidden");
-      observer.disconnect();
-    }
-  });
-};
+
 
 async function transformScroll(event) {
   event.preventDefault();
@@ -21,28 +11,7 @@ async function transformScroll(event) {
   }
 }
 
-const callBackThirdFoldAboutUs = async (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.scrollIntoView();
-      document
-        .getElementById("about-us-thirdfold-content")
-        .classList.remove("hidden");
-      observer.disconnect();
-    }
-  });
-};
-const callBackFourthFoldAboutUs = async (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.scrollIntoView();
-      document
-        .getElementById("about-us-fourthfold-content")
-        .classList.remove("hidden");
-      observer.disconnect();
-    }
-  });
-};
+
 const callBackAboutUs = async (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -74,44 +43,25 @@ function ScrollListener() {
     }
     AboutUS.addEventListener("wheel", transformScroll, { passive: false });
 
-    // const optionsSecondFold = {
-    //   root: null,
-    //   threshold: 0.3,
-    // };
-    // const ObserveSecondFold = new IntersectionObserver(
-    //   callBackSecondFoldAboutUs,
-    //   optionsSecondFold
-    // );
-    // const SecondFoldAboutUS = document.getElementById("about-us-secondfold");
-    // if (SecondFoldAboutUS) {
-    //   ObserveSecondFold.observe(SecondFoldAboutUS);
-    // }
-
-    // const optionsThirdFold = {
-    //   root: null,
-    //   threshold: 0.3,
-    // };
-    // const ObserveThirdFold = new IntersectionObserver(
-    //   callBackThirdFoldAboutUs,
-    //   optionsThirdFold
-    // );
-    // const ThirdFoldAboutUS = document.getElementById("about-us-thirdfold");
-    // if (ThirdFoldAboutUS) {
-    //   ObserveThirdFold.observe(ThirdFoldAboutUS);
-    // }
-
-    // const optionsFourthFold = {
-    //   root: null,
-    //   threshold: 0.3,
-    // };
-    // const ObserveFourthFold = new IntersectionObserver(
-    //   callBackFourthFoldAboutUs,
-    //   optionsFourthFold
-    // );
-    // const FourthFoldAboutUS = document.getElementById("about-us-fourthfold");
-    // if (FourthFoldAboutUS) {
-    //   ObserveFourthFold.observe(FourthFoldAboutUS);
-    // }
+    window.addEventListener('scroll', async () =>  {
+      if (window.scrollY > document.getElementById('nav-menus-desktop').offsetHeight) {
+          document.getElementById('nav-menus-desktop').classList.remove('lg:flex')
+          document.getElementById('nav-menus-desktop').classList.add('hidden')
+          document.getElementById('togglenavbutton').classList.remove('lg:hidden')                
+          document.getElementById('navbar-main').classList.add('bg-clip-padding','shadow','backdrop-filter','backdrop-blur-sm')
+        }else{
+          const navbar = document.getElementById('navbar-main')
+          navbar.classList.remove('bg-clip-padding','shadow','backdrop-filter','bg-opacity-0','backdrop-blur-sm','text-white')          
+          navbar.classList.add('text-slate-800')
+          document.getElementById("navbar-main").classList.remove("bg-black");
+          if(window.innerWidth > 1024){
+              document.getElementById('mobile-menu').classList.add('hidden')                    
+              document.getElementById('nav-menus-desktop').classList.add('lg:flex',)
+              document.getElementById('nav-menus-desktop').classList.remove('hidden')
+              document.getElementById('togglenavbutton').classList.add('lg:hidden')
+          }
+        }
+  })
   }, []);
   return null;
 }

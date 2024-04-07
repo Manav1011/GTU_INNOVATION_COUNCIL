@@ -6,13 +6,13 @@ async function FirstFold() {
       style={{ background: "#E7CFCD", backgroundAttachment: "fixed" }}
     >
       <div
-        className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl  text-5xl sm:pt-28 lg:pt-40 pt-28 sm:px-10"
+        className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl  xs:text-5xl text-4xl sm:pt-28 lg:pt-40 xs:pt-28 pt-20 sm:px-10 text-center"
         style={{ fontFamily: "Baskerville" }}
       >
         WHO WE ARE
       </div>
       <div
-        className="bottomUPContent lg:text-3xl md:sm:text-xl text-2xl px-5 sm:px-20 pt-28 sm:pt-10 text-center"
+        className="bottomUPContent lg:text-3xl md:sm:text-xl text-2xl px-5 xs:text-2xl xs:pt-20 sm:px-20 pt-10 sm:pt-10 text-center"
         style={{ fontFamily: "variable" }}
       >
         {
