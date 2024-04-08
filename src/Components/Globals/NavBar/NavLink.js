@@ -6,9 +6,7 @@ function NavLink({
   title,
   href,
   dropdown,
-  isChildDropdown,
-  parentDiv,
-  SecondParent,
+  isChildDropdown  
 }) {
   if (href) {        
       return (
@@ -17,8 +15,9 @@ function NavLink({
           target={newPage ? '_blank':'_self'}
           href={href}
           onClick={() => {
-            parentDiv ? document.getElementById(parentDiv).classList.add("hidden") : null
-            SecondParent ? document.getElementById(SecondParent).classList.add("hidden"): null;
+            document.querySelectorAll('.parentDropdown').forEach((item) => {
+              item.classList.add("hidden")
+            })            
           }}
         >
           {title}

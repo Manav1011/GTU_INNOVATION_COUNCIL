@@ -15,7 +15,7 @@ async function DesktopNav() {
         />
         <div
           id="GICVerticalsDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
@@ -64,7 +64,7 @@ async function DesktopNav() {
         />
         <div
           id="OurSupportDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
@@ -84,7 +84,7 @@ async function DesktopNav() {
                 />
                 <div
                   id="FundingDropdown"
-                  className="hidden ml-56 z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+                  className="parentDropdown hidden ml-56 z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
                 >
                   <ul
                     className="text-sm"
@@ -121,7 +121,7 @@ async function DesktopNav() {
         />
         <div
           id="GICStartupDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
@@ -152,7 +152,7 @@ async function DesktopNav() {
       />
        <div
           id="ResourceBankDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
@@ -188,7 +188,7 @@ async function DesktopNav() {
       />
         <div
           id="LatestDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
@@ -224,7 +224,7 @@ async function DesktopNav() {
       />
       <div
           id="StartupApplyDropdown"
-          className="hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
+          className="parentDropdown hidden z-10 navdropdowns absolute font-normal bg-opacity-70 bg-gray-800 text-slate-100 mt-2 divide-y rounded-lg shadow min-w-56"
         >
           <ul
             className="text-sm"
