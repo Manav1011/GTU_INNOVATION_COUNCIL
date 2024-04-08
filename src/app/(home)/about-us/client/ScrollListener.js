@@ -4,10 +4,12 @@ import { useEffect } from "react";
 
 
 
-async function transformScroll(event) {
-  event.preventDefault();
-  if (event.deltaY) {    
-    event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+async function transformScroll(event) {  
+  if(document.getElementById('about-us-container')){
+    event.preventDefault();
+    if (event.deltaY) {
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+    }
   }
 }
 

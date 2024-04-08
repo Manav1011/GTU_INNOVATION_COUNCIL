@@ -2,7 +2,7 @@ import React from "react";
 
 async function SixthFold() {
   return (
-    <div className="bg-gradient-to-r min-h-screen py-24 sm:py-32">
+    <div className="bg-gradient-to-r min-h-screen py-24 sm:py-32 bg-gradient-to-r from-neutral-100 to-sky-300 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center space-y-4">

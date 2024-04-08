@@ -3,7 +3,7 @@ import Link from "next/link";
 function NavLinkMobile({ classList, title, href, dropdownLinkClass,isChildDropdown }) {
   if (href) {
     return (
-      <Link className={classList} href={href}>
+      <Link className={classList} href={href} onClick={() =>{document.getElementById('toggle-nav-button').click()}}>
         {title}
       </Link>
     );

@@ -8,7 +8,7 @@ import OurOfferings from "./OurOfferings";
 function ThirdFold() {  
   return (
     <div
-      className="h-screen bg-gradient-to-b bg-slate-100"
+      className="h-screen bg-gradient-to-b sm:bg-gradient-to-r from-slate-100 to-slate-300"
       id="thirdfold"
       style={{        
         backgroundAttachment: "fixed",    

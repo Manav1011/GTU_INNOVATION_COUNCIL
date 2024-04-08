@@ -223,7 +223,7 @@ async function MobileNav() {
          <NavLinkMobile
           classList="hidden dropdownlinksmobile startup-apply-links ml-3 text-slate-200 w-full bg-gradient-to-r from-slate-800 to-transparent bg-opacity-80 bg-opacity-50 hover:bg-gray-700 hover:text-white border-b-2 rounded-md px-3 py-2 text-sm font-semibold"
           title={"Incubation Form"}
-          href={"/"}
+          href={"/incubation"}
         />
          <NavLinkMobile
           classList="hidden dropdownlinksmobile startup-apply-links ml-3 text-slate-200 w-full bg-gradient-to-r from-slate-800 to-transparent bg-opacity-80 bg-opacity-50 hover:bg-gray-700 hover:text-white border-b-2 rounded-md px-3 py-2 text-sm font-semibold"
