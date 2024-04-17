@@ -1,13 +1,13 @@
 function Footer() {
   return (
-    <footer className="relative pt-8 pb-6" >
+    <footer className="sm:pt-8 pt-3 sm:pb-6 pb-3" id="footer">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap  lg:text-left">
           <div className="w-full px-4 flex justify-center flex-row sm:flex-col items-center">
-            <h4 className="text-3xl fonat-semibold text-blueGray-700">
+            <h4 className="sm:text-3xl text-xl text-blueGray-700 mr-5 sm:mr-0">
               Let&apos;s keep in touch!
             </h4>            
-            <div className="mt-6 lg:mb-0 mb-6 flex flex-row">              
+            <div className="sm:mt-6 mt-0 lg:mb-0 sm:mb-6 mb-0 flex flex-row">              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -32,7 +32,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-blueGray-300" />
+        <hr className="sm:my-6 my-3 border-blueGray-300" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-md text-blueGray-500 font-semibold py-1">

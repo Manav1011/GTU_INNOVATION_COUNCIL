@@ -30,3 +30,15 @@
     src: url('/fonts/VariableFont_wght.ttf') format('opentype');
     /* Additional font properties (e.g., font-weight, font-style) can be specified here */
 }
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('/fonts/LibreBaskerville-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'JustAnotherHand';
+    font-weight: lighter;
+    src: url('/fonts/JustAnotherHand-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}

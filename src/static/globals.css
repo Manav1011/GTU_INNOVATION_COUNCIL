@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  overflow: scroll;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
+.no-scroll{
+  overflow: hidden;
 }
+
 ::-webkit-scrollbar {
   width: 0;  
   height: 0;/* Remove scrollbar space */
@@ -67,6 +66,15 @@ html {
     to {
       transform: translateX(-100%);
     }
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .slide-left{
@@ -143,4 +151,22 @@ html {
   .button-51 {
     padding: 16px 32px;
   }
+}
+
+@keyframes bottomToUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bottomUPTitle {
+  animation: slideRightToLeft 0.5s ease forwards;
+}
+.bottomUPContent {
+  animation: bottomToUp 1.5s ease forwards;
 }

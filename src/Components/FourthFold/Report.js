@@ -2,15 +2,15 @@ import React from 'react'
 
 function Report({content,id}) {
   return (
-    <div className="z-20 relative sm:m-2 m-3">
+    <div className="z-20 relative sm:m-2 m-3 reports text-blue-600" style={{ fontFamily: "JustAnotherHand" }}>
     <span className="absolute -z-10  w-full h-full inset-1  rounded-xl"></span>    
-    <div className="p-2 sm:p-7 purple_border  rounded-xl z-20 font-light" style={{fontFamily:'oswald'}}>
-    <div className="pt-2 pb-4 last:mb-0 border-b border-black border-solid">
+    <div className="p-2 sm:p-7 purple_border  rounded-xl z-20 font-light">
+    <div className="pt-2 pb-4 last:mb-0 border-black border-solid">
                   <div
                     className="flex sm:items-center justify-between font-sm text-justify flex-col sm:flex-row items-start"                    
                   >
-                    <span className='sm:mr-10 text-sm font-light sm:text-lg'>{content}</span>                    
-                    <a href="#" className='sm:w-auto w-full mt-5 sm:mt-0 border p-2 text-center rounded-md border-black flex justify-center items-center'>
+                    <span className='sm:mr-10 text-sm font-light sm:text-3xl'>{content}</span>                    
+                    <a href="#" className='sm:hidden sm:w-auto w-full mt-5 sm:mt-0 border p-2 text-center rounded-md border-black flex justify-center items-center'>
                     <span className='sm:hidden mr-5'>view more</span>
                     <svg
                       width={14}

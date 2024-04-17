@@ -1,7 +1,8 @@
 'use client'
 function ToggleNavButton() {    
-    const toggleMenuMobile = () => {      
-      document.getElementById("navbar-main").classList.toggle("bg-black");
+    const toggleMenuMobile = () => {    
+        document.documentElement.classList.toggle('no-scroll')
+        document.getElementById("navbar-main").classList.toggle("bg-black");
         document.getElementById("mobile-menu").classList.toggle("hidden");
         document.getElementById("toggle-nav-button").classList.toggle("text-slate-800");
         document.getElementById("toggle-nav-button").classList.toggle("text-slate-50");

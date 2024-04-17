@@ -71,7 +71,7 @@ export default function SecondFold() {
 
   return (
     <>
-    <div className="h-screen bg-slate-100 bg-opacity-70" id='secondfolddiv' style={{backgroundAttachment:'fixed'}}>
+    <div className="h-screen bg-opacity-70 bg-slate-100" id='secondfolddiv' style={{backgroundAttachment:'fixed'}}>
       <Parallax
         ref={parallax}
         pages={4}
