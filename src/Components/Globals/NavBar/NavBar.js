@@ -1,19 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import ToggleNavButton from "./ToggleNavButton";
-import NavLink from "./NavLink";
-import NavLinkMobile from "./NavLinkMobile";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
 async function NavBar() {
   return (
     <nav
-      className="w-full fixed top-0 z-40 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl"
+      className="w-full fixed top-0 z-40 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl text-sm "
       id="navbar-main"
       style={{
-        fontFamily: "dosislight",
-        fontWeight: "bolder",
+        fontFamily: "OSWALD",        
         backgroundAttachment: "fixed",
       }}
     >

@@ -8,7 +8,7 @@ async function page() {
   return (
     <>    
     <div className="flex overflow-scroll" id="about-us-container">
-    <div className="flex flex-col sm:flex-row">
+    <div className="flex flex-col">
         <FirstFold/>    
         <SecondFold/>    
         <ThirdFold/>

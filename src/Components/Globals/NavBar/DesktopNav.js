@@ -5,10 +5,10 @@ async function DesktopNav() {
     className="hidden lg:ml-6 lg:flex items-center"
     id="nav-menus-desktop"
   >
-    <div className="flex space-x-10">
+    <div className="flex space-x-8">
       <div>
         <NavLink
-          classList="text-slate-800 rounded-md  text-md font-semibold"
+          classList="text-slate-700 hover:text-black rounded-md font-semibold"
           title={"GIC Verticals"}
           dropdown={"GICVerticalsDropdown"}
           href={false}
@@ -57,7 +57,7 @@ async function DesktopNav() {
       
       <div>
         <NavLink
-          classList="text-slate-800 rounded-md  text-md font-semibold"
+          classList="text-slate-700 hover:text-black rounded-md   font-semibold"
           title={"Our Support"}
           dropdown={"OurSupportDropdown"}
           href={false}
@@ -114,7 +114,7 @@ async function DesktopNav() {
       </div>
       <div>
         <NavLink
-          classList="text-slate-800 rounded-md  text-md font-semibold"
+          classList="text-slate-700 hover:text-black rounded-md   font-semibold"
           title={"GIC Startup"}
           dropdown={"GICStartupDropdown"}
           href={false}
@@ -145,7 +145,7 @@ async function DesktopNav() {
       <div>
       
       <NavLink
-        classList="text-slate-800 rounded-md  text-md font-semibold"
+        classList="text-slate-700 hover:text-black rounded-md   font-semibold"
         title={"Resource Bank"}
         dropdown={"ResourceBankDropdown"}
         href={false}
@@ -181,7 +181,7 @@ async function DesktopNav() {
       </div>
       <div>
       <NavLink
-        classList="text-slate-800 rounded-md  text-md font-semibold"
+        classList="text-slate-700 hover:text-black rounded-md   font-semibold"
         title={"Latest"}
         dropdown={"LatestDropdown"}
         href={false}
@@ -217,7 +217,7 @@ async function DesktopNav() {
       </div>
       <div>
        <NavLink
-        classList="text-slate-800 rounded-md  text-md font-semibold"
+        classList="text-slate-700 hover:text-black rounded-md   font-semibold"
         title={"Apply"}
         dropdown={"StartupApplyDropdown"}
         href={false}
@@ -249,12 +249,12 @@ async function DesktopNav() {
         </div>
       </div>
       <NavLink
-        classList="text-slate-800 rounded-md  text-md font-semibold"
+        classList="text-slate-700 hover:text-black rounded-md   font-semibold"
         title={"About"}
         href={'/about-us'}                  
       />
       <NavLink
-        classList="text-slate-800 rounded-md  text-md font-semibold"
+        classList="text-slate-700 hover:text-black rounded-md   font-semibold"
         title={"Reach US"}
         href={'/reach-us'}                  
       />

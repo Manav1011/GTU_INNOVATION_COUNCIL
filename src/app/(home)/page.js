@@ -5,21 +5,23 @@ import ThirdFold from "@/Components/ThirdFold/layout";
 import FourthFold from "@/Components/FourthFold/layout";
 import FifthFold from "@/Components/FifthFold/layout";
 import SixthFold from "@/Components/SixthFold/layout";
+import SecondFoldAlt from "@/Components/SecondFold/layout_alt";
 import SeventhFold from "@/Components/SeventhFold/layout";
 
 export default function Home() {
   return (
     <>   
-    <ScrollListener/>       
       <MainGraphic/> 
-      <>
-      <SecondFold/>
+      <SixthFold/>
+      <SecondFoldAlt/>
       <ThirdFold/>             
       <FourthFold/>
       <FifthFold/>
-      <SixthFold/>
-      <SeventhFold/>
-      </>
+      {/* <SeventhFold/> */}
+      {/* <SecondFold/> */}
+      {/* <>
+      </> */}
+      <ScrollListener/>       
     </>
   );
 }

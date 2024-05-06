@@ -1,6 +1,6 @@
 async function SeventhFold() {
   return (
-    <section className="relative pt-12 overflow-hidden">
+    <section className="bg-slate-100 bg-opacity-40 relative pt-12 overflow-hidden">
       <div className="relative z-10 container px-4 mx-auto">
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-1/3 p-3">
