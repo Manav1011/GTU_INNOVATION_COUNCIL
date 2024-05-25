@@ -7,6 +7,7 @@ import FifthFold from "@/Components/FifthFold/layout";
 import SixthFold from "@/Components/SixthFold/layout";
 import SecondFoldAlt from "@/Components/SecondFold/layout_alt";
 import SeventhFold from "@/Components/SeventhFold/layout";
+import CarouselScrollListener from "@/Components/Client/CarouselScrollListener";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <>
       </> */}
       <ScrollListener/>       
+       <CarouselScrollListener></CarouselScrollListener>
     </>
   );
 }

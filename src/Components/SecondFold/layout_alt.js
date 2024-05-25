@@ -13,18 +13,20 @@ import Ssip_mob_view from "./Ssip_mob_view";
 
 async function SecondFoldAlt() {
   return (
-    <div className="bg-white bg-opacity-40  md:min-h-screen md:h-screen h-full w-full flex flex-wrap">
+    <div className="bg-white bg-opacity-40  lg:min-h-screen lg:h-screen w-full  flex flex-wrap" style={{height:"26rem"}}>
       <div className="lg:hidden w-full flex flex-col">
         <div className="w-full mt-7">
           <span className="w-full text-4xl font-bold px-5" style={{ color: "#2C2E90" }}>Incubation Programs</span>
           <p className="pt-2 text-2xl px-5">Handholding at every stage!</p>
         </div>
-        <Ssip_mob_view></Ssip_mob_view>
-        <Idealab_mob_view></Idealab_mob_view>
-        <IPFS_mob_view></IPFS_mob_view>
-        <Mic_mob_view></Mic_mob_view>
-        <Dic_mob_view></Dic_mob_view>
-        <NSTEDBE_mob_view></NSTEDBE_mob_view>
+        <div className="w-full flex flex-col justify-center" id="carouselContainer">
+        <Ssip_mob_view hidden={false}></Ssip_mob_view>
+        <Idealab_mob_view hidden={true}></Idealab_mob_view>
+        <IPFS_mob_view hidden={true}></IPFS_mob_view>
+        <Mic_mob_view hidden={true}></Mic_mob_view>
+        <Dic_mob_view hidden={true}></Dic_mob_view>
+        <NSTEDBE_mob_view hidden={true}></NSTEDBE_mob_view>
+        </div>
       </div>
       <div className="lg:w-full lg:flex hidden">
         <div className="w-4/12 flex flex-col h-screen justify-center ">
