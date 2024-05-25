@@ -12,15 +12,15 @@ async function page(){
                         </p>
                     </div>
                     <form className="w-full sm:flex sm:gap-3">
-                    <select id="countries" className=" border border-gray-300  text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 my-2 sm:my-0">
-                        <option selected>Select Year</option>
+                    <select id="countries" className=" border border-gray-300  text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 my-2 sm:my-0" defaultValue={""}>
+                        <option value="">Select Year</option>
                         <option value="US">2024</option>
                         <option value="CA">2023</option>
                         <option value="FR">2022</option>
                         <option value="DE">2021</option>
                     </select>
-                    <select id="countries" className=" border border-gray-300  text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 my-2 sm:my-0">
-                        <option selected>Select Month</option>
+                    <select id="countries" className=" border border-gray-300  text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 my-2 sm:my-0" defaultValue={""}>
+                        <option value="">Select Month</option>
                         <option value="US">January</option>
                         <option value="CA">February</option>
                         <option value="FR">March</option>

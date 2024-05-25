@@ -30,7 +30,7 @@ async function Circular({ content, id , timespan }) {
     <h3 className="text-center my-3 text-4xl font-bold">REPORTS</h3>
         <ol className="relative border-s border-gray-200 dark:border-gray-700">                                      
             {reports && reports.map((item,index) => (                
-                <li id={item.id} className="mb-4 ms-4  px-3 py-2 rounded-md border border-gray-700">
+                <li key={index} id={item.id} className="mb-4 ms-4  px-3 py-2 rounded-md border border-gray-700">
                         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                         <time className="mb-1 text-sm font-normal leading-none ">{item.timespan}</time>
                         <p className="text-xl font-normal text-blue-800">{item.content}</p>
