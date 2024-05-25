@@ -1,5 +1,5 @@
 import Siderbar2 from "./components/Sidebar2";
-import "./global.css";
+import '../../static/globals.css'
 
 import "@/static/globals.css";
 import '@/static/fonts.css'
