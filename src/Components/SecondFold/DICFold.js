@@ -2,19 +2,19 @@ async function DICFold() {
     return (    
             <div className="carousel-item w-full h-full flex flex-row items-center justify-center">
               <>
-                <div className="container my-24 mx-auto md:px-6">
+                <div className="container my-24 mx-auto md:pr-8">
                   <section className="">
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap items-center">
                       <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
                         <div className="flex lg:py-12 lg:justify-end">
                           <img
                             src="/images/secondfold/DIC.webp"
-                            className="z-[10] w-full rounded-lg p-10 shadow dark:shadow-black/20 lg:ml-[50px]"
+                            className="z-[10] w-full rounded-lg p-10 shadow dark:shadow-black/20"
                             alt="image"
                           />
                         </div>
                       </div>
-                      <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                      <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-50px]">
                         <div
                           className="flex h-full items-center rounded-lg p-6 text-center text-white lg:pl-12 lg:text-left"
                           style={{ backgroundColor: "rgb(196 169 16)" }}

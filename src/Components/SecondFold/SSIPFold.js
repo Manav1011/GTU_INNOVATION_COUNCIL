@@ -2,19 +2,19 @@ async function SSIPFold() {
   return (  
     <div className="carousel-item w-full h-full flex flex-row items-center justify-center">
     <>
-      <div className="container my-24 mx-auto md:px-6">
+      <div className="container my-24 mx-auto md:pr-8">
         <section className="">
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap items-center">
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
               <div className="flex lg:py-12">
                 <img
                   src="/images/secondfold/SSIP.webp"
-                  className="z-[10] w-full rounded-lg p-10 shadow dark:shadow-black/20 lg:ml-[50px]"
+                  className="z-[10] w-full rounded-lg p-10 shadow dark:shadow-black/20"
                   alt="image"
                 />
               </div>
             </div>
-            <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+            <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-50px]">
               <div className="flex h-full items-center rounded-lg bg-red-400 p-6 text-center text-white lg:pl-12 lg:text-left">
                 <div className="lg:pl-12">
                   <h2 className="mb-8 text-3xl font-bold">About SSIP</h2>
