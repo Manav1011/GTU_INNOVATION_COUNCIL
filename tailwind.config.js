@@ -35,7 +35,35 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      transform: ['hover'],
+      backfaceVisibility: ['responsive'],
+      perspective: ['responsive'],
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      transform: ['hover'],
+      backfaceVisibility: ['responsive'],
+      perspective: ['responsive'],
+    },
+  },
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.perspective-1000': {
+          perspective: '1000px',
+        },
+        '.preserve-3d': {
+          transformStyle: 'preserve-3d',
+        },
+        '.rotate-y-180': {
+          transform: 'rotateY(180deg)',
+        },
+        '.backface-hidden': {
+          backfaceVisibility: 'hidden',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 };

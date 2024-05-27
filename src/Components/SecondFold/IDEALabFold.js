@@ -6,17 +6,17 @@ async function IDEALabFold() {
                 <section className="">
                   <div className="flex flex-wrap items-center">
                     <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                      <div className="flex lg:py-10 lg:justify-end">
+                      <div className="flex lg:py-10 lg:justify-end dark:shadow-black/20 h-80">
                         <img
                           src="/images/secondfold/IDEALAB.webp"
-                          className="z-[10] w-2/5 sm:w-full rounded-lg p-10 shadow dark:shadow-black/20"
+                          className="z-[10] w-1/5 sm:w-full rounded-lg shadow"
                           alt="image"
                         />
                       </div>
                     </div>
-                    <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-50px]">
+                    <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-20px]">
                       <div
-                        className="flex h-full items-center rounded-lg p-6 text-center text-white lg:pl-12 lg:text-left"
+                        className="flex h-full items-center rounded-lg p-6 text-center text-white lg:pl-4 lg:text-left"
                         style={{ backgroundColor: "rgb(196 169 16)" }}
                       >
                         <div className="lg:pl-12">

@@ -13,13 +13,13 @@ import Ssip_mob_view from "./Ssip_mob_view";
 
 async function SecondFoldAlt() {
   return (
-    <div className="bg-white bg-opacity-40  lg:min-h-screen lg:h-screen w-full  flex flex-wrap" style={{height:"26rem"}}>
-      <div className="lg:hidden w-full flex flex-col">
+    <div className="bg-white bg-opacity-40 h-fit lg:min-h-screen lg:h-screen w-full  flex flex-wrap">
+      <div className="lg:hidden w-full">
         <div className="w-full mt-7">
-          <span className="w-full text-4xl font-bold px-5" style={{ color: "#2C2E90" }}>Incubation Programs</span>
+          <span className="w-full text-4xl font-bold text-center ml-3" style={{ color: "#2C2E90" }}>Incubation Programs</span>
           <p className="pt-2 text-2xl px-5">Handholding at every stage!</p>
         </div>
-        <div className="w-full flex flex-col justify-center" id="carouselContainer">
+        <div className="w-full px-3 mb-5" id="carouselContainer">
         <Ssip_mob_view hidden={false}></Ssip_mob_view>
         <Idealab_mob_view hidden={true}></Idealab_mob_view>
         <IPFS_mob_view hidden={true}></IPFS_mob_view>
@@ -28,11 +28,11 @@ async function SecondFoldAlt() {
         <NSTEDBE_mob_view hidden={true}></NSTEDBE_mob_view>
         </div>
       </div>
-      <div className="lg:w-full lg:flex hidden">
-        <div className="w-4/12 flex flex-col h-screen justify-center ">
-          <span className="text-7xl  sm:pl-40 md:pl-20 font-bold" style={{ color: "#2C2E90" }}>Incubation</span>
-          <span className="text-7xl  sm:pl-40 md:pl-20 font-bold" style={{ color: "#2C2E90" }}>Programs</span>
-          <span className="sm:pl-40 md:pl-20 pt-2 text-2xl">Handholding at every stage!</span>
+      <div className="lg:w-full lg:flex lg:flex-row flex-col hidden">
+        <div className="w-full lg:w-4/12 flex lg:flex-col lg:h-screen justify-center items-center">
+          <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Incubation</span>
+          <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Programs</span>
+          <p className="pt-2 text-2xl">Handholding at every stage!</p>
         </div>
         <div className="w-8/12 flex flex-wrap h-screen items-center overflow-x-scroll">
           <SSIPFold></SSIPFold>
