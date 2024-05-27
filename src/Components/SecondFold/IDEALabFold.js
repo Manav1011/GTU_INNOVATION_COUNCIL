@@ -6,10 +6,10 @@ async function IDEALabFold() {
                 <section className="">
                   <div className="flex flex-wrap items-center">
                     <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                      <div className="flex lg:py-10 lg:justify-end dark:shadow-black/20 h-80">
+                      <div className="flex lg:py-10 lg:justify-end rounded-lg shadow dark:shadow-black/60 h-80">
                         <img
                           src="/images/secondfold/IDEALAB.webp"
-                          className="z-[10] w-1/5 sm:w-full rounded-lg shadow"
+                          className="z-[10] w-1/5 sm:w-full "
                           alt="image"
                         />
                       </div>

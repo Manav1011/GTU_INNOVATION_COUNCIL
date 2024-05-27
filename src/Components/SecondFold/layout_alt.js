@@ -31,8 +31,8 @@ async function SecondFoldAlt() {
       <div className="lg:w-full lg:flex lg:flex-row flex-col hidden">
         <div className="w-full lg:w-4/12 flex lg:flex-col lg:h-screen justify-center items-center">
           <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Incubation</span>
-          <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Programs</span>
-          <p className="pt-2 text-2xl">Handholding at every stage!</p>
+          <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Programs &nbsp;</span>
+          <p className="pt-2 text-2xl">Handholding at every stage!&nbsp; &nbsp; &nbsp; &nbsp;</p>
         </div>
         <div className="w-8/12 flex flex-wrap h-screen items-center overflow-x-scroll">
           <SSIPFold></SSIPFold>

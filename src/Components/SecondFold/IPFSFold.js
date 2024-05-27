@@ -6,7 +6,7 @@ async function IPFSFold() {
           <section className="">
             <div className="flex flex-wrap items-center">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                <div className="flex lg:py-12 shadow dark:shadow-black/20 h-60">
+                <div className="flex lg:py-12 rounded-lg shadow dark:shadow-black/60 h-60">
                   <img
                     src="/images/secondfold/IPR.webp"
                     className="z-[10] w-full rounded-lg p-5"

@@ -6,7 +6,7 @@ async function NSTEDBFold() {
             <section className="">
               <div className="flex flex-wrap items-center">
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                  <div className="flex lg:py-12 rounded-lg shadow dark:shadow-black/20">
+                  <div className="flex lg:py-12 rounded-lg shadow dark:shadow-black/60">
                     <img
                       src="/images/secondfold/NSTEDB.webp"
                       className="z-[10] w-full p-7"
