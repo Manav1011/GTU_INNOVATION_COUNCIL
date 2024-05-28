@@ -1,17 +1,10 @@
 async function Mic_mob_view({hidden}){
     return (
         <>
-        {/* <div className={`carousel mt-10 px-2 h-60 flex items-center mx-2 hover:shadow-2xl hover:translate-y-4 hover:duration-1000  translate-y-0 duration-1000 rounded-lg shadow dark:shadow-black/20 ${hidden && 'hidden'}`}>
-  <img src="/images/secondfold/MIC.webp" alt="Your Image" className="px-3"/>
-
-  <div class="group absolute inset-0 h-full flex flex-col items-center rounded-lg justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 gap-y-2 hover:h-full hover:duration-1000">
-    <p className="text-white text-left font-bold text-xl group-hover:animate-fade-in-up">About MIC</p>
-    <p class="text-white text-center group-hover:animate-fade-in-up">The Indian Ministry of Education has set up an Innovation Cell to cultivate innovation in Higher Education Institutions nationwide. The Cell aims to nurture a comprehensive innovation ecosystem, from idea generation to startup success, and will develop a ranking system to recognize innovative institutions.</p>
-  </div>
-</div> */}
+        
 
 <div className={`carousel w-full h-80 bg-white overflow-hidden perspective-1000 mt-5 rounded-lg shadow dark:shadow-black/20 ${hidden && 'hidden'}`}>
-        <div className="relative w-full h-full text-center transition-transform duration-1000 preserve-3d hover:rotate-y-180">
+        <div className="card relative w-full h-full text-center transition-transform duration-1000 preserve-3d hover:rotate-y-180">
           <div className="absolute w-full h-full backface-hiddentext-white flex items-center justify-center">
           <img src="images/secondfold/MIC.webp" className="px-3"/>
           </div>

@@ -4,8 +4,13 @@ import { useEffect } from "react";
 const CarouselScrollListener = () => {
     useEffect(() => {
       const carouselContainer = document.getElementById('carouselContainer');
-      const carousel = carouselContainer.getElementsByClassName('carousel');
+      const carousel = carouselContainer.querySelectorAll('.carousel');
       let currentIndex = 0;
+
+      carousel.forEach(function(child){
+        child.addEventListener('click',cardClickHandeller);
+      })
+      
 
         function changeCarousel(){
             carousel[currentIndex].classList.add("hidden");
@@ -18,18 +23,29 @@ const CarouselScrollListener = () => {
       let interavalID = setInterval(changeCarousel,3000);
 
 
-      carouselContainer.addEventListener('mouseover',(e)=>{
-        e.preventDefault();
-        clearInterval(interavalID);
-      })
+      
 
-      carouselContainer.addEventListener('mouseleave',(e)=>{
+      function cardClickHandeller(e){
+        e.preventDefault()
+        e.stopPropagation()
+        const cardParent = e.currentTarget;
+        const cardClass = cardParent.getElementsByClassName('card')
+        if(cardClass[0].classList.contains('rotate-y-180')){
+          cardClass[0].classList.remove('rotate-y-180')
           interavalID = setInterval(changeCarousel,3000);
-      })
-
+        }
+        else{
+          cardClass[0].classList.add('rotate-y-180')
+          clearInterval(interavalID);
+        }
+      }
     }, [])
     
-  return null;
+  return ()=>{
+    carousel.forEach(function(child){
+      child.removeEventListener('click',cardClickHandeller);
+    })
+  };
 }
 
 export default CarouselScrollListener
