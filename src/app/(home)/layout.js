@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <NextTopLoader color="red" initialPosition={0.08} crawlSpeed={200} height={3} crawl={true} easing="ease" showSpinner={false} speed={200} shadow="0 0 10px #2299DD,0 0 5px #2299DD" zIndex={1600} showAtBottom={false} />
           <div className="min-h-screen flex flex-col">
             <NavBar/>
-            <div className="flex-1">{children}</div>
+            <div className="flex-1">{children}</div>            
             <Footer/>            
             <NavScrollListener/>
           </div>
