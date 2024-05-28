@@ -15,7 +15,18 @@ const CarouselScrollListener = () => {
 
       //display the initial carousel 
       carousel[currentIndex].classList.remove("hidden");
-      setInterval(changeCarousel,3000);
+      let interavalID = setInterval(changeCarousel,3000);
+
+
+      carouselContainer.addEventListener('mouseover',(e)=>{
+        e.preventDefault();
+        clearInterval(interavalID);
+      })
+
+      carouselContainer.addEventListener('mouseleave',(e)=>{
+          interavalID = setInterval(changeCarousel,3000);
+      })
+
     }, [])
     
   return null;

@@ -4,19 +4,19 @@ async function NSTEDBFold() {
         <>
           <div className="container my-24 mx-auto md:pr-8">
             <section className="">
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap items-center">
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                  <div className="flex lg:py-12">
+                  <div className="flex lg:py-12 rounded-lg shadow dark:shadow-black/60">
                     <img
                       src="/images/secondfold/NSTEDB.webp"
-                      className="z-[10] w-full rounded-lg p-10 shadow dark:shadow-black/20 "
+                      className="z-[10] w-full p-7"
                       alt="image"
                     />
                   </div>
                 </div>
-                <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-50px]">
+                <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-20px]">
                   <div
-                    className="flex h-full items-center rounded-lg p-6 text-center text-white lg:pl-12 lg:text-left"
+                    className="flex h-full items-center rounded-lg p-6 text-center text-white lg:pl-4 lg:text-left"
                     style={{ backgroundColor: "rgb(14 130 86)" }}
                   >
                     <div className="lg:pl-12">
