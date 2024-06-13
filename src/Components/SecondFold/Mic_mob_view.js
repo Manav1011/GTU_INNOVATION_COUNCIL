@@ -4,7 +4,7 @@ async function Mic_mob_view({hidden}){
         
 
 <div className={`carousel w-full h-80 bg-white overflow-hidden perspective-1000 mt-5 rounded-lg shadow dark:shadow-black/20 ${hidden && 'hidden'}`}>
-        <div className="card relative w-full h-full text-center transition-transform duration-1000 preserve-3d hover:rotate-y-180">
+        <div className="card relative w-full h-full text-center transition-transform duration-1000 preserve-3d">
           <div className="absolute w-full h-full backface-hiddentext-white flex items-center justify-center">
           <img src="images/secondfold/MIC.webp" className="px-3"/>
           </div>

@@ -8,10 +8,15 @@ async function IDEALabFold() {
                     <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
                       <div className="flex lg:py-10 lg:justify-end rounded-lg shadow dark:shadow-black/60 h-80">
                         <img
-                          src="/images/secondfold/IDEALAB.webp"
-                          className="z-[10] w-1/5 sm:w-full "
-                          alt="image"
+                          src="/images/secondfold/IDEALAB.webp "
+                          className="z-[10] w-1/5 sm:w-full md:hidden lg:block"
+                          alt="image" 
                         />
+                        <img 
+                        src="/images/secondfold/newidealab_2.png"
+                        className="z-[10] w-1/5 sm:w-full md:block lg:hidden"
+                        alt="image" 
+                        ></img>
                       </div>
                     </div>
                     <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:ml-[-20px]">
