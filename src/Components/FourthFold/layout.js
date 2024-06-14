@@ -12,8 +12,8 @@ async function truncateSentence(sentence, maxLength) {
 async function FourthFold() {  
   return (
     <>
-    <div className="min-h-screen w-full bg-indigo-100 bg-opacity-40  pt-14 px-2 sm:px-9">
-          <div className="w-full flex flex-wrap sm:flex-nowrap">
+    <div className="min-h-screen w-full bg-indigo-100 bg-opacity-40  pt-20 px-2 sm:px-9">
+          <div className="w-full h-full flex flex-wrap sm:flex-nowrap justify-center items-center">
            <Circular/>
             <Report/>
           </div>

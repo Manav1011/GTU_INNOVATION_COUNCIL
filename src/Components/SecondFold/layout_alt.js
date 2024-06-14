@@ -15,7 +15,7 @@ async function SecondFoldAlt() {
   return (
     <div className="bg-white bg-opacity-40 h-fit lg:min-h-screen lg:h-screen w-full  flex flex-wrap">
       <div className="lg:hidden w-full">
-        <div className="w-full mt-7">
+        <div className="w-full mt-7 text-center">
           <span className="w-full text-4xl font-bold text-center ml-3" style={{ color: "#2C2E90" }}>Incubation Programs</span>
           <p className="pt-2 text-2xl px-5">Handholding at every stage!</p>
         </div>

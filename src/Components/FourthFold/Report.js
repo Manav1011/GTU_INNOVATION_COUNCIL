@@ -16,13 +16,8 @@ async function Circular({ content, id , timespan }) {
     {
         id:3,
         timespan:"April 2022",
-        content:'GTU - Design Innovation Centre (DIC) is celebrating \\\"Innovation Day\\\" on 15th October, 2019 at Chandkheda campus as to mark Dr. A.P.J. Abdul Kalam’s Birth Anniversary by a number of interesting programs. GTU - DIC is inviting Principal/Director, HOD, Faculty members, Students, Researchers, Industry Personnel, Innovators/Start-ups or any aspirants with the zeal to know, learn, acquire skills by practical approach in areas of Design, Innovation and Emerging Technologies for the program.'
-    },
-    {
-        id:4,
-        timespan:"May 2022",
-        content:"For Faculty Members of Degree (BE) colleges of GTU who are previously trained at level 1 FDP: Please register for 53rd FDP (4 days, Intermediate Level 2) on Design Engineering – whole cycle of Design Thinking with refinement in the process and with newer tools, from 20th to 23rd August, 2019 : Important Message for Principals/ Directors/ Heads of Departments/ GTU Coordinators/ Design Coordinators of all the Degree Engineering Colleges – Please read the circular."
-    }
+        content:'GTU - Design Innovation Centre (DIC) is celebrating \\\"Innovation Day\\\" on 15th October, 2019 at Chandkheda campus as to mark Dr. A.P.J. Abdul Kalam’s Birth...'
+    }    
 ]
 
   return (

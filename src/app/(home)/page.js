@@ -23,7 +23,7 @@ export default function Home() {
       {/* <>
       </> */}
       <ScrollListener/>       
-       <CarouselScrollListener></CarouselScrollListener>
+       <CarouselScrollListener/>
     </>
   );
 }

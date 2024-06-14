@@ -14,11 +14,11 @@ function page() {
             <div className="form w-full">
               <form className="flex flex-col w-full">
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
+                  <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
                   <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
                     <option>United States</option>
@@ -28,35 +28,35 @@ function page() {
                   </select>
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Your email</label>
                   <input type="email" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
+                  <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
                   <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
                     <option>United States</option>
@@ -67,15 +67,15 @@ function page() {
 
                 </div>
                 <div className="mb-5 w-full px-3">
-                  <label for="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
+                  <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select your country</label>
                   <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
                 </div>
                 <div className="mb-5 w-full px-3">
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="user_avatar">Upload file</label>
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" htmlFor="user_avatar">Upload file</label>
                 <input type="file" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="mb-5 w-full px-3">
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="user_avatar">Upload file</label>
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" htmlFor="user_avatar">Upload file</label>
                 <input type="file" id="email" className=" text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full border border-gray-300" placeholder="name@flowbite.com" required />
                 </div>
                 <div className="w-full mb-5 px-3">

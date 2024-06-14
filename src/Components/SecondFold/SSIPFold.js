@@ -9,7 +9,7 @@ async function SSIPFold() {
               <div className="flex lg:py-12 shadow dark:shadow-black/60 rounded-lg h-60">
                 <img
                   src="/images/secondfold/SSIP.webp"
-                  className="z-[10] w-full rounded-lg p-7"
+                  className="z-[10] w-full rounded-lg p-3"
                   alt="image"
                 />
               </div>
