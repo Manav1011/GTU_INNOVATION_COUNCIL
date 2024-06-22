@@ -34,7 +34,7 @@
 
 @keyframes slideRight {
     from {
-      transform: translateX(-100%);
+      transform: trainslateX(-100%);
     }
     to {
       transform: translateX(0);
@@ -61,10 +61,10 @@
 
 @keyframes slideLeft {
     from {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(100%);
     }
 }
 

@@ -19,22 +19,22 @@ export default function MainGraphic() {
           className="h-full w-full flex flex-col backdrop-filter"
           style={{ backdropFilter: "blur(1px)",}}
         >
-          <div className="pt-40 z-10 bg-white slide-right mb-2 text-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30" style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
+          <div className="pt-40 z-10 bg-white slide-right mb-2 text-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 mx-3">
             <h1
-              className=" text-orange-500 my-2 leading-10 sm:leading-1 font-bold"
-              style={{ fontFamily: "Azonix" ,fontSize:'2em'}}
+              className=" text-black my-2 leading-10 sm:leading-1 font-bold"
+              style={{ fontFamily: "Azonix" ,fontSize:'3em'}}
             >
               Igniting Innovation
             </h1>
             <h1
-              className="text-slate-300 my-2 leading-10 sm:leading-1 text-md font-bold"
-              style={{ fontFamily: "Azonix",fontSize:'1.1em'}}
+              className="text-slate-500 my-2 leading-10 sm:leading-1 text-md font-bold"
+              style={{ fontFamily: "Azonix",fontSize:'1.2em'}}
             >
               Empowering Entrepreneurs
             </h1>
             <div
-              className="font-semibold	sm:font-normal text-green-500"
-              style={{ fontFamily: "dosislight",fontSize:'0.8em'}}
+              className="font-semibold	sm:font-normal text-slate-400 "
+              style={{ fontFamily: "OSWALD",fontSize:'1em'}}
             >
               Welcome to the Gateway of Opportunities at GTU Innovation Council
             </div>
