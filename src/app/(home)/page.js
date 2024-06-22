@@ -8,6 +8,7 @@ import SixthFold from "@/Components/SixthFold/layout";
 import SecondFoldAlt from "@/Components/SecondFold/layout_alt";
 import SeventhFold from "@/Components/SeventhFold/layout";
 import CarouselScrollListener from "@/Components/Client/CarouselScrollListener";
+import PageScroll from "@/Components/Client/PageScroll";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <SecondFold/> */}
       {/* <>
       </> */}
+      <PageScroll></PageScroll>
       <ScrollListener/>       
        <CarouselScrollListener/>
     </>
