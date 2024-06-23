@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="bg-slate-100 bg-opacity-40 sm:h-screen flex justify-between flex-col">
+    <div className="bg-opacity-40 sm:h-screen flex justify-between flex-col">
     <section className="relative sm:pt-40 overflow-hidden">
       <div className="relative z-10 container px-4 mx-auto">
         <div className="flex flex-wrap -m-3">
