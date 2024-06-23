@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>   
       <MainGraphic/> 
-      <SixthFold/>
+      {/* <SixthFold/> */}
       <SecondFoldAlt/>
       {/* <SecondFoldAlt/> */}
       <ThirdFoldAlt/>             

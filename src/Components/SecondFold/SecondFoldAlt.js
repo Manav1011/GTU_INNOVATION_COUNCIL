@@ -10,11 +10,11 @@ async function SecondFoldAlt() {
         backgroundAttachment: "fixed",
       }}
     >    
-    <div className="min-h-screen py-20 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
-      <div className="mx-auto px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-none">
+    <div className="min-h-screen py-20 justify-center flex items-center bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
+      <div className="w-full">
+        <div className="lg:mx-20 mx-5">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-8xl font-extrabold tracking-tight text-black">
+            <h2 className="text-3xl sm:text-8xl font-extrabold tracking-tight text-slate-800">
                 STARTUP STATISTICS
             </h2>
             <p className="text-lg leading-8 font-semibold sm:text-4xl text-slate-600">
@@ -67,8 +67,13 @@ async function SecondFoldAlt() {
         </div>
       </div>
     </div>    
-      <div className="h-full w-full py-24 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30">
-        <div className="h-full min-h-screen w-full  pt-12 p-4">
+      <div className="h-full w-full py-10 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30">
+      <div className="text-center">
+            <h2 className="text-3xl sm:text-8xl font-extrabold tracking-tight text-slate-800">
+                OUR PARTNERS
+            </h2>
+          </div>
+        <div className="h-full min-h-screen w-full  pt-20 p-4">
           <div className="flex flex-wrap justify-center gap-2">
             <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl">
               <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">

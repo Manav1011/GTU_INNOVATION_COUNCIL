@@ -16,19 +16,12 @@ function QuoteCard({content,author,designation,hidden}) {
        {content && content}
       </p>
     </blockquote>
-    <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-      <Image
-        height={30}
-        width={30}
-        className="w-6 h-6 rounded-full"
-        src="/images/logos/michael-gouch.png"
-        alt="profile picture"
-      />
+    <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">      
       <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-        <cite className="pe-3 text-sm text-font-medium text-gray-900">
+        <cite className="pe-3 text-md font-bold text-gray-900">
         {author && author}
         </cite>
-        <cite className="ps-3 text-sm text-gray-500 dark:text-gray-500">
+        <cite className="ps-3 text-md text-gray-900 font-medium dark:text-gray-900">
           {designation && designation}
         </cite>
       </div>

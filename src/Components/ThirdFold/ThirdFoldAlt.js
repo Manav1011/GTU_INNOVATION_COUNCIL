@@ -2,6 +2,7 @@ import WhyGICAlt from "./WhyGICAlt"
 import GoalsALT from "./GoalsALT"
 import OurSupportALT from "./OurSupportALT"
 import OurOfferingsALT from "./OurOfferingsALT"
+import ThirdFoldCombined from "./ThirdFoldCombined"
 
 async function ThirdFoldAlt() {
   return (
@@ -16,9 +17,10 @@ async function ThirdFoldAlt() {
       }}>        
       <div className="h-full w-full py-6  bg-black backdrop-filter bg-opacity-70"></div>
         <WhyGICAlt/>
-        <GoalsALT/>
+        <ThirdFoldCombined/>
+        {/* <GoalsALT/>
         <OurSupportALT/>
-        <OurOfferingsALT/>
+        <OurOfferingsALT/> */}
       </section>
   )
 }
