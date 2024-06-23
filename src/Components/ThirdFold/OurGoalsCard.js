@@ -1,6 +1,6 @@
 const OurGoalsCard = ({ content }) => {
   return (
-    <div className="relative my-2 px-7 py-6  bg-sky-100 bg-opacity-20 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start sm:justify-start items-center space-x-6">
+    <div className="relative my-2 px-7 py-6  bg-sky-100 bg-opacity-60 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start sm:justify-start items-center space-x-6">
       <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24">
         <path
           stroke="currentColor"

@@ -1,7 +1,8 @@
 import MainGraphic from "@/Components/FirstFold/layout";
 import ScrollListener from "@/Components/Client/ScrollListener";
 import SecondFold from "@/Components/SecondFold/layout";
-import ThirdFold from "@/Components/ThirdFold/layout";
+import ThirdFoldAlt from "@/Components/ThirdFold/ThirdFoldAlt";
+// import ThirdFold from "@/Components/ThirdFold/layout";
 import FourthFold from "@/Components/FourthFold/layout";
 import FifthFold from "@/Components/FifthFold/layout";
 import SixthFold from "@/Components/SixthFold/layout";
@@ -17,7 +18,7 @@ export default function Home() {
       <SixthFold/>
       <SecondFoldAlt/>
       {/* <SecondFoldAlt/> */}
-      <ThirdFold/>             
+      <ThirdFoldAlt/>             
       <FourthFold/>
       <FifthFold/>
       {/* <SeventhFold/> */}
