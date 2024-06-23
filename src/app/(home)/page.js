@@ -5,10 +5,10 @@ import ThirdFold from "@/Components/ThirdFold/layout";
 import FourthFold from "@/Components/FourthFold/layout";
 import FifthFold from "@/Components/FifthFold/layout";
 import SixthFold from "@/Components/SixthFold/layout";
-import SecondFoldAlt from "@/Components/SecondFold/layout_alt";
+// import SecondFoldAlt from "@/Components/SecondFold/layout_alt";
 import SeventhFold from "@/Components/SeventhFold/layout";
 import CarouselScrollListener from "@/Components/Client/CarouselScrollListener";
-import PageScroll from "@/Components/Client/PageScroll";
+import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 
 export default function Home() {
   return (
@@ -16,16 +16,16 @@ export default function Home() {
       <MainGraphic/> 
       <SixthFold/>
       <SecondFoldAlt/>
+      {/* <SecondFoldAlt/> */}
       <ThirdFold/>             
       <FourthFold/>
       <FifthFold/>
       {/* <SeventhFold/> */}
       {/* <SecondFold/> */}
       {/* <>
-      </> */}
-      <PageScroll></PageScroll>
+      </> */}      
       <ScrollListener/>       
-       <CarouselScrollListener/>
+       {/* <CarouselScrollListener/> */}
     </>
   );
 }

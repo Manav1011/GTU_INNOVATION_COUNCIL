@@ -13,6 +13,8 @@ import Ssip_mob_view from "./Ssip_mob_view";
 
 async function SecondFoldAlt() {
   return (
+    <section>
+
     <div className="bg-white bg-opacity-40 h-fit lg:min-h-screen lg:h-screen w-full  flex flex-wrap">
       <div className="lg:hidden w-full">
         <div className="w-full mt-7 text-center">
@@ -45,6 +47,7 @@ async function SecondFoldAlt() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

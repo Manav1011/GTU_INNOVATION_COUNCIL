@@ -7,6 +7,8 @@ import OurOfferings from "./OurOfferings";
 
 function ThirdFold() {  
   return (
+    <section>
+
     <div
       className="h-screen bg-gradient-to-b sm:bg-gradient-to-r from-slate-100 to-slate-300"
       id="thirdfold"
@@ -109,6 +111,7 @@ function ThirdFold() {
         </ParallaxLayer>
       </Parallax>
     </div>
+    </section>
   );
 }
 

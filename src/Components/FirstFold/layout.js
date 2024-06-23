@@ -1,6 +1,8 @@
 import Image from "next/image";
 export default function MainGraphic() {
   return (
+    <section>
+
     <div id="firstfold">
       <div
         className="flex flex-col sm:hidden"
@@ -81,5 +83,6 @@ export default function MainGraphic() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
