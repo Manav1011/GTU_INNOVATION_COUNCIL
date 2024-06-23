@@ -19,8 +19,8 @@ export default function Home() {
       <SecondFoldAlt/>
       {/* <SecondFoldAlt/> */}
       <ThirdFoldAlt/>             
-      <FourthFold/>
       <FifthFold/>
+      <FourthFold/>
       {/* <SeventhFold/> */}
       {/* <SecondFold/> */}
       {/* <>

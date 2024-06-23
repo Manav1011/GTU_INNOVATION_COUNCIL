@@ -49,7 +49,7 @@ function OurOfferingsALT() {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-500 font-medium">
+                  <div className="max-w-md text-slate-700 font-medium">
                     <p className="mb-2">
                       We support to student for patent filling. Meet up with Industry collaboration
                     </p>
@@ -96,7 +96,7 @@ function OurOfferingsALT() {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-500 font-medium">
+                  <div className="max-w-md text-slate-700 font-medium">
                     <p className="mb-2">
                       Its very important for students to work with Startup for understanding ground reality of research and project work.
                     </p>
@@ -143,7 +143,7 @@ function OurOfferingsALT() {
                 {/* Card body */}
                 <div className="flex items-end justify-between whitespace-normal">
                   {/* Paragraph */}
-                  <div className="max-w-md text-slate-500 font-medium">
+                  <div className="max-w-md text-slate-700 font-medium">
                     <p className="mb-2">
                     We arrange events at GIC where students can be benefited by attending expert mentor lecturer.
                     </p>
