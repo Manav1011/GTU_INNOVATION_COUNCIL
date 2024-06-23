@@ -1,4 +1,22 @@
+import Link from "next/link";
+
 function SliderbarSubMenu({ title }) {
+  const toggleSidebar = async () => {
+    let NavigationSidebar = document.getElementById("NavigationSidebar");    
+    NavigationSidebar.classList.toggle("hidden");    
+    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
+    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
+  };
+   function slugify(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')         // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')     // Remove all non-word chars
+      .replace(/\-\-+/g, '-')       // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
+  }
+  
+  
   const Menus = {
     "gic-verticals": [
       "GIC Clubs",
@@ -39,7 +57,7 @@ function SliderbarSubMenu({ title }) {
       "Utility Forms",
     ],
     apply: [
-      "Incubation Form",
+      "Incubation",
       "Apply Under Nodal Institute",
       "Apply Under SSIP",
       "Apply Under TBI",
@@ -52,8 +70,10 @@ function SliderbarSubMenu({ title }) {
       {Menus[title]?.map((item, index) => {
         if (typeof item === "string") {
           return (
-            <div
+            <Link
+            href={`/${slugify(item)}`}
               key={index}
+              onClick={() => {toggleSidebar()}}
               className="font-medium text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
             >
               {item}
@@ -70,7 +90,7 @@ function SliderbarSubMenu({ title }) {
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
-            </div>
+            </Link>
           );
         } else if (typeof item === "object") {
           return (
@@ -82,12 +102,14 @@ function SliderbarSubMenu({ title }) {
                   </div>
                   <div className="font-normal text-2xl flex gap-6">
                     {item[key].map((subItem, subSubIndex) => (
-                      <div
+                      <Link
+                        href={`/${slugify(subItem)}`}
+                        onClick={() => {toggleSidebar()}}
                         key={subSubIndex}
                         className="hover:text-orange-500 transition duration-300 ease-in-out"
                       >
                         {subItem}
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>

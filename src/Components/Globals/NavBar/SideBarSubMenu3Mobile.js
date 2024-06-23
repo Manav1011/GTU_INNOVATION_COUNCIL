@@ -1,4 +1,20 @@
+import Link from "next/link";
+
 function SideBarSubMenu3Mobile({ title }) {
+  const toggleSidebar = async () => {
+    let NavigationSidebar = document.getElementById("NavigationSidebar");    
+    NavigationSidebar.classList.toggle("hidden");    
+    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
+    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
+  };
+   function slugify(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')         // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')     // Remove all non-word chars
+      .replace(/\-\-+/g, '-')       // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
+  }
   const HideTheThirdSubMenu = async () => {
     document.getElementById("SideBarSubMenu3Mobile").classList.add("hidden");
   };
@@ -36,12 +52,14 @@ function SideBarSubMenu3Mobile({ title }) {
         style={{ fontFamily: "OSWALD" }}
       >
         {Menus[title].map((item, index) => (
-          <div
+          <Link
+            href={`/${slugify(item)}`}
             key={index}
+            onClick={() => {toggleSidebar()}}
             className={`font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
           >
             {item}
-          </div>
+          </Link>
         ))}
       </div>
     </section>

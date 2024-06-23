@@ -1,11 +1,26 @@
 import { useState } from "react";
 import SideBarSubMenu3Mobile from "./SideBarSubMenu3Mobile";
+import Link from "next/link";
 
 function SideBarSubMenu2Mobile({ title }) {
   const [selectedMenuPhone, setSelectedMenuPhone] = useState(null);
   const HideTheSecondSubMenu = async () => {
     document.getElementById("SideBarSubMenu2Mobile").classList.add("hidden");
   };
+  const toggleSidebar = async () => {
+    let NavigationSidebar = document.getElementById("NavigationSidebar");    
+    NavigationSidebar.classList.toggle("hidden");    
+    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
+    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
+  };
+   function slugify(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')         // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')     // Remove all non-word chars
+      .replace(/\-\-+/g, '-')       // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
+  }
   const Menus = {
     "gic-verticals": [
       "GIC Clubs",
@@ -43,7 +58,7 @@ function SideBarSubMenu2Mobile({ title }) {
       "Utility Forms",
     ],
     apply: [
-      "Incubation Form",
+      "Incubation",
       "Apply Under Nodal Institute",
       "Apply Under SSIP",
       "Apply Under TBI",
@@ -81,23 +96,30 @@ function SideBarSubMenu2Mobile({ title }) {
         style={{ fontFamily: "OSWALD" }}
       >
         {Menus[title].map((item, index) => (
-          <div
+          item != 'Funding' ? (
+          <Link
+            href={`/${slugify(item)}`}
             key={index}
+            onClick={() => {toggleSidebar()}}
             className={`font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
-            onClick={() => {
-              if (item === "Funding") {
+          >
+            {item}
+          </Link>
+           ) : (
+            <div            
+            key={index}
+            className={`cursor-pointer font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
+            onClick={() => {              
                 setSelectedMenuPhone("funding");
                 const element = document.getElementById(
                   "SideBarSubMenu3Mobile"
                 );
                 if (element) {
                   element.classList.remove("hidden");
-                }
-              }
+                }              
             }}
           >
-            {item}
-            {item == "Funding" ? (
+            {item}            
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={32}
@@ -107,9 +129,9 @@ function SideBarSubMenu2Mobile({ title }) {
                 viewBox="0 0 16 16"
               >
                 <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            ) : null}
+              </svg>            
           </div>
+           )
         ))}
       </div>
       {selectedMenuPhone && <SideBarSubMenu3Mobile title={selectedMenuPhone} />}

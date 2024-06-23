@@ -1,9 +1,16 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import SliderbarSubMenu from "./SliderbarSubMenu";
 import SideBarSubMenu2Mobile from "./SideBarSubMenu2Mobile";
 
 function NavigationSidebar() {
+  const toggleSidebar = async () => {
+    let NavigationSidebar = document.getElementById("NavigationSidebar");    
+    NavigationSidebar.classList.toggle("hidden");    
+    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
+    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
+  };
   const [selectedMenuDesktop, setSelectedMenuDesktop] = useState("gic-verticals");
   const [selectedMenuPhone, setSelectedMenuPhone] = useState(null);
   return (
@@ -18,7 +25,7 @@ function NavigationSidebar() {
             style={{ fontFamily: "OSWALD" }}
           >
             <div
-              className={`font-bold sm:text-2xl text-3xl ${
+              className={`cursor-pointer font-bold sm:text-2xl text-3xl ${
                 selectedMenuDesktop == "gic-verticals"
                   ? "sm:text-orange-500 sm:underline"
                   : null
@@ -38,7 +45,7 @@ function NavigationSidebar() {
               </svg>
             </div>
             <div
-              className={`font-bold sm:text-2xl text-3xl ${
+              className={`cursor-pointer font-bold sm:text-2xl text-3xl ${
                 selectedMenuDesktop == "our-support"
                   ? "sm:text-orange-500 sm:underline"
                   : null
@@ -58,7 +65,7 @@ function NavigationSidebar() {
               </svg>
             </div>
             <div
-              className={`font-bold sm:text-2xl text-3xl ${
+              className={`cursor-pointer font-bold sm:text-2xl text-3xl ${
                 selectedMenuDesktop == "gic-startup"
                   ? "sm:text-orange-500 sm:underline"
                   : null
@@ -78,7 +85,7 @@ function NavigationSidebar() {
               </svg>
             </div>
             <div
-              className={`font-bold sm:text-2xl text-3xl ${
+              className={`cursor-pointer font-bold sm:text-2xl text-3xl ${
                 selectedMenuDesktop == "resource-bank"
                   ? "sm:text-orange-500 sm:underline"
                   : null
@@ -98,7 +105,7 @@ function NavigationSidebar() {
               </svg>
             </div>
             <div
-              className={`font-bold sm:text-2xl text-3xl ${
+              className={`cursor-pointer font-bold sm:text-2xl text-3xl ${
                 selectedMenuDesktop == "latest"
                   ? "sm:text-orange-500 sm:underline"
                   : null
@@ -118,7 +125,7 @@ function NavigationSidebar() {
               </svg>
             </div>
             <div
-              className={`${
+              className={`cursor-pointer ${
                 selectedMenuDesktop == "apply" ? "sm:underline" : null
               } flex items-center justify-between sm:justify-center font-bold sm:text-3xl text-4xl text-orange-500`}
               onClick={() => {setSelectedMenuDesktop("apply");setSelectedMenuPhone("apply"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
@@ -135,14 +142,14 @@ function NavigationSidebar() {
                 <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
               </svg>
             </div>
-            <div className="font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
+            <Link href="/about-us" onClick={() => {toggleSidebar()}} className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
               About
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={16}
                 height={16}
                 fill="currentColor"
-                className="bi bi-arrow-right sm:hidden"
+                className="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -150,8 +157,8 @@ function NavigationSidebar() {
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
-            </div>
-            <div className="font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
+            </Link>
+            <Link href={'/reach-us'} onClick={() => {toggleSidebar()}} className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
               Reach Us
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +173,7 @@ function NavigationSidebar() {
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
         <div

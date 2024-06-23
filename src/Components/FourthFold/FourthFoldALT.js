@@ -14,9 +14,9 @@ async function FourthFoldALT() {
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2020
                 </time>
-                <type className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
+                <span className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
                   Report
-                </type>
+                </span>
                 <div className="text-xl font-bold text-slate-900">
                   Acme was founded in Milan, Italy
                 </div>
@@ -32,9 +32,9 @@ async function FourthFoldALT() {
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2021
                 </time>
-                <type className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
+                <span className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
                   Circular
-                </type>
+                </span>
                 <div className="text-xl font-bold text-slate-900">
                   Reached 5K customers
                 </div>
@@ -50,9 +50,9 @@ async function FourthFoldALT() {
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2022
                 </time>
-                <type className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
+                <span className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
                   Circular
-                </type>
+                </span>
                 <div className="text-xl font-bold text-slate-900">
                   Acquired various companies, inluding Technology Inc.
                 </div>
@@ -68,9 +68,9 @@ async function FourthFoldALT() {
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2023
                 </time>
-                <type className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
+                <span className="sm:absolute left-0 top-14 inline-flex items-center justify-center font-semibold uppercase w-20 h-6 text-amber-600 rounded-full text-xl">
                   Report
-                </type>
+                </span>
                 <div className="text-xl font-bold text-slate-900">
                   Acme went public at the New York Stock Exchange
                 </div>
