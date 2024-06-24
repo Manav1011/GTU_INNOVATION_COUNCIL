@@ -1,6 +1,8 @@
 async function WhyGICAlt() {
   return (
     <div className="p-5 pt-12 sm:pt-10 text-center sm:p-10 flex flex-col justify-center items-center bg-black backdrop-filter bg-opacity-70" style={{backdropFilter: "blur(1px)"}}>
+    <div id="WhyGICFold" className=" opacity-0">
+
         <h5 className="sm:mb-20 mb-5 text-transparent bg-clip-text w-full bg-gradient-to-r from-slate-100 to-teal-200 sm:text-6xl text-6xl font-semibold tracking-tight" style={{fontFamily:'oswald'}}>
           WHY GIC ?
         </h5>      
@@ -28,6 +30,7 @@ async function WhyGICAlt() {
           </span>
           </>
       </p>
+    </div>
     </div>
   )
 }

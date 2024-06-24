@@ -4,12 +4,29 @@ async function FourthFoldALT() {
       <div className="h-full w-full mx-auto">
         {/* Vertical Timeline #1 */}
         <div className="pt-24 flex justify-center items-center flex-col">
-        <h5 className="text-center sm:mb-20 mb-5 text-transparent bg-clip-text w-full bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold tracking-tight" style={{fontFamily:'oswald'}}>
-          REPORTS & CIRCULARS
-        </h5>      
+          <div className="text-center flex sm:mb-20 mb-5 w-full sm:flex-row flex-col justify-center gap-3 opacity-0" id="FourthFoldTitle">
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold"
+              style={{ fontFamily: "oswald" }}
+            >
+              REPORTS
+            </span>
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold"
+              style={{ fontFamily: "oswald" }}
+            >
+              &
+            </span>
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold"
+              style={{ fontFamily: "oswald" }}
+            >
+              CIRCULARS
+            </span>
+          </div>
           <div className="mx-5 sm:mx-auto">
             {/* Item #1 */}
-            <div className="relative pl-8 sm:pl-32 py-6 group">
+            <div className="relative pl-8 sm:pl-32 py-6 group report opacity-0">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2020
@@ -23,11 +40,13 @@ async function FourthFoldALT() {
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                GTU - Design Innovation Centre (DIC) is celebrating &quot;Innovation Day&quot; on 15th October, 2019 at Chandkheda campus as to mark Dr. A.P.J. Abdul Kalam’s Birth Anniversary.
+                GTU - Design Innovation Centre (DIC) is celebrating
+                &quot;Innovation Day&quot; on 15th October, 2019 at Chandkheda
+                campus as to mark Dr. A.P.J. Abdul Kalam’s Birth Anniversary.
               </div>
             </div>
             {/* Item #2 */}
-            <div className="relative pl-8 sm:pl-32 py-6 group">
+            <div className="relative pl-8 sm:pl-32 py-6 group circular opacity-0">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2021
@@ -41,11 +60,13 @@ async function FourthFoldALT() {
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Invite Application from Students / Innovators / Researchers / Start - up to take support and mentorship under Design Innovation Centre (DIC) funded by MHRD.
+                Invite Application from Students / Innovators / Researchers /
+                Start - up to take support and mentorship under Design
+                Innovation Centre (DIC) funded by MHRD.
               </div>
             </div>
             {/* Item #3 */}
-            <div className="relative pl-8 sm:pl-32 py-6 group">
+            <div className="relative pl-8 sm:pl-32 py-6 group circular opacity-0">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2022
@@ -59,11 +80,13 @@ async function FourthFoldALT() {
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Invite Application from Students / Innovators / Researchers / Start - up to take support and mentorship under Design Innovation Centre (DIC) funded by MHRD.
+                Invite Application from Students / Innovators / Researchers /
+                Start - up to take support and mentorship under Design
+                Innovation Centre (DIC) funded by MHRD.
               </div>
             </div>
             {/* Item #4 */}
-            <div className="relative pl-8 sm:pl-32 py-6 group">
+            <div className="relative pl-8 sm:pl-32 py-6 group report opacity-0">
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
                   May, 2023
@@ -77,7 +100,9 @@ async function FourthFoldALT() {
               </div>
               {/* Content */}
               <div className="text-slate-500">
-              GTU - Design Innovation Centre (DIC) is celebrating &quot;Innovation Day&quot; on 15th October, 2019 at Chandkheda campus as to mark Dr. A.P.J. Abdul Kalam’s Birth Anniversary.
+                GTU - Design Innovation Centre (DIC) is celebrating
+                &quot;Innovation Day&quot; on 15th October, 2019 at Chandkheda
+                campus as to mark Dr. A.P.J. Abdul Kalam’s Birth Anniversary.
               </div>
             </div>
           </div>

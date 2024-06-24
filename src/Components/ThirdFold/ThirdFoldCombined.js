@@ -4,7 +4,7 @@ async function ThirdFoldCombined() {
   <div className="container max-w-full mx-auto py-12 px-6">        
     <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
       <div className="relative flex flex-col md:flex-row items-center">
-        <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8relative z-0 rounded-lg shadow-lg md:-mr-4">
+        <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8relative z-0 rounded-lg shadow-lg md:-mr-4 third-fold opacity-0">
           <div className="bg-slate-200 text-black rounded-lg shadow-lg pb-8 overflow-hidden bg-opacity-90">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-2xl mb-2 font-bold uppercase p-3 pb-0 text-center tracking-wide">
@@ -77,7 +77,7 @@ async function ThirdFoldCombined() {
             </div>            
           </div>
         </div>
-        <div className="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white pb-8 rounded-lg shadow-lg">          
+        <div className="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white pb-8 rounded-lg shadow-lg third-fold opacity-0"> 
           <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
             <h1 className="text-2xl mb-2 font-bold uppercase p-3 pb-0 text-center tracking-wide">
               Our Support
@@ -158,7 +158,7 @@ async function ThirdFoldCombined() {
           </div>
          
         </div>
-        <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+        <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4 third-fold opacity-0">
           <div className="bg-slate-200 bg-opacity-90 text-black pb-8  rounded-lg shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
             <h1 className="text-2xl mb-2 font-bold uppercase p-3 pb-0 text-center tracking-wide">

@@ -10,7 +10,7 @@ async function TitleToast() {
         <Image
           width={50}
           height={50}
-          priority={true}
+          loading="lazy"
           className="h-auto w-20"
           src="/images/logos/GISC.png"
           alt="Your Company"

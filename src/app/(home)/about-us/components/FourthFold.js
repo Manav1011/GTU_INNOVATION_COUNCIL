@@ -18,7 +18,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             style={{ mixBlendMode: "darken" }}
             src="/images/gic-startup-logos/9_1_1_eswasthya.in_-scalia-person-scalia-person.webp"
@@ -27,7 +27,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -36,7 +36,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -45,7 +45,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -54,7 +54,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -63,7 +63,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -72,7 +72,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -81,7 +81,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -90,7 +90,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -99,7 +99,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -108,7 +108,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}
@@ -117,7 +117,7 @@ async function FourthFold() {
           <Image
             width={200}
             height={150}
-            priority={true}
+            loading="lazy"
             className="h-auto sm:w-24 lg:w-32 w-20"
             alt="default image"
             style={{ mixBlendMode: "darken" }}

@@ -31,18 +31,18 @@ const callBackAboutUs = async (entries, observer) => {
 
 function ScrollListener() {
   useEffect(() => {
-    const optionsAboutUS = {
-      root: null,
-      threshold: 0.1,
-    };
-    const ObserveeAboutUs = new IntersectionObserver(
-      callBackAboutUs,
-      optionsAboutUS
-    );
-    const AboutUS = document.getElementById("about-us-container");
-    if (AboutUS) {
-      ObserveeAboutUs.observe(AboutUS);
-    }
+    // const optionsAboutUS = {
+    //   root: null,
+    //   threshold: 0.1,
+    // };
+    // const ObserveeAboutUs = new IntersectionObserver(
+    //   callBackAboutUs,
+    //   optionsAboutUS
+    // );
+    // const AboutUS = document.getElementById("about-us-container");
+    // if (AboutUS) {
+    //   ObserveeAboutUs.observe(AboutUS);
+    // }
     // AboutUS.addEventListener("wheel", transformScroll, { passive: false });
   }, []);
   return null;

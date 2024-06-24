@@ -1,4 +1,5 @@
 import "@/static/globals.css";
+import "@/static/transitions.css";
 import '@/static/fonts.css'
 import Footer from "@/Components/Globals/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
