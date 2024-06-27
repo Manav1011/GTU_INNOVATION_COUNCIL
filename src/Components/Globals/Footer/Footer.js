@@ -92,7 +92,7 @@ function Footer() {
                 Address
               </h3>
               <p className="font-medium text-sm max-w-xs mx-auto leading-relaxed">
-                GTU Innovation Council, Block 6, L.D Boys Hostel Gate, Opp.Old Passport office, Navarangpura, Ahmedabad.
+              Acedamic Block 2, GTU- GISC Office, GTU Innovation Council, VGEC College Campus, Chandkheda, Ahmedabad - 382424
               </p>              
             </div>
           </div>

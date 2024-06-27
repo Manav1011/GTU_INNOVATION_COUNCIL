@@ -14,7 +14,7 @@ export async function POST(request,res) {
     ip_address: ip,
     user_agent: ua,
   };
-  const encryptedSession = await encrypt(data)  
+  const encryptedSession = await encrypt(data)
   cookies().set('session', encryptedSession, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',

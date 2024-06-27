@@ -82,8 +82,7 @@ async function page() {
                   <h2 className="text-2xl">GTU Innovation Council</h2>
                   <p className="text-gray-200 text-xl my-2">Ahmedabad</p>
                   <p className="text-gray-400 text-sm mt-4">
-                    Block 3 & 6, L.D College Boys Hostel Gate, Opp.Old Passport
-                    Office, Navrangpura, Ahmedabad-380015.
+                    Acedamic block 2, GTU- GISC office, GTU innovation council, VGEC College Campus, Chandkheda, Ahmedabad 382424
                     <br />
                     Email : startupni@gtu.edu.in | ssipgtu@gtu.edu.in
                     <br />

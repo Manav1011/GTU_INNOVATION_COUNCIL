@@ -8,6 +8,10 @@ export async function encrypt(payload) {
 }
 
 export async function decrypt(input){
-    const payload = await jwtVerify(input,key,{algorithms:['HS256']})
-    return payload
+    try {
+        const payload = await jwtVerify(input,key,{algorithms:['HS256']})   
+        return payload
+    } catch (error) {
+        return false
+    }
 }
