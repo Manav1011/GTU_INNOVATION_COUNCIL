@@ -1,10 +1,10 @@
 async function FourthFoldALT() {
   return (
-    <section>
+    <section className="bg-zinc-100	 min-h-screen">
       <div className="h-full w-full mx-auto">
         {/* Vertical Timeline #1 */}
         <div className="pt-24 flex justify-center items-center flex-col">
-          <div className="text-center flex sm:mb-20 mb-5 w-full sm:flex-row flex-col justify-center gap-3 opacity-0" id="FourthFoldTitle">
+          <div className="text-center flex sm:mb-20 mb-5 w-full sm:flex-row flex-col justify-center gap-3 opacity-0 items-center" id="FourthFoldTitle">
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold"
               style={{ fontFamily: "oswald" }}
@@ -23,6 +23,26 @@ async function FourthFoldALT() {
             >
               CIRCULARS
             </span>
+            <div className="flex gap-5 items-center text-blue-600">
+            <span className="sm:hidden">Read More</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              // width={32}
+              // height={32}
+              fill="currentColor"
+              className="h-6 w-6 sm:h-8 sm:w-8 bi bi-box-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+              />
+              <path
+                fillRule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+              />
+            </svg>
+            </div>
           </div>
           <div className="mx-5 sm:mx-auto">
             {/* Item #1 */}

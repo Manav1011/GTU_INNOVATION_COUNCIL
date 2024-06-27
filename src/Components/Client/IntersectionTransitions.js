@@ -72,7 +72,7 @@ function IntersectionTransitions() {
                         entries.forEach((entry) => {
                             if(entry.isIntersecting){  
                                 el.classList.remove('opacity-0')
-                                el.classList.add('BottomTOUp')
+                                el.classList.add('BottomTOUpSlightlyText')
                                 observer.disconnect();
                             }
                         })
