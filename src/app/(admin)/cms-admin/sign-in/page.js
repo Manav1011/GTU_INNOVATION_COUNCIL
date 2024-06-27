@@ -16,8 +16,13 @@ function page() {
             password:password.current.value
         })
     }).then((res) => res.json()).then(data => {
+      console.log(data)
         if(data.success == true){
+          console.log("one")
             router.push('/cms-admin')
+        }
+        if(data.error == true){
+          alert(data.message)
         }
     }).catch(err => {
         console.log(err);
