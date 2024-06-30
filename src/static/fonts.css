@@ -74,3 +74,28 @@
     src: url('/fonts/Roboto-Regular.ttf') format('opentype');
     /* Additional font properties (e.g., font-weight, font-style) can be specified here */
 }
+@font-face {
+    font-family: 'Anton';    
+    src: url('/fonts/Anton-Regular.ttf') format('opentype');    
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'BebasNeue';    
+    src: url('/fonts/BebasNeue-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Rajdhani';    
+    src: url('/fonts/Rajdhani-Light.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Rajdhani-Medium';
+    src: url('/fonts/Rajdhani-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'SairaCondensed';
+    src: url('/fonts/SairaCondensed-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}

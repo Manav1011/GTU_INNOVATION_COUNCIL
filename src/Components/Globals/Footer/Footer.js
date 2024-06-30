@@ -1,11 +1,17 @@
 function Footer() {
   return (
-    <div className="sm:h-screen flex justify-between flex-col bg-slate-200">
-    <section className="relative sm:pt-40 overflow-hidden">
+    <div className="sm:h-screen flex justify-between flex-col"
+    style={{
+              backgroundImage:
+              "url('/images/backgrounds/footer-landscape.png')",              
+              backgroundAttachment: "fixed",
+              backgroundPosition:'center'
+            }}>
+    <section className="relative sm:pt-24 pt-20 overflow-hidden" style={{backdropFilter:'blur(1px)'}}>
       <div className="relative z-10 container px-4 mx-auto">
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-1/3 p-3">
-            <div className="p-11 h-full text-center  bg-opacity-20 border sm:border-r-slate-800">
+            <div className="p-11 h-full text-center  bg-slate-300 bg-opacity-40 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm">
                 <div className="mb-6 relative mx-auto w-16 h-16  bg-white  border border-blueGray-200 rounded-full">
                 <a href="mailto:info_gisc@gtu.edu.in">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 cursor-pointer">
@@ -36,7 +42,7 @@ function Footer() {
             </div>
           </div>
           <div className="w-full md:w-1/3 p-3">
-          <div className="p-11 h-full text-center bg-opacity-20 border sm:border-r-slate-800">
+          <div className="p-11 h-full text-center bg-slate-300 bg-opacity-40 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm">
             <div className="mb-6 relative mx-auto w-16 h-16 bg-white rounded-full">
                 <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                   <svg
@@ -61,7 +67,7 @@ function Footer() {
             </div>
           </div>
           <div className="w-full md:w-1/3 p-3">
-          <div className="p-11 h-full text-center bg-opacity-20 border border-blueGray-100 rounded-xl">
+          <div className="p-11 h-full text-center bg-slate-300 bg-opacity-40 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm">
               <div className="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
                 <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                   <svg
@@ -99,7 +105,7 @@ function Footer() {
         </div>
       </div>
     </section>
-    <footer className="bg-opacity-40 sm:pt-8 pt-3 sm:pb-6 pb-3" id="footer">
+    <footer className="bg-opacity-40 sm:pt-8 pt-3 sm:pb-6 pb-3" id="footer" style={{backdropFilter:'blur(1px)'}}>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap  lg:text-left">
           <div className="w-full px-4 flex justify-center flex-row sm:flex-col items-center">

@@ -1,25 +1,28 @@
 async function ThirdFold() {
   return (
     <section
-      className={`h-screen w-screen`}
-      id="about-us-thirdfold"
-      style={{ background: "#f28482", backgroundAttachment: "fixed" }}
-    >
-    <div className="" id="about-us-thirdfold-content">
+    className="h-screen min-h-screen w-full min-w-screen overflow-hidden bg-stone-500"
+    style={{
+      backgroundImage:
+        "url('/images/backgrounds/white-black-grad.png')",
+      backgroundAttachment: "fixed",
+    }}
+  >
+    <div className="h-full w-full flex flex-col items-center justify-center" id="about-us-thirdfold-content">
       <div className="container mx-auto px-6">
         <div className="text-center">
-          <p
-            className="bottomUPTitle xs:text-5xl xs:pt-28 font-thin sm:text-5xl lg:text-7xl  text-4xl sm:pt-20 lg:pt-32 pt-28 sm:px-10 text-center"
-            style={{ fontFamily: "Baskerville" }}
-          >
+        <div
+      className="bottomUPTitle font-light sm:text-5xl lg:text-8xl  xs:text-5xl text-5xl sm:px-10 text-center"
+      style={{ fontFamily: "OSWALD" }}
+    >
             OUR MISSION
-          </p>
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center">
       <p
         className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-20 lg:text-3xl sm:text-xl text-2xl px-10 sm:px-20 pt-10 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "variable" }}
+        style={{ fontFamily: "SairaCondensed" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +38,7 @@ async function ThirdFold() {
       </p>
       <p
         className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "variable" }}
+        style={{ fontFamily: "SairaCondensed" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +55,7 @@ async function ThirdFold() {
       </p>
       <p
         className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "variable" }}
+        style={{ fontFamily: "SairaCondensed" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

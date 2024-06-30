@@ -3,7 +3,7 @@ async function FirstFold() {
     <div
       id="about-us-firstfold"
       className="h-screen w-screen flex flex-col items-center justify-start"
-      style={{ background: "#E7CFCD", backgroundAttachment: "fixed" }}
+      style={{ backgroundAttachment: "fixed" }}
     >
       <div
         className="bottomUPTitle font-thin sm:text-5xl lg:text-7xl  xs:text-5xl text-4xl sm:pt-28 lg:pt-32 xs:pt-28 pt-20 sm:px-10 text-center"
