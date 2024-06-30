@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { SignInUser, AuthenticateUser } from "./actions";
+import { SignInUser, AuthenticateUser } from "../actions";
 import { useFormState } from "react-dom";
 
 function SignInComponent() {
