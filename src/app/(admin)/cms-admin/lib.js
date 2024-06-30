@@ -1,4 +1,3 @@
-import { cookies } from "next/headers"
 import { SignJWT,jwtVerify } from "jose"
 
 console.log(process.env.signKey);
@@ -12,7 +11,7 @@ export async function decrypt(input){
         const payload = await jwtVerify(input,key,{algorithms:['HS256']})   
         return payload
     } catch (error) {
-        console.log(error)
         return false
     }
 }
+

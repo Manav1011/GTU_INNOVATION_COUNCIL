@@ -1,5 +1,4 @@
-// import '../../static/globals.css'
-import "@/static/globals.css";
+import '@/static/globals.css'
 import '@/static/fonts.css'
 
 export const metadata = {

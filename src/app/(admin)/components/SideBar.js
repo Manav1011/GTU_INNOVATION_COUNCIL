@@ -1,6 +1,6 @@
 async function SideBar() {
   return (
-    <aside className="bg-white shadow-sm ml-5 rounded-xl my-5 z-50 w-72  transition-transform duration-300  border border-blue-gray-100">
+    <aside className="hidden max-w-screen lg:flex bg-white shadow-sm ml-5 rounded-xl my-5 z-50 w-72  transition-transform duration-300  border border-blue-gray-100">
       <div className="m-4">
         <ul className="mb-4 flex flex-col gap-1">
           <li>

@@ -1,7 +1,10 @@
 import ListTable from "../components/ListTable"
 import SideBar from "../components/SideBar"
+import { AuthenticateUser } from "./actions"
 
-function page() {  
+
+async function page() {    
+  await AuthenticateUser()  
   return (    
     <>
     <section className="flex w-full items-center h-screen bg-black">

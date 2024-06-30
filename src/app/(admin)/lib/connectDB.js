@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+console.log(mongoose.models);
 const DATABASE_URL = `mongodb+srv://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@gic.cbipwdl.mongodb.net/GIC`
 
 if(! DATABASE_URL) {
@@ -11,7 +11,6 @@ let cached = global.mongoose
 if (!cached){
     cached = global.mongoose = { conn: null, promise: null };
 }
-console.log(cached)
 async function connectDB() {
     if (cached.conn) {
       return cached.conn;
@@ -31,4 +30,4 @@ async function connectDB() {
     return cached.conn;
   }
 
-  export default connectDB;
+export default connectDB

@@ -1,9 +1,5 @@
-import mongoose from "mongoose";
-import connectDB from "../lib/connectDB";
-
-await connectDB()
-
-const User = mongoose.Schema(
+const mongoose = global.mongoose
+const User = new mongoose.Schema(
     {
         user_name : {
             type : String,
@@ -31,7 +27,6 @@ const User = mongoose.Schema(
         }
     }
 );
-console.log(mongoose.models)
 export default mongoose.models.User || mongoose.model("User", User);
 
 
