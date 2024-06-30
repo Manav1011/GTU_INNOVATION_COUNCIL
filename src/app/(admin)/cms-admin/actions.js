@@ -1,10 +1,7 @@
 "use server";
-import { headers } from "next/headers";
 import User from "../Model/User";
 import { redirect } from "next/navigation";
-const bcrypt = require("bcrypt");
-import { encrypt, decrypt } from "./lib";
-const crypto = require("crypto");
+import { decrypt } from "./lib";
 import { cookies } from "next/headers";
 
 export async function AuthenticateUser() {  
