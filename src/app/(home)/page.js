@@ -13,26 +13,74 @@ import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
 import Preloaders from "@/Components/Client/Preloaders";
+import base_url from "@/baseusrl";
 
-export default function Home() {
-  return (
-    <>
-    {/* <Preloaders/>    */}
-      <MainGraphic/> 
-      {/* <SixthFold/> */}
-      <SecondFoldAlt/>
-      {/* <SecondFoldAlt/> */}
-      <ThirdFoldAlt/>             
-      <FifthFold/>
-      {/* <FourthFold/> */}
-      <FourthFoldALT/>
-      {/* <SeventhFold/> */}
-      {/* <SecondFold/> */}
-      {/* <>
-      </> */}      
-      <ScrollListener/>       
-      <IntersectionTransitions/>
-       {/* <CarouselScrollListener/> */}
-    </>
-  );
+export default async function  Home() {
+  
+  try{
+    let res = await fetch(`${base_url}/manage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        query: `{
+            quotes{
+                _id,
+                content,
+                author,
+                designation
+            },
+            startups{
+                _id,
+                title,
+                count
+            },
+            partners{
+              _id,
+              logo,
+              title,
+              about
+            }
+          }`
+      })
+    })
+
+    const result = await res.json()
+    const quotes = result.data.quotes
+    const startups = result.data.startups
+    const partners = result.data.partners
+    
+  
+  
+      return (
+        <>
+          {/* <Preloaders/>    */}
+          <MainGraphic />
+          {/* <SixthFold/> */}
+          {startups && partners && <SecondFoldAlt startups={startups} partners={partners}/>}
+          {/* <SecondFoldAlt/> */}
+          <ThirdFoldAlt />
+          {quotes && <><FifthFold quotes={quotes}/> <ScrollListener /></>}
+          {/* <FourthFold/> */}
+          <FourthFoldALT />
+          {/* <SeventhFold/> */}
+          {/* <SecondFold/> */}
+          {/* <>
+          </> */}
+          
+          <IntersectionTransitions />
+          {/* <CarouselScrollListener/> */}
+        </>
+      );
+  }
+  catch(error){
+    return (
+      <>
+        error page
+      </>
+    )
+  }
+    
+    
 }
