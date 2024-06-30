@@ -21,8 +21,7 @@ export async function register() {
                 };
             
                 cached.promise = mongoose.connect(DATABASE_URL, opts).then((mongoose) => {
-                  console.log("database connection success")
-                  return mongoose
+                  console.log("database connection success")                  
                 });
               }
               cached.conn = await cached.promise;
