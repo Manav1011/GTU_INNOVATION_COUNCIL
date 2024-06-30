@@ -3,7 +3,6 @@ export async function register() {
         const mongoose = require('mongoose');
         global.mongoose = mongoose
         require('dotenv').config()
-        
         const DATABASE_URL = `mongodb+srv://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@gic.cbipwdl.mongodb.net/GIC`;
         
         if (!DATABASE_URL) {
