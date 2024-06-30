@@ -1,6 +1,3 @@
-import FirstFold from "./components/FirstFold";
-import SecondFold from "./components/SecondFold";
-import ScrollListener from "./client/ScrollListener";
 import ThirdFold from "./components/ThirdFold";
 import FourthFold from "./components/FourthFold";
 import SecondFoldAlt from "@/app/(home)/about-us/components/SecondFoldAlt";
@@ -19,8 +16,7 @@ async function page() {
               <FourthFold/>
             </div>        
           </div>        
-      </div>
-      <ScrollListener />
+      </div>      
     </>
   );
 }
