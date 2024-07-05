@@ -4,7 +4,7 @@ async function SixthFold() {
   return (
     <></>
     // <section className="h-full w-full" style={{backgroundImage:"url('/images/backgrounds/startup.webp')",backgroundPosition:'center',backgroundSize:'cover',backgroundAttachment:'fixed'}}>
-    // <div className="min-h-screen py-20 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
+    // <div className="min-h-[100dvh] py-20 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
     //   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     //     <div className="mx-auto max-w-2xl lg:max-w-none">
     //       <div className="text-center space-y-4">

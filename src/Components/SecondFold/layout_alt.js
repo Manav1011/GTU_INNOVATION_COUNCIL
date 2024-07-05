@@ -15,7 +15,7 @@ async function SecondFoldAlt() {
   return (
     <section>
 
-    <div className="bg-white bg-opacity-40 h-fit lg:min-h-screen lg:h-screen w-full  flex flex-wrap">
+    <div className="bg-white bg-opacity-40 h-fit lg:min-h-[100dvh] lg:h-[100dvh] w-full  flex flex-wrap">
       <div className="lg:hidden w-full">
         <div className="w-full mt-7 text-center">
           <span className="w-full text-4xl font-bold text-center ml-3" style={{ color: "#2C2E90" }}>Incubation Programs</span>
@@ -31,12 +31,12 @@ async function SecondFoldAlt() {
         </div>
       </div>
       <div className="lg:w-full lg:flex lg:flex-row flex-col hidden">
-        <div className="w-full lg:w-4/12 flex lg:flex-col lg:h-screen justify-center items-center">
+        <div className="w-full lg:w-4/12 flex lg:flex-col lg:h-[100dvh] justify-center items-center">
           <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Incubation</span>
           <span className="text-7xl font-bold" style={{ color: "#2C2E90" }}>Programs &nbsp;</span>
           <p className="pt-2 text-2xl">Handholding at every stage!&nbsp; &nbsp; &nbsp; &nbsp;</p>
         </div>
-        <div className="w-8/12 flex flex-wrap h-screen items-center overflow-x-scroll">
+        <div className="w-8/12 flex flex-wrap h-[100dvh] items-center overflow-x-scroll">
           <SSIPFold></SSIPFold>
           <IDEALabFold></IDEALabFold>
           <IPFSFold></IPFSFold>

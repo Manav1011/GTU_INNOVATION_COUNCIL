@@ -1,6 +1,6 @@
 async function FourthFoldALT() {
   return (
-    <section className="bg-zinc-100	 min-h-screen">
+    <section className="bg-zinc-100	 min-h-[100dvh]">
       <div className="h-full w-full mx-auto">
         {/* Vertical Timeline #1 */}
         <div className="pt-24 flex justify-center items-center flex-col">

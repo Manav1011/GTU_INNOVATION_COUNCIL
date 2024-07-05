@@ -32,15 +32,16 @@ h1#MainGraphicHeader{
 }
 
 .roller{
-  height: 4.425rem;
-  /* line-height: 4rem; */
+  animation: slide 4s infinite;
+  /* height: 4.25rem; */
+  /* line-height: normal;
   position: relative;
   overflow: hidden; 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1D3557;
+  color: #1D3557; */
 }
 
 
@@ -55,100 +56,52 @@ h1#MainGraphicHeader{
 }
 
 .roller #rolltext {
-  position: absolute;
-  top: 10;
-  padding: 20px;
-  animation: slide 5s infinite;  
+  /* position: absolute; */
+  /* top: 10; */
+  /* padding: 20px; */
+  /* animation: slide 5s infinite;   */
 }
 
 @keyframes slide {
   0%{
-    top:0;
+    transform: translateY(0rem);
   }
   25%{
-    top: -4rem;    
+    transform: translateY(-3.5rem);
   }
   50%{
-    top: -8rem;
+    transform: translateY(-7rem);    
   }
+  /* 75%{
+    transform: translateY(0rem);    
+  } */
   100%{
-    top: 0;
+    transform: translateY(0rem);    
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .roller{
-    height: 3.425rem;
-    /* line-height: 4rem; */
-    position: relative;
-    overflow: hidden; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #1D3557;
+@keyframes bottomUp {
+  0% {
+    transform: translateY(100%);
   }
-
-@keyframes slide {
-  0%{
-    top:0;
+  50% {
+    transform: translateY(0%);
   }
-  25%{
-    top: -3.5rem;    
+  60% {
+    transform: translateY(0%);
   }
-  50%{
-    top: -7rem;
+  70% {
+    transform: translateY(0%);
   }
-  100%{
-    top: 0;
+  80% {
+    transform: translateY(0%);
+  }  
+  100% {
+    transform: translateY(-90%);
   }
-}
-#spare-time{
-  /* font-size: 1rem; */
-  /* font-style: italic; */
-  letter-spacing: 0.2rem;
-  word-spacing: 0.4rem;
-  margin-top: 0;
-  /* color: #A8DADC; */
-  
-}
 }
 
-@media screen and (max-width: 768px) {
-  .roller{
-    height: 3rem;
-    /* line-height: 4rem; */
-    position: relative;
-    overflow: hidden; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #1D3557;
-  }
-
-@keyframes slide {
-  0%{
-    top:0;
-  }
-  25%{
-    top: -3.2rem;    
-  }
-  50%{
-    top: -6.4rem;
-  }
-  100%{
-    top: 0;
-  }
-}
-#spare-time{
-  /* font-size: 1rem; */
-  /* font-style: italic; */
-  letter-spacing: 0.1rem;
-  word-spacing: 0.2rem;
-  margin-top: 0;
-  /* color: #A8DADC; */
-  
-}
+.bottom-up{
+  animation: bottomUp 2s ease-out;
 }
 

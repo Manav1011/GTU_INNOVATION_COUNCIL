@@ -7,12 +7,6 @@ function SideBarSubMenu2Mobile({ title }) {
   const HideTheSecondSubMenu = async () => {
     document.getElementById("SideBarSubMenu2Mobile").classList.add("hidden");
   };
-  const toggleSidebar = async () => {
-    let NavigationSidebar = document.getElementById("NavigationSidebar");    
-    NavigationSidebar.classList.toggle("hidden");    
-    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
-    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
-  };
    function slugify(text) {
     return text.toString().toLowerCase().trim()
       .replace(/\s+/g, '-')         // Replace spaces with -
@@ -67,7 +61,7 @@ function SideBarSubMenu2Mobile({ title }) {
   };
   return (
     <section
-      className="z-20 w-full fixed h-screen overflow-y-scroll overflow-x-hidden sm:hidden sm:w-1/4 bg-zinc-300 flex flex-col gap-10 justify-start sm:justify-center items-start sm:pt-14 pt-28"
+      className="z-20 w-full fixed h-[100dvh] overflow-y-scroll overflow-x-hidden sm:hidden sm:w-1/4 bg-zinc-300 flex flex-col gap-10 justify-start sm:justify-center items-start sm:pt-14 pt-28"
       id="SideBarSubMenu2Mobile"
     >
       <div
@@ -99,8 +93,7 @@ function SideBarSubMenu2Mobile({ title }) {
           item != 'Funding' ? (
           <Link
             href={`/${slugify(item)}`}
-            key={index}
-            onClick={() => {toggleSidebar()}}
+            key={index}            
             className={`font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
           >
             {item}

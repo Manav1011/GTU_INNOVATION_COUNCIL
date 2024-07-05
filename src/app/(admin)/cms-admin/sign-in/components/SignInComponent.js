@@ -18,7 +18,7 @@ function SignInComponent() {
     <>
       {isAuthenticated ? (
         <div>
-          <div className="flex justify-center h-screen w-full flex-col items-center relative">
+          <div className="flex justify-center h-[100dvh] w-full flex-col items-center relative">
             <div className="absolute w-full h-full backdrop-blur-sm z-20"></div>
             <div className="container sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
               <div className="w-full sm:p-8 p-4 my-4 md:px-12  mx-auto rounded-2xl shadow-2xl">
@@ -74,7 +74,7 @@ function SignInComponent() {
             </div>
           ) : null}
 
-          <div className="flex justify-center h-screen w-full flex-col items-center">
+          <div className="flex justify-center h-[100dvh] w-full flex-col items-center">
             <div className="container sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
               <div className="w-full sm:p-8 p-4 my-4 md:px-12  mx-auto rounded-2xl shadow-2xl">
                 <div className="">

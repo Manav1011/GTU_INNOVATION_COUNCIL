@@ -5,7 +5,7 @@ async function page() {
     <>
       <div className="flex justify-center flex-col items-center  sm:pt-12 pt-12">
         {/* COMPONENT CODE */}
-        <div className="container min-h-screen sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
+        <div className="container min-h-[100dvh] sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
           <div className="w-full sm:p-8 p-4 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex">
               <h1

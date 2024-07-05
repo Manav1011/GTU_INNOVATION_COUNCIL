@@ -6,10 +6,10 @@ async function page(){
     return (
         <>
             <div className="w-full mt-20 px-7 sm:px-0 gap-3 flex justify-center">
-                <div className="lg:w-1/4 h-screen hidden lg:flex mx-auto">
+                <div className="lg:w-1/4 h-[100dvh] hidden lg:flex mx-auto">
                     <PartnerALT/>
                 </div>
-                <div className="lg:w-2/3  w-full text-center flex flex-col mt-5 gap-y-8 mx-auto max-h-screen overflow-y-auto">
+                <div className="lg:w-2/3  w-full text-center flex flex-col mt-5 gap-y-8 mx-auto max-h-[100dvh] overflow-y-auto">
                     <div className="w-full">
                         <p className="w-full text-center text-5xl">
                             CIRCULARS

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <link rel="icon" href="/images/favicon.ico" sizes="any" />
     </head>
       <body style={{ backgroundColor: "#f1f5f9" }}>
-        <div className="w-full h-screen">        
+        <div className="w-full h-[100dvh]">        
         {children}        
         </div>
       </body>

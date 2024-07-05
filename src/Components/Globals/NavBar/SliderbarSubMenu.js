@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 function SliderbarSubMenu({ title }) {
-  const toggleSidebar = async () => {
-    let NavigationSidebar = document.getElementById("NavigationSidebar");    
-    NavigationSidebar.classList.toggle("hidden");    
-    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
-    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
-  };
+  // const toggleSidebar = async () => {
+  //   let NavigationSidebar = document.getElementById("NavigationSidebar");    
+  //   NavigationSidebar.classList.toggle("hidden");    
+  //   document.getElementById("NavTogglerOpen").classList.toggle('hidden')
+  //   document.getElementById("NavTogglerClosed").classList.toggle('hidden')
+  // };
    function slugify(text) {
     return text.toString().toLowerCase().trim()
       .replace(/\s+/g, '-')         // Replace spaces with -
@@ -73,7 +73,7 @@ function SliderbarSubMenu({ title }) {
             <Link
             href={`/${slugify(item)}`}
               key={index}
-              onClick={() => {toggleSidebar()}}
+              // onClick={() => {toggleSidebar()}}
               className="font-medium text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
             >
               {item}
@@ -104,7 +104,7 @@ function SliderbarSubMenu({ title }) {
                     {item[key].map((subItem, subSubIndex) => (
                       <Link
                         href={`/${slugify(subItem)}`}
-                        onClick={() => {toggleSidebar()}}
+                        // onClick={() => {toggleSidebar()}}
                         key={subSubIndex}
                         className="hover:text-orange-500 transition duration-300 ease-in-out"
                       >

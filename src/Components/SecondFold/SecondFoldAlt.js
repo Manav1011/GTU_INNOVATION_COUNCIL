@@ -10,7 +10,7 @@ async function SecondFoldAlt() {
         backgroundAttachment: "fixed",
       }}
     >    
-    <div className="min-h-screen py-20 justify-center flex items-center bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
+    <div className="min-h-[100dvh] py-20 justify-center flex items-center bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  sm:py-32 0">
       <div className="w-full" id="SecondFoldContainer">
         <div className="lg:mx-20 mx-5  opacity-0" id="SecondFoldSubContainer">
           <div className="text-center space-y-4">
@@ -83,10 +83,10 @@ async function SecondFoldAlt() {
             </span>            
           </div>
           </div>
-        <div className="h-full min-h-screen w-full  pt-20 p-4">
+        <div className="h-full min-h-[100dvh] w-full  pt-20 p-4">
           <div className="flex flex-wrap justify-center gap-2">
             <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0">
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
@@ -110,7 +110,7 @@ async function SecondFoldAlt() {
               data-aos-delay={150}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
@@ -134,13 +134,13 @@ async function SecondFoldAlt() {
               data-aos-delay={300}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
                   // priority={true}
                   loading="lazy"
-                  src="/images/secondfold/newidealab.png"
+                  src="/images/secondfold/newidealab.webp"
                   alt="default image"
                 />
               </div>
@@ -158,7 +158,7 @@ async function SecondFoldAlt() {
               data-aos-delay={300}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
@@ -182,7 +182,7 @@ async function SecondFoldAlt() {
               data-aos-delay={300}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
@@ -206,7 +206,7 @@ async function SecondFoldAlt() {
               data-aos-delay={300}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
-              <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
+              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}                  

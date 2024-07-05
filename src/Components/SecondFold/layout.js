@@ -25,7 +25,7 @@ const Page = ({
       className={`${styles.text}`}
       id="secondfolds"
     >
-      <div className="flex justify-center flex-col sm:flex-row items-center h-screen">
+      <div className="flex justify-center flex-col sm:flex-row items-center h-[100dvh]">
         {logo && <div className="w-full h-48  sm:w-1/4 text-center ">
           <Image
             height={300}
@@ -71,7 +71,7 @@ export default function SecondFold() {
 
   return (
     <>
-    <div className="h-screen bg-opacity-70 bg-slate-100" id='secondfolddiv' style={{backgroundAttachment:'fixed'}}>
+    <div className="h-[100dvh] bg-opacity-70 bg-slate-100" id='secondfolddiv' style={{backgroundAttachment:'fixed'}}>
       <Parallax
         ref={parallax}
         pages={4}

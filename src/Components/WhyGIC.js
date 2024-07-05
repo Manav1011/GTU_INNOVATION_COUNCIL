@@ -1,7 +1,7 @@
 const WhyGIC = () => {
   return (
     <div
-      className="h-screen sm:h-screen max-w-2xl border border-gray-900"
+      className="h-[100dvh] sm:h-[100dvh] max-w-2xl border border-gray-900"
       style={{ backgroundImage: "url('/images/stocks/TOYOTA.webp')",backgroundSize:'cover',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",          

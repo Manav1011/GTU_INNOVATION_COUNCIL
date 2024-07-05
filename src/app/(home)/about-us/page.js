@@ -8,8 +8,8 @@ async function page() {
   return (
     <>
       <div className="flex" id="about-us-container">
-        <div className="flex flex-col w-full">
-            <div className="w-full h-full overflow-scroll" id="about-us-section">
+        <div className="flex flex-col w-full bg-black backdrop-blur-md">
+            <div className="w-full h-full overflow-scroll " id="about-us-section" >
               <FirstFoldAlt />
               <SecondFoldAlt />
               <ThirdFold/>

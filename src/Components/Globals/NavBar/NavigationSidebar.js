@@ -4,22 +4,16 @@ import Link from "next/link";
 import SliderbarSubMenu from "./SliderbarSubMenu";
 import SideBarSubMenu2Mobile from "./SideBarSubMenu2Mobile";
 
-function NavigationSidebar() {
-  const toggleSidebar = async () => {
-    let NavigationSidebar = document.getElementById("NavigationSidebar");    
-    NavigationSidebar.classList.toggle("hidden");    
-    document.getElementById("NavTogglerOpen").classList.toggle('hidden')
-    document.getElementById("NavTogglerClosed").classList.toggle('hidden')
-  };
+function NavigationSidebar() {  
   const [selectedMenuDesktop, setSelectedMenuDesktop] = useState("gic-verticals");
   const [selectedMenuPhone, setSelectedMenuPhone] = useState(null);
   return (
     <section
-      className="w-full z-20 fixed h-screen bg-slate-50 hidden bottomUPTitle overflow-y-scroll sm:overflow-y-hidden"
+      className="w-full z-20 fixed h-[100dvh] bg-slate-50 hidden bottomUPTitle overflow-y-scroll sm:overflow-y-hidden"
       id="NavigationSidebar"
     >
       <div className="h-full w-full flex">
-        <div className="h-full w-full sm:w-1/4 bg-zinc-300 flex justify-start sm:justify-center sm:pt-28 pt-28">
+        <div className="h-full w-full sm:w-1/4 bg-zinc-300 flex justify-start sm:justify-center sm:pt-20 pt-20">
           <div
             className="flex flex-col gap-10 mx-4 sm:mx-0 w-full"
             style={{ fontFamily: "OSWALD" }}
@@ -142,7 +136,23 @@ function NavigationSidebar() {
                 <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
               </svg>
             </div>
-            <Link href="/about-us" onClick={() => {toggleSidebar()}} className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScemptmi9LFonX5U1VyoPwVZ_K7-8EVIcss2op1GdBY9GZ4rw/viewform" target="_blank" className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
+              Send Inquiry
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={16}
+                height={16}
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+              </svg>
+            </Link>
+            <Link href="/about-us" className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
               About
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +168,7 @@ function NavigationSidebar() {
                 />
               </svg>
             </Link>
-            <Link href={'/reach-us'} onClick={() => {toggleSidebar()}} className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
+            <Link href={'/reach-us'} className="cursor-pointer font-bold text-lg flex flex-row items-center sm:justify-center gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
               Reach Us
               <svg
                 xmlns="http://www.w3.org/2000/svg"

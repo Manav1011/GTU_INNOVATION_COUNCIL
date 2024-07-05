@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function MainGraphic() {
   return (
     <section>
@@ -61,43 +60,51 @@ export default function MainGraphic() {
             as="image"
           />
           <div
-            className="h-full w-full flex flex-col bg-black  backdrop-filter bg-opacity-50"
+            className="h-full w-full flex flex-col bg-black  backdrop-filter bg-opacity-20"
             style={{ backdropFilter: "blur(3px)" }}
           >
             <div className="main">
-              <h1
+              <div
                 id="MainGraphicHeader"
                 className="my-2 leading-10 font-bold w-full"
               >
-                <div className="roller">
-                  <span id="rolltext">
-                    <span
-                      className="lg:text-6xl sm:text-4xl md:text-5xl text-orange-600"
-                      style={{ fontFamily: "Azonix" }}
-                    >
-                      Igniting Innovation
-                    </span>
-                    <br />
-                    <span
-                      className="lg:text-6xl sm:text-4xl md:text-5xl text-black"
-                      style={{ fontFamily: "Azonix" }}
-                    >
-                      Empowering Enterpreneurs
-                    </span>
-                    <br />
-                    <span
-                      className="lg:text-6xl sm:text-4xl md:text-5xl text-white"
-                      style={{ fontFamily: "Azonix" }}
-                    >
-                      Elevating Excellence
-                    </span>
-                    <br />
-                    {/* <span id="spare-time">too much spare time?</span> */}
-                    <br />
-                  </span>
+                <div className="sm:h-[2.5rem] lg:h-[3rem] xl:h-[3.5rem] 2xl:h-[4.5rem] flex items-center flex-col justify-start overflow-hidden">
+                  <div className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+                    <div className="rolling-up-text bottom-up hidden">
+                      <span
+                        className="text-orange-600"
+                        style={{ fontFamily: "Azonix" }}
+                        id="igniting-innovation-span"
+                      >
+                        Igniting Innovation
+                      </span>
+                    </div>
+                    <div className="rolling-up-text bottom-up hidden">
+                      <span
+                        className=" text-black"
+                        style={{ fontFamily: "Azonix" }}
+                      >
+                        Empowering Enterpreneurs
+                      </span>
+                    </div>
+                    <div className="rolling-up-text bottom-up hidden">
+                      <span
+                        className=" text-white"
+                        style={{ fontFamily: "Azonix" }}
+                      >
+                        Elevating Excellence
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <span className="text-emerald-200 lg:text-xl mx:text-lg sm:text-md bg-gradient-to-r from-emerald-200 to-green-500 text-transparent bg-clip-text " id="spare-time">Welcome to the Gateway of Opportunities at GTU Innovation Council</span>
-              </h1>
+                <span
+                  className="text-emerald-200 sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl bg-gradient-to-r from-emerald-200 to-green-500 text-transparent bg-clip-text "
+                  id="spare-time"
+                >
+                  Welcome to the Gateway of Opportunities at GTU Innovation
+                  Council
+                </span>
+              </div>
             </div>
             {/* <div className="slide-right bg-gray-900 mb-2 text-left bg-clip-padding backdrop-filter rounded-r-full backdrop-blur-sm bg-opacity-75 p-10">
             <h1

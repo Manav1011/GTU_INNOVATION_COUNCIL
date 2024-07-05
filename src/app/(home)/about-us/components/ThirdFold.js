@@ -1,11 +1,12 @@
 async function ThirdFold() {
   return (
     <section
-    className="h-screen min-h-screen w-full min-w-screen overflow-hidden bg-stone-500"
+    className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden bg-stone-500"
     style={{
       backgroundImage:
         "url('/images/backgrounds/white-black-grad.png')",
       backgroundAttachment: "fixed",
+      backgroundSize:'cover',
     }}
   >
     <div className="h-full w-full flex flex-col items-center justify-center" id="about-us-thirdfold-content">

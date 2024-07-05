@@ -1,7 +1,7 @@
 import Link from "next/link";
 async function page() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-indigo-300 bg-opacity-30 backdrop-filter backdrop-blur-sm">
+    <div className="w-screen h-[100dvh] flex justify-center items-center bg-indigo-300 bg-opacity-30 backdrop-filter backdrop-blur-sm">
       <div className="cursor-pointer	fixed top-0 left-0 ml-10 mt-10">
       <Link href='/'>
         <svg

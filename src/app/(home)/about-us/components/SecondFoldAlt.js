@@ -1,11 +1,12 @@
 async function SecondFoldAlt() {
   return (    
           <section
-            className="h-screen min-h-screen w-full min-w-screen overflow-hidden bg-gray-500"
+            className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden bg-gray-500"
             style={{
               backgroundImage:
                 "url('/images/backgrounds/white-black-grad.png')",
               backgroundAttachment: "fixed",
+              backgroundSize:'cover'
             }}
           >
           <div

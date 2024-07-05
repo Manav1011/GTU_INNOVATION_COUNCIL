@@ -7,7 +7,7 @@ import Ssip_mob_view from "@/Components/SecondFold/Ssip_mob_view";
 
 async function PartnerALT() {
   return (
-    <div className="bg-white bg-opacity-40 min-h-screen h-screen w-full  items-center justify-center lg:flex hidden">
+    <div className="bg-white bg-opacity-40 min-h-[100dvh] h-[100dvh] w-full  items-center justify-center lg:flex hidden">
       <div className="flex-col w-full">
         <div className="w-full mt-7 text-center">
           <span className="w-full text-4xl font-bold text-center " style={{ color: "#2C2E90" }}>Incubation Programs</span>

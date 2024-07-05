@@ -1,10 +1,11 @@
 async function FirstFoldAlt() {
   return (        
           <section
-            className="h-screen min-h-screen w-full min-w-screen overflow-hidden bg-slate-500"
+            className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden bg-slate-500"
             style={{
               backgroundImage:
                 "url('/images/backgrounds/white-black-grad.png')",
+                backgroundSize:'cover',
               backgroundAttachment: "fixed",
             }}
           >
@@ -20,7 +21,7 @@ async function FirstFoldAlt() {
           WHO WE ARE
         </div>
         <div
-          className="bottomUPContent lg:text-3xl sm:text-xl text-ms px-5 xs:text-2xl xs:pt-20 sm:px-20 pt-10 sm:pt-10 text-center"
+          className="bottomUPContent lg:text-3xl sm:text-2xl px-5 xs:text-xl xs:pt-10 sm:px-20 pt-10 sm:pt-10 text-center"
           style={{ fontFamily: "SairaCondensed" }}
         >
           {

@@ -2,7 +2,7 @@ async function FirstFold() {
   return (
     <div
       id="about-us-firstfold"
-      className="h-screen w-screen flex flex-col items-center justify-start"
+      className="h-[100dvh] w-screen flex flex-col items-center justify-start"
       style={{ backgroundAttachment: "fixed" }}
     >
       <div

@@ -2,7 +2,7 @@ async function SecondFold() {
   return (
     <div
       id="about-us-secondfold"
-      className="h-screen w-screen"
+      className="h-[100dvh] w-screen"
       style={{ ddbackground: "#CFD8D7", backgroundAttachment: "fixed" }}
     >
       <div

@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="sm:h-screen flex justify-between flex-col"
+    <div className="sm:h-[100dvh] flex justify-between flex-col"
     style={{
               backgroundImage:
               "url('/images/backgrounds/footer-landscape.png')",              
