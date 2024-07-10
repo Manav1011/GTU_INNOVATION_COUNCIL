@@ -12,7 +12,7 @@ export default function MainGraphic() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             width: "100%",
-            height: "100vh",
+            height: "100dvh",
           }}
         >
           <div
@@ -51,7 +51,7 @@ export default function MainGraphic() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             width: "100%",
-            height: "100vh",
+            height: "100dvh",
           }}
         >
           <link

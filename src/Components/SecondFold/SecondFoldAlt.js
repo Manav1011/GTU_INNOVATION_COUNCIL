@@ -93,6 +93,7 @@ async function SecondFoldAlt() {
                   // priority={true}
                   loading="lazy"
                   src="/images/secondfold/SSIP.webp"
+                  className="w-auto h-auto"
                   alt="default image"
                 />
               </div>
@@ -117,6 +118,7 @@ async function SecondFoldAlt() {
                   // priority={true}
                   loading="lazy"
                   src="/images/secondfold/IPR.webp"
+                  className="w-auto h-auto"
                   alt="default image"
                 />
               </div>
@@ -141,6 +143,7 @@ async function SecondFoldAlt() {
                   // priority={true}
                   loading="lazy"
                   src="/images/secondfold/newidealab.webp"
+                  className="w-auto h-auto"
                   alt="default image"
                 />
               </div>
@@ -165,6 +168,7 @@ async function SecondFoldAlt() {
                   // priority={true}
                   loading="lazy"
                   src="/images/secondfold/MIC.webp"
+                  className="w-auto h-auto"
                   alt="default image"
                 />
               </div>
@@ -189,6 +193,7 @@ async function SecondFoldAlt() {
                   // priority={true}
                   loading="lazy"
                   src="/images/secondfold/DIC.webp"
+                  className="w-auto h-auto"
                   alt="default image"
                 />
               </div>
@@ -212,6 +217,7 @@ async function SecondFoldAlt() {
                   height={40}                  
                   src="/images/secondfold/NSTEDB.webp"
                   alt="default image"
+                  className="w-auto h-auto"
                   // placeholder="blur"
                   loading="lazy"
                 />

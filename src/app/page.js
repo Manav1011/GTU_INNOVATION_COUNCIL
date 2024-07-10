@@ -13,11 +13,16 @@ import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
 import Preloaders from "@/Components/Client/Preloaders";
+import NavBarLatest from "@/Components/Globals/NavBar/NavBarLatest";
+import Footer from "@/Components/Globals/Footer/Footer";
+import GlobalRouteListener from "./GlobalRouteListener";
+import NavScrollListener from "@/Components/Client/NavScrollListener";
 
 export default function Home() {
   return (
     <>
     {/* <Preloaders/>    */}
+      <NavBarLatest/>            
       <MainGraphic/> 
       {/* <SixthFold/> */}
       <SecondFoldAlt/>
@@ -32,6 +37,9 @@ export default function Home() {
       </> */}      
       <ScrollListener/>       
       <IntersectionTransitions/>
+      <Footer/>   
+      <NavScrollListener/>
+      <GlobalRouteListener/>
        {/* <CarouselScrollListener/> */}
     </>
   );

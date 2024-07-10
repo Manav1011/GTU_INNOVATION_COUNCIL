@@ -1,6 +1,6 @@
 import ThirdFold from "./components/ThirdFold";
 import FourthFold from "./components/FourthFold";
-import SecondFoldAlt from "@/app/(home)/about-us/components/SecondFoldAlt";
+import SecondFoldAlt from "@/app/about-us/components/SecondFoldAlt";
 import FirstFoldAlt from "./components/FirstFoldAlt";
 
 
