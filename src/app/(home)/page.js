@@ -20,7 +20,7 @@ export default async function Home() {
 
   let response
   try {
-     response = await fetch(`http://localhost:4000/manage`, {
+     response = await fetch(`http://localhost:4000/manage`,{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
