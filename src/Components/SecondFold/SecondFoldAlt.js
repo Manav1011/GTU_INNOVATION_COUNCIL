@@ -1,5 +1,5 @@
 import Image from "next/image";
-async function SecondFoldAlt() {
+async function SecondFoldAlt({startups,partners}) {
   return (
     <section
       className="h-full w-full"
@@ -27,7 +27,37 @@ async function SecondFoldAlt() {
             </p>
           </div>
           <dl className="mt-8 sm:mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4" id="stats-container">
-            <div className="flex stats-block flex-col bg-black p-4 bg-opacity-90">
+            {
+              startups.map((startup,index)=>{
+                const rem = startups.length % 4 
+                if(rem == 1 && index == startups.length -1){
+                  return(
+                    <div className="flex stats-block flex-col bg-black sm:bg-slate-200 bg-opacity-30 sm:bg-opacity-90 p-8" style={{ gridColumn: '1 / -1' }}>
+                      <dt className="text-sm font-semibold leading-6 text-slate-300 sm:text-slate-700">
+                      {startup.title}  
+                      </dt>
+                      <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-black stats" data-target={startup.content}>
+                      {startup.content}
+                      </dd>
+                    </div>
+                  )
+                }
+                else{
+                  return (
+                    <div className={`flex stats-block flex-col ${index % 2 == 0 ? 'bg-black' : 'bg-white'} p-4 bg-opacity-90`} key={index}>
+                    <dt className={`text-sm font-semibold leading-6 ${index % 2 == 0 ? 'text-slate-300' : 'text-slate-700'}`}>
+                      {startup.title}
+                    </dt>
+                    <dd className={`order-first text-3xl font-semibold tracking-tight  ${index % 2 == 0 ? 'text-white' : 'text-black'} stats`} data-target={startup.content}>
+                    {startup.content}
+                    </dd>
+                  </div>        
+                  )
+                }
+                  
+              })
+            }
+            {/* <div className="flex stats-block flex-col bg-black p-4 bg-opacity-90">
               <dt className="text-sm font-semibold leading-6 text-slate-300">
                 Application Received SSIP + NI (2500 + 150)
               </dt>
@@ -66,51 +96,29 @@ async function SecondFoldAlt() {
               <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-black stats" data-target="500">
                 500
               </dd>
-            </div>
+            </div> */}
         
           </dl>
         </div>
       </div>
     </div>    
       <div className="h-full w-full py-10 bg-slate-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30" id="ThirdFoldContainer">
-      <div className="text-center">
-      <div className="text-center flex  w-full sm:flex-row flex-col justify-center gap-3 opacity-0" id="third-fold-title">
+        <div className="text-center">
+          <div className="text-center flex  w-full sm:flex-row flex-col justify-center gap-3 opacity-0" id="third-fold-title">
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 sm:text-6xl text-6xl font-semibold"
               style={{ fontFamily: "oswald" }}
             >
               OUR PARTNERS
-            </span>            
+            </span>
           </div>
           </div>
         <div className="h-full min-h-[100dvh] w-full  pt-20 p-4">
           <div className="flex flex-wrap justify-center gap-2">
-            <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0">
-              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
-                <Image
-                  width={40}
-                  height={40}
-                  // priority={true}
-                  loading="lazy"
-                  src="/images/secondfold/SSIP.webp"
-                  className="w-auto h-auto"
-                  alt="default image"
-                />
-              </div>
-              <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                Student Startup and Innovation Policy
-              </h1>
-              <p className="px-4 text-gray-500">
-                The Government of Gujarat's policy supports startups and
-                innovation, assisting individuals and institutions like
-                universities and R&D centers. These institutions also mentor
-                innovators, boosting the economy's technological performance.
-              </p>
-            </div>
-            <div
-              data-aos-delay={150}
-              className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
-            >
+            {
+              partners.map((partner,index)=>{
+                  return (
+                    <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0" key={index}>
               <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
@@ -123,115 +131,15 @@ async function SecondFoldAlt() {
                 />
               </div>
               <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                Intellectual Property Facilitation Centre
+                {partner.title}
               </h1>
               <p className="px-4 text-gray-500">
-                IPFC for MSMEs, established at ni-msme in August 2009, provides
-                consultancy on trademarks, copyrights, patents, and more. It
-                offers incentives for national and international patents and
-                geographical indications.
+                {partner.about}
               </p>
             </div>
-            <div
-              data-aos-delay={300}
-              className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
-            >
-              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
-                <Image
-                  width={40}
-                  height={40}
-                  // priority={true}
-                  loading="lazy"
-                  src="/images/secondfold/newidealab.webp"
-                  className="w-auto h-auto"
-                  alt="default image"
-                />
-              </div>
-              <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                IDEA Lab
-              </h1>
-              <p className="px-4 text-gray-500">
-                AICTE-IDEA Labs enhance STEM learning and hands-on experience,
-                promoting skills like critical thinking and creativity. They
-                empower students and faculty for multidisciplinary education and
-                research.
-              </p>
-            </div>
-            <div
-              data-aos-delay={300}
-              className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
-            >
-              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
-                <Image
-                  width={40}
-                  height={40}
-                  // priority={true}
-                  loading="lazy"
-                  src="/images/secondfold/MIC.webp"
-                  className="w-auto h-auto"
-                  alt="default image"
-                />
-              </div>
-              <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                MIC
-              </h1>
-              <p className="px-4 text-gray-500">
-                The Ministry of Education's Innovation Cell fosters innovation
-                in Higher Education Institutions nationwide. It creates an
-                ecosystem from idea generation to successful startups and
-                designs a ranking system for innovative institutions.
-              </p>
-            </div>
-            <div
-              data-aos-delay={300}
-              className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
-            >
-              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
-                <Image
-                  width={40}
-                  height={40}
-                  // priority={true}
-                  loading="lazy"
-                  src="/images/secondfold/DIC.webp"
-                  className="w-auto h-auto"
-                  alt="default image"
-                />
-              </div>
-              <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                Design Innovation Centre
-              </h1>
-              <p className="px-4 text-gray-500">
-                The Gujarat Technological University's Design Innovation Centre,
-                funded by the Ministry of Education in May 2018, provides a
-                platform for students, faculty, and researchers to transform
-                their ideas into design innovations.
-              </p>
-            </div>
-            <div
-              data-aos-delay={300}
-              className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
-            >
-              <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
-                <Image
-                  width={40}
-                  height={40}                  
-                  src="/images/secondfold/NSTEDB.webp"
-                  alt="default image"
-                  className="w-auto h-auto"
-                  // placeholder="blur"
-                  loading="lazy"
-                />
-              </div>
-              <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                NSTEDB
-              </h1>
-              <p className="px-4 text-gray-500">
-                Established in 1982, the National Science & Technology
-                Entrepreneurship Development Board (NSTEDB) promotes
-                self-employment and innovation among S&T professionals, under
-                the Department of Science & Technology.
-              </p>
-            </div>
+                  )
+              })
+            }
           </div>
         </div>
       </div>

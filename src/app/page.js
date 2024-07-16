@@ -18,24 +18,87 @@ import Footer from "@/Components/Globals/Footer/Footer";
 import GlobalRouteListener from "./GlobalRouteListener";
 import NavScrollListener from "@/Components/Client/NavScrollListener";
 
-export default function Home() {
+export default async function Home() {
+  let partners = null
+  let startups = null
+  let quotes = null
+
+  let response
+  try {
+     response = await fetch(`http://localhost:4000/manage`,{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `
+          query{
+            startups {
+              slug
+              title
+              content
+            }
+            quotes {
+              slug
+              content
+              author
+              designation
+            }
+            partners {
+              logo
+              slug
+              title
+              about
+              url
+            }
+            }
+        `,
+      }),
+    });
+
+    if (!response.ok) {
+      console.log(response)
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    partners = data.data.partners
+    quotes = data.data.quotes
+    startups = data.data.startups
+    console.log(partners)
+
+  } catch (error) {
+    console.log(error)
+    console.error("Error fetching data:", error);
+  }
+
   return (
     <>
     {/* <Preloaders/>    */}
       <NavBarLatest/>            
       <MainGraphic/> 
       {/* <SixthFold/> */}
-      <SecondFoldAlt/>
+      {
+        startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />
+      }
+      
       {/* <SecondFoldAlt/> */}
       <ThirdFoldAlt/>             
-      <FifthFold/>
+      {
+        quotes && <FifthFold quotes={quotes} /> 
+    
+      }
+      
       {/* <FourthFold/> */}
       <FourthFoldALT/>
       {/* <SeventhFold/> */}
       {/* <SecondFold/> */}
       {/* <>
       </> */}      
-      <ScrollListener/>       
+      {
+        quotes && <ScrollListener/>   
+      }          
       <IntersectionTransitions/>
       <Footer/>   
       <NavScrollListener/>
