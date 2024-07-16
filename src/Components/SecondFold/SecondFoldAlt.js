@@ -1,5 +1,5 @@
 import Image from "next/image";
-async function SecondFoldAlt() {
+async function SecondFoldAlt({startups,partners}) {
   return (
     <section
       className="h-full w-full"
@@ -27,7 +27,37 @@ async function SecondFoldAlt() {
             </p>
           </div>
           <dl className="mt-8 sm:mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4" id="stats-container">
-            <div className="flex stats-block flex-col bg-black p-4 bg-opacity-90">
+            {
+              startups.map((startup,index)=>{
+                const rem = startups.length % 4 
+                if(rem == 1 && index == startups.length -1){
+                  return(
+                    <div className="flex stats-block flex-col bg-black sm:bg-slate-200 bg-opacity-30 sm:bg-opacity-90 p-8" style={{ gridColumn: '1 / -1' }}>
+                      <dt className="text-sm font-semibold leading-6 text-slate-300 sm:text-slate-700">
+                      {startup.title}  
+                      </dt>
+                      <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-black stats" data-target={startup.content}>
+                      {startup.content}
+                      </dd>
+                    </div>
+                  )
+                }
+                else{
+                  return (
+                    <div className={`flex stats-block flex-col ${index % 2 == 0 ? 'bg-black' : 'bg-white'} p-4 bg-opacity-90`} key={index}>
+                    <dt className={`text-sm font-semibold leading-6 ${index % 2 == 0 ? 'text-slate-300' : 'text-slate-700'}`}>
+                      {startup.title}
+                    </dt>
+                    <dd className={`order-first text-3xl font-semibold tracking-tight  ${index % 2 == 0 ? 'text-white' : 'text-black'} stats`} data-target={startup.content}>
+                    {startup.content}
+                    </dd>
+                  </div>        
+                  )
+                }
+                  
+              })
+            }
+            {/* <div className="flex stats-block flex-col bg-black p-4 bg-opacity-90">
               <dt className="text-sm font-semibold leading-6 text-slate-300">
                 Application Received SSIP + NI (2500 + 150)
               </dt>
@@ -66,7 +96,7 @@ async function SecondFoldAlt() {
               <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-black stats" data-target="500">
                 500
               </dd>
-            </div>
+            </div> */}
         
           </dl>
         </div>
@@ -85,28 +115,32 @@ async function SecondFoldAlt() {
           </div>
         <div className="h-full min-h-[100dvh] w-full  pt-20 p-4">
           <div className="flex flex-wrap justify-center gap-2">
-            <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0">
+            {
+              partners.map((partner,index)=>{
+                  return (
+                    <div className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0" key={index}>
               <div className="mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-white shadow-lg shadow-teal-500/40">
                 <Image
                   width={40}
                   height={40}
                   // priority={true}
                   loading="lazy"
-                  src="/images/secondfold/SSIP.webp"
+                  src="/images/secondfold/IPR.webp"
                   alt="default image"
                 />
               </div>
               <h1 className="text-darken mb-3 text-md font-bold uppercase">
-                Student Startup and Innovation Policy
+                {partner.title}
               </h1>
               <p className="px-4 text-gray-500">
-                The Government of Gujarat's policy supports startups and
-                innovation, assisting individuals and institutions like
-                universities and R&D centers. These institutions also mentor
-                innovators, boosting the economy's technological performance.
+                {partner.about}
               </p>
             </div>
-            <div
+                  )
+              })
+            }
+            
+            {/* <div
               data-aos-delay={150}
               className="rounded-xl w-full lg:w-1/4 min-h-72 bg-white p-6 text-center shadow-xl partner-card opacity-0"
             >
@@ -225,7 +259,7 @@ async function SecondFoldAlt() {
                 self-employment and innovation among S&T professionals, under
                 the Department of Science & Technology.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

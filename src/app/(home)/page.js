@@ -13,24 +13,85 @@ import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
 import Preloaders from "@/Components/Client/Preloaders";
+export default async function Home() {
+  let partners = null
+  let startups = null
+  let quotes = null
 
-export default function Home() {
+  let response
+  try {
+     response = await fetch(`http://localhost:4000/manage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `
+          query{
+            startups {
+              slug
+              title
+              content
+            }
+            quotes {
+              slug
+              content
+              author
+              designation
+            }
+            partners {
+              logo
+              slug
+              title
+              about
+              url
+            }
+            }
+        `,
+      }),
+    });
+
+    if (!response.ok) {
+      console.log(response)
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    partners = data.data.partners
+    quotes = data.data.quotes
+    startups = data.data.startups
+
+  } catch (error) {
+    console.log(error)
+    console.error("Error fetching data:", error);
+  }
+
   return (
     <>
     {/* <Preloaders/>    */}
       <MainGraphic/> 
       {/* <SixthFold/> */}
-      <SecondFoldAlt/>
+      {
+        startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />
+      }
+      
       {/* <SecondFoldAlt/> */}
       <ThirdFoldAlt/>             
-      <FifthFold/>
+      {
+        quotes && <FifthFold quotes={quotes} /> 
+    
+      }
+      
       {/* <FourthFold/> */}
       <FourthFoldALT/>
       {/* <SeventhFold/> */}
       {/* <SecondFold/> */}
       {/* <>
       </> */}      
-      <ScrollListener/>       
+      {
+        quotes && <ScrollListener/>   
+      }          
       <IntersectionTransitions/>
        {/* <CarouselScrollListener/> */}
     </>
