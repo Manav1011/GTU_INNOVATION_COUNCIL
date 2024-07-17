@@ -22,19 +22,19 @@ export default function MainGraphic() {
             <div className="pt-40 z-10 bg-white slide-right mb-2 text-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 mx-3">
               <h1
                 className=" text-black my-2 leading-10 sm:leading-1 font-bold"
-                style={{ fontFamily: "Azonix", fontSize: "3em" }}
+                style={{ fontFamily: "AvenirBlack", fontSize: "3em" }}
               >
                 Igniting Innovation
               </h1>
               <h1
                 className="text-slate-500 my-2 leading-10 sm:leading-1 text-md font-bold"
-                style={{ fontFamily: "Azonix", fontSize: "1.2em" }}
+                style={{ fontFamily: "AvenirBlack", fontSize: "1.2em" }}
               >
                 Empowering Entrepreneurs
               </h1>
               <div
                 className="font-semibold	sm:font-normal text-slate-400 "
-                style={{ fontFamily: "OSWALD", fontSize: "1em" }}
+                style={{ fontFamily: "AvenirLight", fontSize: "1em" }}
               >
                 Welcome to the Gateway of Opportunities at GTU Innovation
                 Council
@@ -60,7 +60,7 @@ export default function MainGraphic() {
             as="image"
           />
           <div
-            className="h-full w-full flex flex-col bg-black  backdrop-filter bg-opacity-20"
+            className="h-full w-full flex flex-col bg-black  backdrop-filter bg-opacity-30"
             style={{ backdropFilter: "blur(3px)" }}
           >
             <div className="main">
@@ -68,12 +68,12 @@ export default function MainGraphic() {
                 id="MainGraphicHeader"
                 className="my-2 leading-10 font-bold w-full"
               >
-                <div className="sm:h-[2.5rem] lg:h-[3rem] xl:h-[3.5rem] 2xl:h-[4.5rem] flex items-center flex-col justify-start overflow-hidden">
-                  <div className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+                <div className="sm:h-[2.5rem] lg:h-[3rem] xl:h-[3.5rem] 2xl:h-[7rem] flex items-center flex-col justify-start overflow-hidden">
+                  <div className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl">
                     <div className="rolling-up-text bottom-up hidden">
                       <span
                         className="text-orange-600"
-                        style={{ fontFamily: "Azonix" }}
+                        style={{ fontFamily: "AvenirBlack" }}
                         id="igniting-innovation-span"
                       >
                         Igniting Innovation
@@ -82,7 +82,7 @@ export default function MainGraphic() {
                     <div className="rolling-up-text bottom-up hidden">
                       <span
                         className=" text-black"
-                        style={{ fontFamily: "Azonix" }}
+                        style={{ fontFamily: "AvenirBlack" }}
                       >
                         Empowering Enterpreneurs
                       </span>
@@ -90,7 +90,7 @@ export default function MainGraphic() {
                     <div className="rolling-up-text bottom-up hidden">
                       <span
                         className=" text-white"
-                        style={{ fontFamily: "Azonix" }}
+                        style={{ fontFamily: "AvenirBlack" }}
                       >
                         Elevating Excellence
                       </span>

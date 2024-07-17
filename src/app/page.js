@@ -18,6 +18,7 @@ import Footer from "@/Components/Globals/Footer/Footer";
 import GlobalRouteListener from "./GlobalRouteListener";
 import NavScrollListener from "@/Components/Client/NavScrollListener";
 
+export const dynamic = 'force-dynamic'
 export default async function Home() {
   let partners = null
   let startups = null

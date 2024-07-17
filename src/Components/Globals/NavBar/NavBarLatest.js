@@ -13,6 +13,7 @@ async function NavBarLatest() {
               width={200}
               height={192}
               priority={true}
+              id="gtu-logo"
               className="h-auto w-14"
               src="/images/logos/gtu.png"
               alt="Your Company"
@@ -25,6 +26,7 @@ async function NavBarLatest() {
               width={200}
               height={192}
               priority={true}
+              id="gic-logo"
               className="h-auto w-24"
               src="/images/logos/GISC.png"
               alt="Your Company"

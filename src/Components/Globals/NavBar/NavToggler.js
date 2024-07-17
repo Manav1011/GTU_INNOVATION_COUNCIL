@@ -4,6 +4,9 @@ import { useState } from "react";
 function NavToggler() {
   // const [SidebarOn, setSidebarOn] = useState(false);
   const toggleSidebar = async () => {
+    document.body.classList.toggle('sm:overflow-hidden')
+    document.getElementById('gtu-logo').classList.toggle('sm:hidden')
+    document.getElementById('gic-logo').classList.toggle('sm:hidden')
     let NavigationSidebar = document.getElementById("NavigationSidebar");    
     NavigationSidebar.classList.toggle("hidden");    
     document.getElementById("NavTogglerOpen").classList.toggle('hidden')
