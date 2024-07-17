@@ -23,10 +23,12 @@ module.exports = {
         'fade-in-up': 'fade-in-up 0.5s ease-out',
       },
       screens: {
-        'xs': '340px',
+        'xss':'361px',
+        'xs': '400px',
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',
+        'lg2': '1025px',
         'xl': '1280px',
         '2xl': '1536px',
         '3xl': '1980px',

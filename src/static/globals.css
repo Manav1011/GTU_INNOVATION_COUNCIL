@@ -11,21 +11,20 @@
   height: 0;
   background: transparent;
 }
-/* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   height: 0;
   width: 0;
   background: black;
 }
 
-.main{
+/* .main{
   height:100vh;
   width:100%;  
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-}
+} */
 h1#MainGraphicHeader{
   text-align:center;
   text-transform: uppercase;    
@@ -48,9 +47,9 @@ h1#MainGraphicHeader{
 #spare-time{
   /* font-size: 1rem; */
   /* font-style: italic; */
-  letter-spacing: 0.3rem;
+  /* letter-spacing: 0.3rem;
   word-spacing: 0.5rem;
-  margin-top: 0;
+  margin-top: 0; */
   /* color: #A8DADC; */
   
 }
@@ -105,3 +104,12 @@ h1#MainGraphicHeader{
   animation: bottomUp 2s ease-out;
 }
 
+#mainGraphicContainer{
+  background-image: url('/images/backgrounds/GTU_CAMPUS_6.webp');
+}
+
+@media screen and (max-width: 1024px) {
+  #mainGraphicContainer{
+    background-image: url('/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp');
+  }
+}

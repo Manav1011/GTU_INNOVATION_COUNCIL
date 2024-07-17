@@ -17,7 +17,7 @@ function NavToggler() {
 
   // },[])
   return (
-    <div className="pl-1 cursor-pointer" onClick={toggleSidebar}>      
+    <div className="cursor-pointer" onClick={toggleSidebar}>      
     <div className="hidden" id="NavTogglerOpen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ function NavToggler() {
     </div>
         <div className="" id="NavTogglerClosed">
         <svg
-          viewBox="0 0 32 32"
+          viewBox="0 0 30 40"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="presentation"
@@ -49,8 +49,8 @@ function NavToggler() {
           style={{
             display: "block",
             fill: "none",
-            height: 32,
-            width: 32,
+            height: 40,
+            width: 40,
             stroke: "currentcolor",
             strokeWidth: 3,
             overflow: "visible",

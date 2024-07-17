@@ -5,8 +5,8 @@ import NavToggler from "./NavToggler";
 async function NavBarLatest() {
   return (
     <section>
-    <nav className="w-full fixed top-0 z-40 backdrop-filter bg-opacity-80 topToBottom  rounded-b-2xl" id="navbar-main">
-      <div className="flex justify-between mx-5 sm:mx-20 mt-2 items-center">
+    <nav className="w-full fixed z-40 backdrop-filter bg-white topToBottom" id="navbar-main">
+      <div className="flex justify-between mx-5 sm:mx-20 items-center">
         <div className="">
           <Link href="/" className="">
             <Image
