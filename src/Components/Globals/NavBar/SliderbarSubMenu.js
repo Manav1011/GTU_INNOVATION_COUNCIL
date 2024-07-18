@@ -66,7 +66,7 @@ function SliderbarSubMenu({ title }) {
   };
 
   return (
-    <div className="mt-40 pb-48 flex  flex-wrap flex-col gap-10 ml-40 h-full w-full">
+    <div className="mt-40 pb-48 flex flex-wrap flex-col gap-10 ml-[10%] 2xl:ml-40 h-full w-full ">
       {Menus[title]?.map((item, index) => {
         if (typeof item === "string") {
           return (
@@ -74,7 +74,7 @@ function SliderbarSubMenu({ title }) {
             href={`/${slugify(item)}`}
               key={index}
               // onClick={() => {toggleSidebar()}}
-              className="font-medium text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+              className="font-medium lg:text-xl xl:text-3xl 2xl:text-4xl text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
             >
               {item}
               <svg

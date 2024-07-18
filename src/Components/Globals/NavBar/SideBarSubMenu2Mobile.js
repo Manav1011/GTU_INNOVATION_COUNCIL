@@ -87,14 +87,14 @@ function SideBarSubMenu2Mobile({ title }) {
       </div>
       <div
         className="flex flex-col gap-10 px-4 sm:mx-0 w-full"
-        style={{ fontFamily: "OSWALD" }}
+        style={{ fontFamily: "AvenirLight" }}
       >
         {Menus[title].map((item, index) => (
           item != 'Funding' ? (
           <Link
             href={`/${slugify(item)}`}
             key={index}            
-            className={`font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
+            className={`font-light sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
           >
             {item}
           </Link>
@@ -118,7 +118,7 @@ function SideBarSubMenu2Mobile({ title }) {
                 width={32}
                 height={32}
                 fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
+                className="bi bi-caret-right sm:hidden mr-4"
                 viewBox="0 0 16 16"
               >
                 <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />

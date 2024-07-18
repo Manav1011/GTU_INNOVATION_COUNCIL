@@ -17,7 +17,7 @@ function NavToggler() {
 
   // },[])
   return (
-    <div className="pl-1 cursor-pointer" onClick={toggleSidebar}>      
+    <div className="pl-1 cursor-pointer sm:py-5" onClick={toggleSidebar}>      
     <div className="hidden" id="NavTogglerOpen">
         <svg
           xmlns="http://www.w3.org/2000/svg"

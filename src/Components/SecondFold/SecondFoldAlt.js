@@ -125,7 +125,7 @@ async function SecondFoldAlt({startups,partners}) {
                   height={40}
                   // priority={true}
                   loading="lazy"
-                  src="/images/secondfold/IPR.webp"
+                  src={partner.url}
                   className="w-auto h-auto"
                   alt="default image"
                 />
