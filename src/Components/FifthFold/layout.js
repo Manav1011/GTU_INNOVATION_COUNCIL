@@ -3,14 +3,15 @@ import QuoteCard from "./QuoteCard";
 async function FifthFold({quotes}) {
   return (
     <section
-      className="h-[100dvh] w-full"
+      className="w-full bg-gradient-to-r from-slate-200 via-slate-200 to-slate-300 py-10 select-none shadow-2xl"
       style={{
-        backgroundImage: "url('/images/backgrounds/startup.webp')",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
+        fontFamily:'AvenirLight'
+        // backgroundImage: "url('/images/backgrounds/startup.webp')",
+        // backgroundPosition: "center",
+        // backgroundSize: "cover",
+        // backgroundAttachment: "fixed",
       }}>
-      <div  id="quote-container" className="h-[100dvh] flex justify-center items-center bg-clip-padding backdrop-filter bg-slate-50 bg-opacity-10" style={{backdropFilter:'blur(9px)'}}>
+      <div id="quote-container" className="flex justify-center items-center">
         {
           quotes.map((quote,index)=>{
             return (

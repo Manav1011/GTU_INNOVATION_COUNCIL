@@ -67,7 +67,7 @@ export default async function Home() {
     partners = data.data.partners
     quotes = data.data.quotes
     startups = data.data.startups
-    console.log(partners)
+    // console.log(partners)
 
   } catch (error) {
     console.log(error)

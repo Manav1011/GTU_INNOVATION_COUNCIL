@@ -10,7 +10,7 @@ async function SecondFoldAlt({startups,partners}) {
             <div className="mb-10 text-center space-y-4">
             <div className="text-center flex  w-full sm:flex-row flex-col justify-center gap-3" id="second-fold-title">
               <span
-                className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 font-semibold xss:text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+                className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 font-semibold text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
                 style={{ fontFamily: "AvenirBlack" }}
               >
                 STARTUP STATISTICS
@@ -65,7 +65,7 @@ async function SecondFoldAlt({startups,partners}) {
         <div className="text-center space-y-4 mb-10  mx-5">
           <div className="text-center flex w-full sm:flex-row flex-col justify-center gap-3 opacity-0" id="third-fold-title">
           <span
-                className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 font-semibold xss:text-3xl xs:text-4xl sm:text-4xl md:text-5xl  lg:text-5xl xl:text-6xl 2xl:text-7xl"
+                className="text-transparent bg-clip-text bg-gradient-to-r from-black to-slate-500 font-semibold text-3xl xs:text-4xl sm:text-4xl md:text-5xl  lg:text-5xl xl:text-6xl 2xl:text-7xl"
                 style={{ fontFamily: "AvenirBlack" }}
               >
               OUR PARTNERS
@@ -75,7 +75,7 @@ async function SecondFoldAlt({startups,partners}) {
             How Our Partners Make a Difference
               </p>
           </div>
-        <div className="h-full w-full px-5">
+        <div className="h-full w-full px-10">
           <div className="flex flex-wrap justify-center gap-2">
             {
               partners.map((partner,index)=>{

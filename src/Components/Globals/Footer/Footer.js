@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="sm:h-[100dvh] flex justify-between flex-col">    
+    <div className="h-full flex justify-between flex-col bg-slate-200">    
     <section className="relative sm:pt-24 pt-20 overflow-hidden" style={{backdropFilter:'blur(1px)'}}>
       <div className="relative z-10 container px-4 mx-auto">
         <div className="flex flex-wrap -m-3">
