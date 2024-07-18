@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize');
 // require('dotenv').config()
 
 const sequelize = new Sequelize(process.env.DATABASE_NAME,process.env.DATABASE_USER,process.env.DATABASE_PASSWORD, {
-  host: 'localhost',
+  host: process.env.DOCKER_DB_SERVICE,
   dialect: 'postgres',
   pool: {
     max: 5,
