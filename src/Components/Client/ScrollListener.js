@@ -3,20 +3,20 @@ import { useEffect } from "react";
 
 function ScrollListener() {
   useEffect(() => {    
-    const quoteContainer = document.getElementById("quote-container");
-    const quoteCards = quoteContainer.getElementsByClassName("quote-card");
-    let currentIndex = 0;
+    // const quoteContainer = document.getElementById("quote-container");
+    // const quoteCards = quoteContainer.getElementsByClassName("quote-card");
+    // let currentIndex = 0;
 
-    function showNextQuote() {            
-      // Hide current quote
-      quoteCards[currentIndex].classList.add("hidden");
-      // Calculate index of next quote
-      currentIndex = (currentIndex + 1) % quoteCards.length;
-      // Show next quote
-      quoteCards[currentIndex].classList.remove("hidden");
-    }    
-    quoteCards[currentIndex].classList.remove("hidden");    
-    setInterval(showNextQuote, 3000);      
+    // function showNextQuote() {            
+    //   // Hide current quote
+    //   quoteCards[currentIndex].classList.add("hidden");
+    //   // Calculate index of next quote
+    //   currentIndex = (currentIndex + 1) % quoteCards.length;
+    //   // Show next quote
+    //   quoteCards[currentIndex].classList.remove("hidden");
+    // }    
+    // quoteCards[currentIndex].classList.remove("hidden");    
+    // setInterval(showNextQuote, 3000);      
     try {
       const RollingTitles = document.getElementsByClassName("rolling-up-text");    
           let currentIndexRoller = 0;

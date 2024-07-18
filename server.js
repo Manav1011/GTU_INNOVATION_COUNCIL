@@ -1,33 +1,69 @@
-const { createServer } = require('http')
-const { parse } = require('url')
-const next = require('next')
- 
-const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
-const port = 3000
-// when using middleware `hostname` and `port` must be provided below
-const app = next({ dev, hostname, port })
-const handle = app.getRequestHandler()
- 
-app.prepare().then(() => {
-  createServer(async (req, res) => {
-    try {
-      // Be sure to pass `true` as the second argument to `url.parse`.
-      // This tells it to parse the query portion of the URL.
-      const parsedUrl = parse(req.url, true)
-      const { pathname, query } = parsedUrl      
-      await handle(req, res, parsedUrl)      
-    } catch (err) {
-      console.error('Error occurred handling', req.url, err)
-      res.statusCode = 500
-      res.end('internal server error')
-    }
-  })
-    .once('error', (err) => {
-      console.error(err)
-      process.exit(1)
+const express = require('express')
+const bodyParser = require('body-parser');
+const cors = require('cors')
+require('dotenv').config()
+
+const {graphqlHTTP} = require('express-graphql')
+//import the schema for the graphql
+const schemas = require('./GIC_BACKEND/graphql/schema')
+const {rootResolver} = require("./GIC_BACKEND/graphql/resolver");
+const next = require('next');
+
+//import the resolvers for the graphql
+const dev = process.env.NODE_ENV !== 'production';
+const server = next({dev})
+
+const handle = server.getRequestHandler();
+
+
+// initilized the port, for handling all kinds of request on server
+const PORT = 3000;
+// initilized the express server 
+const app = express()
+
+try{
+    
+    // establish the connection with database  
+    // include the body parser middleware
+    app.use(bodyParser.json())
+    //setup the cors 
+    app.use(cors())    
+
+    app.get('/api/manage/custom',(req,res)=>{
+        res.json({
+            "h1":"hello"
+        })
+    })        
+
+    // setup the graphql endpoint
+    app.use("/api/manage",graphqlHTTP({
+        schema: schemas,
+        rootValue: rootResolver,
+        graphiql: true
+    }))
+
+    app.use((err,req,res,next)=>{
+        console.error(err.stack);
+        res.status(500).send(err.stack);
     })
-    .listen(port, () => {
-      console.log(`> Ready on http://${hostname}:${port}`)
+
+
+    server.prepare().then(()=>{
+        
+        app.all('*',(req,res)=>{
+            return handle(req, res);
+        })
+
+        app.listen(PORT,()=>{
+            console.log("http://localhost:3000")
+        })
     })
-})
+    .catch((error)=>{
+        
+    })
+}
+catch(error){
+    console.log(error.message)
+}
+
+// listen the requests on the port

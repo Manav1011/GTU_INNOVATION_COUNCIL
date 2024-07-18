@@ -18,7 +18,7 @@ import Footer from "@/Components/Globals/Footer/Footer";
 import GlobalRouteListener from "./GlobalRouteListener";
 import NavScrollListener from "@/Components/Client/NavScrollListener";
 
-// export const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 export default async function Home() {
   let partners = null
   let startups = null
@@ -26,7 +26,7 @@ export default async function Home() {
 
   let response
   try {
-     response = await fetch(`http://localhost:4000/manage`,{
+     response = await fetch(`http://localhost:3000/api/manage`,{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -58,8 +58,7 @@ export default async function Home() {
       }),
     });
 
-    if (!response.ok) {
-      console.log(response)
+    if (!response.ok) {            
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
@@ -86,10 +85,10 @@ export default async function Home() {
       
       {/* <SecondFoldAlt/> */}
       <ThirdFoldAlt/>             
-      {
+      {/* {
         quotes && <FifthFold quotes={quotes} /> 
     
-      }
+      } */}
       
       {/* <FourthFold/> */}
       <FourthFoldALT/>
