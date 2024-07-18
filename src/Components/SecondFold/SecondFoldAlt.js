@@ -26,7 +26,7 @@ async function SecondFoldAlt({startups,partners}) {
                   const rem = startups.length % 4 
                   if(rem == 1 && index == startups.length -1){
                     return(
-                      <div className="flex stats-block flex-col bg-black sm:bg-slate-300 bg-opacity-30 sm:bg-opacity-90 p-8" style={{ gridColumn: '1 / -1' }}>
+                      <div key={index} className="flex stats-block flex-col bg-black sm:bg-slate-300 bg-opacity-30 sm:bg-opacity-90 p-8" style={{ gridColumn: '1 / -1' }}>
                         <dt className="text-sm font-semibold leading-6 text-slate-300 sm:text-slate-700">
                         {startup.title}  
                         </dt>
@@ -38,7 +38,7 @@ async function SecondFoldAlt({startups,partners}) {
                   }
                   else{
                     return (
-                      <div className={`flex stats-block flex-col ${index % 2 == 0 ? 'bg-black' : 'bg-white'} p-4 bg-opacity-90`} key={index}>
+                      <div key={index} className={`flex stats-block flex-col ${index % 2 == 0 ? 'bg-black' : 'bg-white'} p-4 bg-opacity-90`}>
                       <dt className={`text-sm font-semibold leading-6 ${index % 2 == 0 ? 'text-slate-300' : 'text-slate-700'}`}>
                         {startup.title}
                       </dt>
