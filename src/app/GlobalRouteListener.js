@@ -6,8 +6,8 @@ function GlobalRouteListener() {
     useEffect(() => {        
         let NavigationSidebar = document.getElementById("NavigationSidebar");    
         NavigationSidebar.classList.add("hidden");    
-        document.getElementById("NavTogglerOpen").classList.add('hidden')
-        document.getElementById("NavTogglerClosed").classList.remove('hidden')
+        // document.getElementById("NavTogglerOpen").classList.add('hidden')
+        // document.getElementById("NavTogglerClosed").classList.remove('hidden')
     },[pathname])
   return null
 }
