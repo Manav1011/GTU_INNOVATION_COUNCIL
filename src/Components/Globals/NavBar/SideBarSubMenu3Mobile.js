@@ -43,13 +43,13 @@ function SideBarSubMenu3Mobile({ title }) {
       </div>
       <div
         className="flex flex-col gap-10 mx-4 sm:mx-0 w-full"
-        style={{ fontFamily: "OSWALD" }}
+        style={{ fontFamily: "AvenirLight" }}
       >
         {Menus[title].map((item, index) => (
           <Link
             href={`/${slugify(item)}`}
             key={index}            
-            className={`font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
+            className={`font-light sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
           >
             {item}
           </Link>
