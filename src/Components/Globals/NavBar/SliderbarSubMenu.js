@@ -18,55 +18,49 @@ function SliderbarSubMenu({ title }) {
   
   
   const Menus = {
-    "gic-verticals": [
+    "About": [
+      "About Us",
+      "Leadership and Governance",
+      "Recognitions",
+      "Partners",
+      "Mentors and Advisors",      
+    ],
+    "Startups and Innovators Supported": [
+      "Startups and Innovators Supported",
+      { "Benefits Available": ["Incubation", "Funding", "IPR Support", "Co Working Facilities", "Resources", "Lab Facilities" , "Market Access and Networking"] },
+    ],
+    "Ecosystem": [
       "GIC Clubs",
       "Sankuls",
-      "Design Thinking",
-      "CIC3",
-      "IPR",
-      "Ideathon21",
-      "GTU Motorsports",
-      "Incubator",
-      "Awards",
+      "CiC3",
       "Student Associateship Program",
+      "GTU Motorsports",
+      "Ideathon",
+      "Robocon Club",
+      "GTU Startup Policy",
     ],
-    "our-support": [
-      "Allied Support",
-      { Funding: ["SSIP", "Nodal Institute", "DIC", "AIC", "TBI"] },
+    "Programs": [
+      "New Program List"
     ],
-    "gic-startup": [
-      "GIC Startup Mart",
-      "Startup Stories",
-      "SSIP Startup List",
-      "Nodal Institute Startup",
-    ],
-    "resource-bank": [
-      "MOOCs",
-      "MSTE",
-      "OSTE",
-      "Case Studies",
-      "BLOG",
-      "Books Generals",
-    ],
-    latest: [
-      "Career",
-      "Upcoming Event List",
-      "Upcoming Classic Event",
-      "Circulars",
-      "Reports",
-      "Utility Forms",
-    ],
-    apply: [
-      "Incubation",
-      "Apply Under Nodal Institute",
-      "Apply Under SSIP",
-      "Apply Under TBI",
-      "Startup Gallery",
-    ],
+    // latest: [
+    //   "Career",
+    //   "Upcoming Event List",
+    //   "Upcoming Classic Event",
+    //   "Circulars",
+    //   "Reports",
+    //   "Utility Forms",
+    // ],
+    // apply: [
+    //   "Incubation",
+    //   "Apply Under Nodal Institute",
+    //   "Apply Under SSIP",
+    //   "Apply Under TBI",
+    //   "Startup Gallery",
+    // ],
   };
 
   return (
-    <div className="mt-40 pb-48 flex  flex-wrap flex-col gap-10 ml-40 h-full w-full">
+    <div className="mt-40 pb-48 flex flex-wrap flex-col gap-10 ml-[10%] 2xl:ml-40 h-full w-full ">
       {Menus[title]?.map((item, index) => {
         if (typeof item === "string") {
           return (
@@ -74,7 +68,7 @@ function SliderbarSubMenu({ title }) {
             href={`/${slugify(item)}`}
               key={index}
               // onClick={() => {toggleSidebar()}}
-              className="font-medium text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+              className="font-medium lg:text-xl xl:text-3xl 2xl:text-4xl text-4xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
             >
               {item}
               <svg

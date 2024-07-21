@@ -8,216 +8,293 @@ import SideBarSubMenu2Mobile from "./SideBarSubMenu2Mobile";
 function NavigationSidebar() {  
   const [selectedMenuDesktop, setSelectedMenuDesktop] = useState("gic-verticals");
   const [selectedMenuPhone, setSelectedMenuPhone] = useState(null);
+
+  const toggleSidebar = async () => {
+    let NavigationSidebar = document.getElementById("NavigationSidebar");    
+    NavigationSidebar.classList.add("hidden");    
+  }; 
+
+  function slugify(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')         // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')     // Remove all non-word chars
+      .replace(/\-\-+/g, '-')       // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
+  }
+
+  const Menus = {
+    "About": [
+      "About Us",
+      "Leadership and Governance",
+      "Recognitions",
+      "Partners",
+      "Mentors and Advisors",      
+    ],
+    "Startups and Innovators": [
+      "Startups and Innovators Supported",
+      { "Benefits Available": ["Incubation", "Funding", "IPR Support", "Co Working Facilities", "Resources", "Lab Facilities" , "Market Access and Networking"] },
+    ],
+    "Ecosystem": [
+      "GIC Clubs",
+      "Sankuls",
+      "CiC3",
+      "Student Associateship Program",
+      "GTU Motorsports",
+      "Ideathon",
+      "Robocon Club",
+      "GTU Startup Policy",
+    ],
+    "Programs" : [
+      "New Programs"
+    ]
+
+  };
   return (
     <section
-      className="w-full z-20 fixed h-[100dvh] bg-slate-50 hidden bottomUPTitle overflow-y-scroll sm:overflow-y-hidden"
+      className="w-full z-20 fixed pt-24 bg-slate-50 duration-300 transition-transform  hidden bottomUPTitle"
       id="NavigationSidebar"
-    >
-      <div className="h-full w-full flex">
-        <div className="h-full w-full sm:w-1/4 bg-zinc-300 flex items-center flex-col justify-start">
-        <div className="flex items-center justify-around w-full ">
-        <Link href="/" className="max-sm:hidden">
-            <Image
-              width={200}
-              height={192}
-              priority={true}
-              id="gtu-logo"
-              className="h-auto w-14"
-              src="/images/logos/gtu.png"
-              alt="Your Company"
-            />
-          </Link>
-          <Link href="/" className="max-sm:hidden">
-            <Image
-              width={200}
-              height={192}
-              priority={true}
-              id="gic-logo"
-              className="h-auto w-24"
-              src="/images/logos/GISC.png"
-              alt="Your Company"
-            />
-          </Link>
+      // onMouseLeave={()=>{toggleSidebar()}}
+      // onMouseDown={()=>{toggleSidebar()}}
+      // onMouseOut={()=>{toggleSidebar()}}
+    > 
+      <div className="flex justify-between gap-x-12 mx-16">
+      <div className="h-full flex flex-col flex-wrap gap-4 justify-between mb-3" id="About">
+        <div className="text-2xl font-bold">
+          About GIC : 
         </div>
-          <div
-            className="flex flex-col gap-10 font-light mx-4 sm:mx-0 w-full justify-center items-start pl-[25%]"
-            style={{ fontFamily: "AvenirLight" }}
-          >
-            <div
-              className={`cursor-pointer font-bold sm:text-3xl text-3xl ${
-                selectedMenuDesktop == "gic-verticals"
-                  ? "sm:text-orange-500 sm:underline"
-                  : null
-              } flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
-              onClick={() => {setSelectedMenuDesktop("gic-verticals");setSelectedMenuPhone("gic-verticals"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              GTU Verticals
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
+      {
+        Menus["About"].map((item,index)=>{
+          if (typeof item === "string") {
+            return (
+              <Link
+              href={`/${slugify(item)}`}
+                key={index}
+                // onClick={() => {toggleSidebar()}}
+                className="font-medium text-xl ml-3 hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
               >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div>
-            <div
-              className={`cursor-pointer font-bold sm:text-3xl text-3xl ${
-                selectedMenuDesktop == "our-support"
-                  ? "sm:text-orange-500 sm:underline"
-                  : null
-              } flex items-center justify-between sm:justify-start transition duration-300 ease-in-out`}
-              onClick={() => {setSelectedMenuDesktop("our-support");setSelectedMenuPhone("our-support"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              Our Support
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div>
-            <div
-              className={`cursor-pointer font-bold sm:text-3xl text-3xl ${
-                selectedMenuDesktop == "gic-startup"
-                  ? "sm:text-orange-500 sm:underline"
-                  : null
-              } flex items-center justify-between sm:justify-start transition duration-300 ease-in-out`}
-              onClick={() => {setSelectedMenuDesktop("gic-startup");setSelectedMenuPhone("gic-startup"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              GIC Startup
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div>
-            <div
-              className={`cursor-pointer font-bold sm:text-3xl text-3xl ${
-                selectedMenuDesktop == "resource-bank"
-                  ? "sm:text-orange-500 sm:underline"
-                  : null
-              } flex items-center justify-between sm:justify-start transition duration-300 ease-in-out`}
-              onClick={() => {setSelectedMenuDesktop("resource-bank");setSelectedMenuPhone("resource-bank"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              Resource Bank
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div>
-            <div
-              className={`cursor-pointer font-bold sm:text-3xl text-3xl ${
-                selectedMenuDesktop == "latest"
-                  ? "sm:text-orange-500 sm:underline"
-                  : null
-              } flex items-center justify-between sm:justify-start transition duration-300 ease-in-out`}
-              onClick={() => {setSelectedMenuDesktop("latest");setSelectedMenuPhone("latest"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              Latest
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div>
-            {/* <div
-              className={`cursor-pointer ${
-                selectedMenuDesktop == "apply" ? "sm:underline" : null
-              } flex items-center justify-between sm:justify-start font-bold sm:text-3xl text-4xl text-orange-500`}
-              onClick={() => {setSelectedMenuDesktop("apply");setSelectedMenuPhone("apply"); document.getElementById('SideBarSubMenu2Mobile') && document.getElementById('SideBarSubMenu2Mobile').classList.remove('hidden')}}
-            >
-              Apply
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>
-            </div> */}
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScemptmi9LFonX5U1VyoPwVZ_K7-8EVIcss2op1GdBY9GZ4rw/viewform" target="_blank" className="cursor-pointer font-bold sm:text-3xl text-3xl flex flex-row items-center sm:justify-start gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
-              Send Inquiry
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={16}
-                height={16}
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                />
-              </svg>
-            </Link>
-            <Link href="/about-us" className="cursor-pointer font-bold sm:text-3xl text-3xl flex flex-row items-center sm:justify-start gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
-              About
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={16}
-                height={16}
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                />
-              </svg>
-            </Link>
-            <Link href={'/reach-us'} className="cursor-pointer font-bold sm:text-3xl text-3xl flex flex-row items-center sm:justify-start gap-5 hover:text-orange-500 transition duration-300 ease-in-out">
-              Reach Us
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={16}
-                height={16}
-                fill="currentColor"
-                className="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                />
-              </svg>
-            </Link>
-          </div>
+                {item}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={32}
+                  height={32}
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </Link>
+            );
+          } else if (typeof item === "object") {
+            return (
+              <div key={index}>
+                {Object.keys(item).map((key, subIndex) => (
+                  <div key={subIndex}>
+                    <div className="font-bold text-xl transition duration-300 ease-in-out flex items-center gap-4 text-emerald-400">
+                      {key}
+                    </div>
+                    <div className="font-normal text-2xl flex gap-6">
+                      {item[key].map((subItem, subSubIndex) => (
+                        <Link
+                          href={`/${slugify(subItem)}`}
+                          // onClick={() => {toggleSidebar()}}
+                          key={subSubIndex}
+                          className="hover:text-orange-500 transition duration-300 ease-in-out"
+                        >
+                          {subItem}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          return null;
+        })
+      }
+      </div> 
+      <div className="  h-full flex-col flex-wrap items-start gap-4 mb-3 flex" id="Startups">
+      <div className="text-2xl font-bold">
+        Startups and Innovators Section : 
         </div>
-        <div
-          className="h-full w-3/4 hidden sm:flex justify-start items-start"
-          style={{ fontFamily: "AvenirLight" }}
-        >
-          <SliderbarSubMenu title={selectedMenuDesktop} />
+      {
+        Menus["Startups and Innovators"].map((item,index)=>{
+          if (typeof item === "string") {
+            return (
+              <Link
+              href={`/${slugify(item)}`}
+                key={index}
+                // onClick={() => {toggleSidebar()}}
+                className="font-medium ml-3 text-xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+              >
+                {item}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={32}
+                  height={32}
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </Link>
+            );
+          } else if (typeof item === "object") {
+            return (
+              <div key={index}>
+                {Object.keys(item).map((key, subIndex) => (
+                  <div key={subIndex}>
+                    <div className="font-bold ml-3 text-2xl transition duration-300 ease-in-out flex items-center gap-4 text-emerald-400">
+                      {key}
+                    </div>
+                    <div className="font-normal mt-3 text-lg flex flex-col gap-2">
+                      {item[key].map((subItem, subSubIndex) => (
+                        <Link
+                          href={`/${slugify(subItem)}`}
+                          // onClick={() => {toggleSidebar()}}
+                          key={subSubIndex}
+                          className="hover:text-orange-500 transition duration-300 ease-in-out ml-3"
+                        >
+                          {subItem}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          return null;
+        })
+      }
+      </div> 
+      <div className="  h-full flex-col flex-wrap gap-4 justify-between mb-3 flex" id="Ecosystem">
+        <div className="text-2xl font-bold">
+          Ecosystem Of GIC :
         </div>
-        {selectedMenuPhone && <SideBarSubMenu2Mobile title={selectedMenuPhone}/> }
+      {
+        Menus["Ecosystem"].map((item,index)=>{
+          if (typeof item === "string") {
+            return (
+              <Link
+              href={`/${slugify(item)}`}
+                key={index}
+                // onClick={() => {toggleSidebar()}}
+                className="font-medium ml-3 text-xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+              >
+                {item}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={32}
+                  height={32}
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </Link>
+            );
+          } else if (typeof item === "object") {
+            return (
+              <div key={index}>
+                {Object.keys(item).map((key, subIndex) => (
+                  <div key={subIndex}>
+                    <div className="font-bold text-xl transition duration-300 ease-in-out flex items-center gap-4 text-emerald-400">
+                      {key}
+                    </div>
+                    <div className="font-normal text-2xl flex gap-6">
+                      {item[key].map((subItem, subSubIndex) => (
+                        <Link
+                          href={`/${slugify(subItem)}`}
+                          // onClick={() => {toggleSidebar()}}
+                          key={subSubIndex}
+                          className="hover:text-orange-500 transition duration-300 ease-in-out"
+                        >
+                          {subItem}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          return null;
+        })
+      }
+      </div> 
+      <div className="  h-full flex-col flex-wrap gap-4 justify-between mb-3 flex" id="Ecosystem">
+        <div className="text-2xl font-bold">
+          Programs :
+        </div>
+      {
+        Menus["Programs"].map((item,index)=>{
+          if (typeof item === "string") {
+            return (
+              <Link
+              href={`/${slugify(item)}`}
+                key={index}
+                // onClick={() => {toggleSidebar()}}
+                className="font-medium ml-3 text-xl hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+              >
+                {item}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={32}
+                  height={32}
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </Link>
+            );
+          } else if (typeof item === "object") {
+            return (
+              <div key={index}>
+                {Object.keys(item).map((key, subIndex) => (
+                  <div key={subIndex}>
+                    <div className="font-bold text-xl transition duration-300 ease-in-out flex items-center gap-4 text-emerald-400">
+                      {key}
+                    </div>
+                    <div className="font-normal text-2xl flex gap-6">
+                      {item[key].map((subItem, subSubIndex) => (
+                        <Link
+                          href={`/${slugify(subItem)}`}
+                          // onClick={() => {toggleSidebar()}}
+                          key={subSubIndex}
+                          className="hover:text-orange-500 transition duration-300 ease-in-out"
+                        >
+                          {subItem}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          return null;
+        })
+      }
+      </div> 
       </div>
     </section>
   );
