@@ -18,18 +18,22 @@
 
 @keyframes bottomUP {
     from {
+      opacity: 0;
       transform: translateY(100%);
     }
     to {
+      opacity: 1;
       transform: translateY(0%);
     }
 }
 
 @keyframes bottomUPSlightText {
   from {
+    opacity: 0;
     transform: translateY(20%);
   }
   to {
+    opacity: 1;
     transform: translateY(0%);
   }
 }
@@ -64,12 +68,19 @@
 .FadeIN{
   animation: FadeIN 1s ease-in-out;
 }
+.FadeINQuick{
+  animation: FadeIN 0.5s forwards;
+}
 .PopUP{
   animation: popUP 1s ease-in-out;
 }
 
 .BottomTOUpSlightlyText{
   animation: bottomUPSlightText 1s ease-in-out;
+}
+
+.BottomTOUpQuick{
+  animation: bottomUP 1s forwards;
 }
 
 .BottomTOUp{

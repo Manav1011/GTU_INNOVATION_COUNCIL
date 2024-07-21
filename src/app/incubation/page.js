@@ -1,6 +1,6 @@
 async function IncubationForm() {
   return (
-    <div className="h-full mt-12 ">
+    <div className="h-full mt-12 bg-white">
       <div className="mx-5 pt-12 text-center">
         <span className="text-3xl sm:text-5xl" style={{ fontFamily: "Azonix" }}>
           Incubation Form

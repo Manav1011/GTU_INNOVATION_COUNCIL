@@ -1,28 +1,28 @@
 async function FirstFoldAlt() {
   return (        
           <section
-            className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden bg-slate-500"
-            style={{
-              backgroundImage:
-                "url('/images/backgrounds/white-black-grad.png')",
-                backgroundSize:'cover',
-              backgroundAttachment: "fixed",
-            }}
+            className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden "
+            // style={{
+            //   backgroundImage:
+            //     "url('/images/backgrounds/white-black-grad.png')",
+            //     backgroundSize:'cover',
+            //   backgroundAttachment: "fixed",
+            // }}
           >
             <div className="w-full h-full overflow-scroll" id="about-us-section">
             <div
         id="about-us-firstfold"
-        className="h-full w-full flex flex-col items-center justify-center"
+        className="h-full w-full flex flex-col items-left justify-center sm:px-20 px-5"
       >
         <div
-          className="bottomUPTitle font-light sm:text-5xl lg:text-8xl  xs:text-5xl text-5xl sm:px-10 text-center"
-          style={{ fontFamily: "OSWALD" }}
+          className="bottomUPTitle font-light sm:text-5xl lg:text-8xl  xs:text-5xl text-5xl text-left"
+          style={{ fontFamily: "AvenirRegular" }}
         >
           WHO WE ARE
         </div>
         <div
-          className="bottomUPContent lg:text-3xl sm:text-2xl px-5 xs:text-xl xs:pt-10 sm:px-20 pt-10 sm:pt-10 text-center"
-          style={{ fontFamily: "SairaCondensed" }}
+          className="bottomUPContent lg:text-3xl sm:text-2xl xs:text-xl xs:pt-10  pt-10 sm:pt-10 text-left"
+          style={{ fontFamily: "AvenirLight" }}
         >
           {
             <>

@@ -3,12 +3,11 @@ import FourthFold from "./components/FourthFold";
 import SecondFoldAlt from "@/app/about-us/components/SecondFoldAlt";
 import FirstFoldAlt from "./components/FirstFoldAlt";
 
-
 async function page() {  
   return (
-    <>
+    <>    
       <div className="flex" id="about-us-container">
-        <div className="flex flex-col w-full bg-black backdrop-blur-md">
+        <div className="flex flex-col w-full">
             <div className="w-full h-full overflow-scroll " id="about-us-section" >
               <FirstFoldAlt />
               <SecondFoldAlt />
@@ -16,7 +15,7 @@ async function page() {
               <FourthFold/>
             </div>        
           </div>        
-      </div>      
+      </div>          
     </>
   );
 }

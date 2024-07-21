@@ -13,12 +13,10 @@ import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
 import Preloaders from "@/Components/Client/Preloaders";
-import NavBarLatest from "@/Components/Globals/NavBar/NavBarLatest";
-import Footer from "@/Components/Globals/Footer/Footer";
-import GlobalRouteListener from "./GlobalRouteListener";
-import NavScrollListener from "@/Components/Client/NavScrollListener";
+// import GlobalRouteListener from "./GlobalRouteListener";
+// import NavScrollListener from "@/Components/Client/NavScrollListener";
 
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 export default async function Home() {
   let partners = null
   let startups = null
@@ -76,7 +74,7 @@ export default async function Home() {
   return (
     <>
     {/* <Preloaders/>    */}
-      <NavBarLatest/>            
+      {/* <NavBarLatest/>             */}
       <MainGraphic/> 
       {/* <SixthFold/> */}
       {
@@ -99,10 +97,8 @@ export default async function Home() {
       {
         quotes && <ScrollListener/>   
       }          
-      <IntersectionTransitions/>
-      <Footer/>   
-      <NavScrollListener/>
-      <GlobalRouteListener/>
+      <IntersectionTransitions/>      
+      {/* <GlobalRouteListener/> */}
        {/* <CarouselScrollListener/> */}
     </>
   );

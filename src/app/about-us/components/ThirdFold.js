@@ -1,29 +1,26 @@
 async function ThirdFold() {
   return (
     <section
-    className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden bg-stone-500"
-    style={{
-      backgroundImage:
-        "url('/images/backgrounds/white-black-grad.png')",
-      backgroundAttachment: "fixed",
-      backgroundSize:'cover',
-    }}
+    className="h-[100dvh] min-h-[100dvh] w-full min-w-screen overflow-hidden"
   >
-    <div className="h-full w-full flex flex-col items-center justify-center" id="about-us-thirdfold-content">
-      <div className="container mx-auto px-6">
-        <div className="text-center">
+    <div className="h-full w-full flex flex-col items-center justify-center sm:px-20 px-5" id="about-us-thirdfold-content">
+      <div className="container mx-auto">
+      <div
+        id="about-us-firstfold"
+        className="h-full w-full flex flex-col items-left"
+      >
         <div
-      className="bottomUPTitle font-light sm:text-5xl lg:text-8xl  xs:text-5xl text-5xl sm:px-10 text-center"
-      style={{ fontFamily: "OSWALD" }}
-    >
-            OUR MISSION
+          className="bottomUPTitle font-light sm:text-5xl lg:text-8xl  xs:text-5xl text-5xl text-left"
+          style={{ fontFamily: "AvenirRegular" }}
+        >
+          OUR MISSION        
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-start">
       <p
-        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-20 lg:text-3xl sm:text-xl text-2xl px-10 sm:px-20 pt-10 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "SairaCondensed" }}
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-20 lg:text-3xl sm:text-xl text-2xl pt-10 sm:pt-10"
+        style={{ fontFamily: "AvenirLight" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +35,8 @@ async function ThirdFold() {
         To nurture creativity and innovation within the university community.
       </p>
       <p
-        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "SairaCondensed" }}
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl pt-5 sm:pt-10 "
+        style={{ fontFamily: "AvenirLight" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +52,8 @@ async function ThirdFold() {
         innovation campaign.
       </p>
       <p
-        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl px-10 sm:px-20 pt-5 sm:pt-10 sm:text-center text-justify"
-        style={{ fontFamily: "SairaCondensed" }}
+        className="flex flex-row  bottomUPContent xs:text-2xl xs:pt-10 sm:text-xl lg:text-3xl text-2xl pt-5 sm:pt-10 sm:text-center text-justify"
+        style={{ fontFamily: "AvenirLight" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

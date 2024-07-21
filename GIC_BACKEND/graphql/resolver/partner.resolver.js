@@ -4,13 +4,13 @@ const Partner = require("../../models/partner.model");
 module.exports = {
     partners : async()=>{
         try{
-            console.log("called2")
+            // console.log("called2")
             const partner_lst = await Partner.findAll()
             const lst = await Promise.all(partner_lst.map(async(part,index)=>{
                 const url = await get_preSinged_url(part.logo)
                 return {...part.toJSON(),url}
             }))
-            console.log(lst)
+            // console.log(lst)
             return lst
         }
         catch(error){
