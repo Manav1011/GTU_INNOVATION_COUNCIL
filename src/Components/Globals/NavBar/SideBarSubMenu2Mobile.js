@@ -1,5 +1,6 @@
 import SideBarSubMenu3Mobile from "./SideBarSubMenu3Mobile";
 import Link from "next/link";
+import Navigation from './client/Navigation'
 
 function SideBarSubMenu2Mobile() {
   // const [selectedMenuPhone, setSelectedMenuPhone] = useState(null);
@@ -40,14 +41,18 @@ function SideBarSubMenu2Mobile() {
   };
   return (
     <section
-      className="z-20 w-full fixed h-[100dvh] overflow-y-scroll overflow-x-hidden hidden  bg-zinc-300 flex-col gap-10 justify-start items-start sm:pt-14 pt-28"
+      className="z-20 w-full fixed h-[100dvh] overflow-y-scroll overflow-x-hidden hidden text-zinc-600 bg-black FadeINQuick flex-col justify-start items-start sm:pt-24 pt-28"
       id="SideBarSubMenu2Mobile"
     >
+      
       <div
+        className="flex h-full flex-col  px-4 sm:mx-0 w-full"
+        style={{ fontFamily: "AvenirLight" }}
+      >
+        <div
         className="flex gap-6 items-center justify-center  w-full font-bold text-xl ml-5 text-slate-500 cursor-pointer mb-5"
-        onClick={() => {
-          HideTheSecondSubMenu();
-        }}
+        id = "close_btn"
+        
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +69,7 @@ function SideBarSubMenu2Mobile() {
         </svg>
         Go Back
       </div>
-      <div
-        className="flex flex-col gap-10 px-4 sm:mx-0 w-full"
-        style={{ fontFamily: "AvenirLight" }}
-      >
-        <div className="w-full h-full flex-col flex-wrap gap-4 justify-between mb-3 hidden" id="About_Mobile">
-        <div className="text-2xl font-bold">
-          About :
-        </div>
+        <div className="w-full h-full flex-col justify-center items-center flex-wrap gap-5  mb-3 hidden BottomTOUpQuick" id="About">
       {
         Menus["About"].map((item,index)=>{
           if (typeof item === "string") {
@@ -80,22 +78,9 @@ function SideBarSubMenu2Mobile() {
               href={`/${slugify(item)}`}
                 key={index}
                 // onClick={() => {toggleSidebar()}}
-                className="font-medium text-xl ml-3 hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+                className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4"
               >
                 {item}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={32}
-                  height={32}
-                  fill="currentColor"
-                  className="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
-                </svg>
               </Link>
             );
           } else if (typeof item === "object") {
@@ -112,7 +97,7 @@ function SideBarSubMenu2Mobile() {
                           href={`/${slugify(subItem)}`}
                           // onClick={() => {toggleSidebar()}}
                           key={subSubIndex}
-                          className="hover:text-orange-500 transition duration-300 ease-in-out"
+                          className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4"
                         >
                           {subItem}
                         </Link>
@@ -127,10 +112,7 @@ function SideBarSubMenu2Mobile() {
         })
       }
       </div> 
-      <div className="w-full h-full flex-wrap gap-4 justify-between mb-3 hidden" id="Startups_Mobile">
-      <div className="text-2xl font-bold">
-          Startups and Innovators :
-        </div>
+      <div className="w-full h-full flex-wrap flex-col gap-4 mb-3 hidden BottomTOUpQuick justify-center items-center" id="Startups">
       {
         Menus["Startups and Innovators"].map((item,index)=>{
           if (typeof item === "string") {
@@ -139,22 +121,9 @@ function SideBarSubMenu2Mobile() {
               href={`/${slugify(item)}`}
                 key={index}
                 // onClick={() => {toggleSidebar()}}
-                className="font-medium text-xl ml-3 hover:text-orange-500 transition duration-300 ease-in-out flex items-center gap-4"
+                className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4"
               >
                 {item}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={32}
-                  height={32}
-                  fill="currentColor"
-                  className="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
-                </svg>
               </Link>
             );
           } else if (typeof item === "object") {
@@ -162,33 +131,8 @@ function SideBarSubMenu2Mobile() {
               <div key={index} className="ml-3">
                 {Object.keys(item).map((key, subIndex) => (
                   <div key={subIndex}>
-                    <div className="font-bold text-2xl transition duration-300 ease-in-out flex items-center gap-4 ">
+                    <div className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4 nav-sab-link" data-custom-value={key.split(' ')[0]}>
                       {key}
-                    </div>
-                    <div className="font-normal text-xl flex flex-col gap-6 mt-3">
-                      {item[key].map((subItem, subSubIndex) => (
-                        <Link
-                          href={`/${slugify(subItem)}`}
-                          // onClick={() => {toggleSidebar()}}
-                          key={subSubIndex}
-                          className="hover:text-orange-500 transition duration-300 ease-in-out flex"
-                        >
-                          {subItem}
-                          <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={32}
-                  height={32}
-                  fill="currentColor"
-                  className="bi bi-arrow-right ml-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
-                </svg>
-                        </Link>
-                      ))}
                     </div>
                   </div>
                 ))}
@@ -199,10 +143,7 @@ function SideBarSubMenu2Mobile() {
         })
       }
       </div> 
-      <div className="w-full h-full  flex-col flex-wrap gap-4 justify-between mb-3 hidden" id="Ecosystem_Mobile">
-        <div className="text-2xl font-bold">
-          Ecosystem :
-        </div>
+      <div className="w-full h-full  flex-col flex-wrap gap-4 mb-3 hidden BottomTOUpQuick justify-center items-center" id="Ecosystem">
       {
         Menus["Ecosystem"].map((item,index)=>{
           if (typeof item === "string") {
@@ -211,22 +152,9 @@ function SideBarSubMenu2Mobile() {
               href={`/${slugify(item)}`}
                 key={index}
                 // onClick={() => {toggleSidebar()}}
-                className="font-medium text-xl hover:text-orange-500 transition duration-300 ml-4 ease-in-out flex items-center gap-4"
+                className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4"
               >
                 {item}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={32}
-                  height={32}
-                  fill="currentColor"
-                  className="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
-                </svg>
               </Link>
             );
           } else if (typeof item === "object") {
@@ -234,7 +162,7 @@ function SideBarSubMenu2Mobile() {
               <div key={index}>
                 {Object.keys(item).map((key, subIndex) => (
                   <div key={subIndex}>
-                    <div className="font-bold text-4xl transition duration-300 ease-in-out flex items-center gap-4">
+                    <div className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white  ml-3  transition flex items-center gap-4">
                       {key}
                     </div>
                     <div className="font-normal text-2xl flex gap-6 mt-3">
@@ -258,45 +186,10 @@ function SideBarSubMenu2Mobile() {
         })
       }
       </div> 
-        {/* {Menus[title].map((item, index) => (
-          item != 'Funding' ? (
-          <Link
-            href={`/${slugify(item)}`}
-            key={index}            
-            className={`font-light sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
-          >
-            {item}
-          </Link>
-           ) : (
-            <div            
-            key={index}
-            className={`cursor-pointer font-bold sm:text-2xl text-3xl flex items-center justify-between sm:justify-center transition duration-300 ease-in-out`}
-            onClick={() => {              
-                setSelectedMenuPhone("Benefits Available");
-                const element = document.getElementById(
-                  "SideBarSubMenu3Mobile"
-                );
-                if (element) {
-                  element.classList.remove("hidden");
-                }              
-            }}
-          >
-            {item}            
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={32}
-                height={32}
-                fill="currentColor"
-                className="bi bi-caret-right sm:hidden mr-4"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
-              </svg>            
-          </div>
-           )
-        ))} */}
+        
       </div>
-      {/* {selectedMenuPhone && <SideBarSubMenu3Mobile title={selectedMenuPhone} />} */}
+      <SideBarSubMenu3Mobile  />
+      <Navigation></Navigation>
     </section>
   );
 }

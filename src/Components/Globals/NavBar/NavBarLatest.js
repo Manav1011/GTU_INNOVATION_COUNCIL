@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import NavToggler from '@/Components/Globals/NavBar/client/NavToggler'
 import './NavToggler.css'
+import SideBarSubMenu2Mobile from './SideBarSubMenu2Mobile'
+import Navigation from './client/Navigation'
 async function NavBarLatest() {
   return (
     <section>
@@ -45,15 +47,17 @@ async function NavBarLatest() {
       </nav>
       <div className="w-full h-[100dvh] bg-black	 text-zinc-600 absolute hidden z-10 FadeINQuick" id="full-screen-nav-menu-container">
         <div className="h-full w-full flex justify-center items-center flex-col gap-4 BottomTOUpQuick" style={{fontFamily:'OSWALD'}}>
-          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">About</h1>
-          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">Startups and Innovators</h1>
-          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">Ecosystem</h1>
+          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white nav-link"  data-custom-value="About" >About</h1>
+          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white nav-link"  data-custom-value="Startups" >Startups and Innovators</h1>
+          <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white nav-link"  data-custom-value="Ecosystem" >Ecosystem</h1>
           <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">Programs</h1>
           <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">Apply</h1>
           <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-5xl ease-in duration-200 hover:text-white">Contact Us</h1>
         </div>
       </div>
+      <SideBarSubMenu2Mobile></SideBarSubMenu2Mobile>
       <NavToggler/>
+      <Navigation></Navigation>
     </section>
   );
 }
