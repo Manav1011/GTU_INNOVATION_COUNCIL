@@ -4,6 +4,7 @@ import "@/static/fonts.css";
 import NavBarLatest from "@/Components/Globals/NavBar/NavBarLatest";
 import Footer from "@/Components/Globals/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
+import GlobalRouteListener from '@/app/(home)/GlobalRouteListener'
 
 export const metadata = {
   title: "GTU Innovation Council",
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         <Footer />
+        <GlobalRouteListener/>
       </body>
     </html>
   );
