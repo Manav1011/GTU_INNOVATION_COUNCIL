@@ -252,7 +252,7 @@ async function NavBarLatest() {
     Apply: {
       key: "apply",
       title: "Apply",
-      link: "apply",
+      link: "incubation",
       "is-sub-menu": false,
       "parent-menu-key": null,
       "has-sub-menu": false,
@@ -311,7 +311,7 @@ async function NavBarLatest() {
         </div>
       </nav>
       <div
-        className="w-full h-[100dvh] bg-black	 text-zinc-500 absolute hidden z-10 FadeINQuick flex justify-between pb-6 items-center flex-col"
+        className="w-full h-[100dvh] bg-black	 text-zinc-500 fixed hidden z-10 FadeINQuick flex justify-between pb-6 items-center flex-col"
         id="full-screen-nav-menu-container"
       >
         <NavLinks BaseLinksObj={Menus} />
