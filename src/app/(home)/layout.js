@@ -48,7 +48,11 @@ export default function RootLayout({ children }) {
           />
           <div className="min-h-[100dvh] flex flex-col">
             <div className="flex-1" id="main-root">
-              {children}
+              
+            
+              
+                {children}
+              
             </div>
           </div>
         </div>
