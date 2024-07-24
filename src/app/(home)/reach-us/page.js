@@ -3,14 +3,19 @@ import ReginalCenter from "./components/ReginalCenter";
 async function page() {
   return (
     <>
-      <div className="flex justify-center flex-col items-center  sm:pt-12 pt-12 bg-white">
+      <div className="flex justify-center flex-col items-center  sm:pt-14 pt-14 bg-white">
         {/* COMPONENT CODE */}
+        {/* <div className="w-full text-center lg:text-5xl sm:text-4xl text-2xl uppercase font-bold"
+          style={{ fontFamily: "AvenirBlack" }}
+        >
+          Get In Touch With Us
+        </div> */}
         <div className="container min-h-[100dvh] sm:mx-auto my-4 mx-4 sm:px-4 lg:px-20">
           <div className="w-full sm:p-8 p-4 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex">
               <h1
                 className="font-bold uppercase lg:text-5xl sm:text-4xl text-2xl"
-                style={{ fontFamily: "Azonix" }}
+                style={{ fontFamily: "AvenirBlack" }}
               >
                 Send us a message
               </h1>
@@ -67,12 +72,12 @@ async function page() {
                 Licensing Officer
               </h1>
               <span className="text-2xl">GTU Innovation & Startup Center</span>
-              <div>
+              {/* <div>
                 <p className="font-bold mt-5">
                   Prof. (Dr.) Sanjay Chauhan - Director
                 </p>
                 <p className="font-medium">Email : director.gic@gtu.edu.in</p>
-              </div>
+              </div> */}
               <div>
                 <p className="font-bold mt-5">Mr. Tushar Panchal - CEO-GISC</p>
                 <p className="font-medium">Email : ceo_gisc@gtu.edu.in</p>
@@ -95,7 +100,7 @@ async function page() {
           </div>
         </div>
         <div className="text-center pt-12">
-        <h1 className="font-bold uppercase lg:text-5xl sm:text-4xl text-2xl" style={{ fontFamily: "Azonix" }}> Regional Center</h1>
+        <h1 className="font-bold uppercase lg:text-5xl sm:text-4xl text-2xl" style={{ fontFamily: "AvenirBlack" }}> Regional Center</h1>
         <div className="grid my-4 border-gray-200 rounded-lg shadow-sm md:grid-cols-2">
            <ReginalCenter city={'Vadodara'} address={'GTU Innovation and Startup Centre, Technical High School Campus, Opposite Santadevi Nursing House, Dandia Bazar, Dandia Bazar, Vadodara, Gujarat 390001.'} ph_no={'265 2415500'}/>
            <ReginalCenter city={'Surat'} address={'GTU Innovation and Startup Centre, 1st Floor, Amenities Block, Dr. S. S. Gandhy College Campus, Majura Gate, Surat, Gujarat 395001.'} ph_no={'261 2660603 / 602'}/>

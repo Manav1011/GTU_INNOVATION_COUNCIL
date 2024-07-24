@@ -63,7 +63,7 @@ export default function MainGraphic() {
               </span>
             </div>
             <div className="wrapper mt-2 " style={{ fontFamily: "AvenirBook" }}>
-              <Link className="cta bg-white text-black px-11 py-2 border border-teal-500 lg:py-4" href="/incubation">
+              <Link className="cta bg-white text-black px-11 py-2 border border-teal-500 lg:py-4" href="https://docs.google.com/forms/d/e/1FAIpQLScemptmi9LFonX5U1VyoPwVZ_K7-8EVIcss2op1GdBY9GZ4rw/viewform" target='_blank'>
                 <span>Apply Now</span>
                 <span>
                   <svg
