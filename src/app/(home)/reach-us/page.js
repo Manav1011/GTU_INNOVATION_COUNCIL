@@ -102,10 +102,10 @@ async function page() {
         <div className="text-center pt-12">
         <h1 className="font-bold uppercase lg:text-5xl sm:text-4xl text-2xl" style={{ fontFamily: "AvenirBlack" }}> Regional Center</h1>
         <div className="grid my-4 border-gray-200 rounded-lg shadow-sm md:grid-cols-2">
-           <ReginalCenter city={'Vadodara'} address={'GTU Innovation and Startup Centre, Technical High School Campus, Opposite Santadevi Nursing House, Dandia Bazar, Dandia Bazar, Vadodara, Gujarat 390001.'} ph_no={'265 2415500'}/>
-           <ReginalCenter city={'Surat'} address={'GTU Innovation and Startup Centre, 1st Floor, Amenities Block, Dr. S. S. Gandhy College Campus, Majura Gate, Surat, Gujarat 395001.'} ph_no={'261 2660603 / 602'}/>
-           <ReginalCenter city={'Rajkot'} address={'GTU Innovation and Startup Centre, AVPTI Campus, Opp. Hemu Gadhvi Hall, Tagore Road, Rajkot, 360001.'} ph_no={'0281 2464964 / 56'}/>
-           <ReginalCenter city={'Mehsana'} address={'GTU Innovation and Startup G9GP+PVH, Near Mevad Toll-booth, Ahmedabad, Express Highway, Mehsana, Gujarat 382710.'}/>
+           <ReginalCenter mapLink={'https://maps.app.goo.gl/QncufSJDyBSkZWji8'} city={'Vadodara'} address={'GTU Innovation and Startup Centre, Technical High School Campus, Opposite Santadevi Nursing House, Dandia Bazar, Dandia Bazar, Vadodara, Gujarat 390001.'} ph_no={'265 2415500'}/>
+           <ReginalCenter mapLink={'https://maps.app.goo.gl/1UizNEgtYB5V2k4m9'} city={'Surat'} address={'GTU Innovation and Startup Centre, 1st Floor, Amenities Block, Dr. S. S. Gandhy College Campus, Majura Gate, Surat, Gujarat 395001.'} ph_no={'261 2660603 / 602'}/>
+           <ReginalCenter mapLink={'https://maps.app.goo.gl/4hHaFDwsH64Sg79QA'} city={'Rajkot'} address={'GTU Innovation and Startup Centre, AVPTI Campus, Opp. Hemu Gadhvi Hall, Tagore Road, Rajkot, 360001.'} ph_no={'0281 2464964 / 56'}/>
+           <ReginalCenter mapLink={'https://maps.app.goo.gl/H8yDVy3L7D3pyKYG6'} city={'Mehsana'} address={'GTU Innovation and Startup G9GP+PVH, Near Mevad Toll-booth, Ahmedabad, Express Highway, Mehsana, Gujarat 382710.'}/>
         </div>
         </div>
 
