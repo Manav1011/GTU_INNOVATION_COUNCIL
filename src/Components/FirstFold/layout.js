@@ -3,7 +3,7 @@ export default function MainGraphic() {
   return (
     <section>
       <div
-        className="flex backdrop-filter bg-opacity-5 bg-[url('/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp')]"
+        className="select-none flex backdrop-filter bg-opacity-5"
         id="mainGraphicContainer"
         style={{
           backgroundAttachment: "fixed",

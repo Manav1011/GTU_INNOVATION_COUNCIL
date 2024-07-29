@@ -1,10 +1,10 @@
-import "@/static/globals.css";
-import "@/static/transitions.css";
-import "@/static/fonts.css";
 import NavBarLatest from "@/Components/Globals/NavBar/NavBarLatest";
 import Footer from "@/Components/Globals/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
 import GlobalRouteListener from '@/app/(home)/GlobalRouteListener'
+import "../../../public/static/css/globals.css"
+import "../../../public/static/css/transitions.css"
+import "../../../public/static/css/fonts.css"
 
 export const metadata = {
   title: "GTU Innovation Council",
@@ -17,7 +17,11 @@ export default function RootLayout({ children }) {
     <html lang="en" id="htmltagel">
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
-        <meta property="og:image" content="/images/ogimage.png" />
+        <link rel="preload" as="image" href="/images/backgrounds/GTU_CAMPUS_POTRAIT_4.webp" />
+        <link rel="preload" as="image" href="/images/backgrounds/GTU_CAMPUS_6.webp" />
+        <link rel="preload" href="/static/css/fonts.css" as="style"/>
+        <link rel="preload" href="/static/css/transitions.css" as="style"/>
+        <link rel="preload" href="/static/css/globals.css" as="style"/>
       </head>
       <body
         className="scroll-smooth"

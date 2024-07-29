@@ -1,6 +1,4 @@
 import Link from "next/link";
-import '@/static/globals.css'
-import '@/static/fonts.css'
 export default async function NotFound() {
   return (
     <section

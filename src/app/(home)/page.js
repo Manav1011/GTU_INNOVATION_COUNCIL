@@ -1,11 +1,9 @@
 import MainGraphic from "@/Components/FirstFold/layout";
 import ScrollListener from "@/Components/Client/ScrollListener";
 import ThirdFoldAlt from "@/Components/ThirdFold/ThirdFoldAlt";
-import FifthFold from "@/Components/FifthFold/layout";
 import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
-import Preloaders from "@/Components/Client/Preloaders";
 
 export const dynamic = 'force-dynamic'
 export default async function Home() {
@@ -55,7 +53,6 @@ export default async function Home() {
     partners = data.data.partners
     quotes = data.data.quotes
     startups = data.data.startups
-    // console.log(partners)
 
   } catch (error) {
     console.log(error)
@@ -63,33 +60,13 @@ export default async function Home() {
   }
 
   return (
-    <>
-    {/* <Preloaders/>    */}
-      {/* <NavBarLatest/>             */}
-      <MainGraphic/> 
-      {/* <SixthFold/> */}
-      {
-        startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />
-      }
-      
-      {/* <SecondFoldAlt/> */}
-      <ThirdFoldAlt/>             
-      {/* {
-        quotes && <FifthFold quotes={quotes} /> 
-    
-      } */}
-      
-      {/* <FourthFold/> */}
-      <FourthFoldALT/>
-      {/* <SeventhFold/> */}
-      {/* <SecondFold/> */}
-      {/* <>
-      </> */}      
-      {
-        quotes && <ScrollListener/>   
-      }          
-      <IntersectionTransitions/>      
-       {/* <CarouselScrollListener/> */}
+    <>          
+      <MainGraphic/>       
+      {startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />}
+      <ThirdFoldAlt/>                                 
+      <FourthFoldALT/>      
+      {quotes && <ScrollListener/>}          
+      <IntersectionTransitions/>       
     </>
   );
 }
