@@ -61,7 +61,7 @@ async function FourthFoldALT({circulars}) {
               />
             </svg>
             </div>
-          <div className="mx-5 sm:mx-auto" style={{ fontFamily: "AvenirLight" }}>
+          <div className="mx-5 sm:mx-auto max-w-[90%]" style={{ fontFamily: "AvenirLight" }}>
             {/* Item #1 */}
             {circulars.map((circular,index)=>(
                  <div className="relative pl-8 sm:pl-32 py-6 group report opacity-0" key={index}>
@@ -73,11 +73,11 @@ async function FourthFoldALT({circulars}) {
                      Circular
                    </span>
                    <div className="text-xl font-bold text-slate-900">
-                     <a href={circular.url}>{circular.title}</a>
+                     <a target="_blank" href={circular.url}>{circular.title}</a>
                    </div>
                  </div>
                  {/* Content */}
-                 <div className="text-slate-500">
+                 <div className="text-slate-500 text-justify">
                    {circular.about}
                  </div>
                </div>
