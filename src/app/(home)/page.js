@@ -10,7 +10,7 @@ export default async function Home() {
   let partners = null
   let startups = null
   let quotes = null
-
+  let circulars = null
   let response
   try {
      response = await fetch(`http://localhost:3000/api/manage`,{
@@ -40,6 +40,13 @@ export default async function Home() {
               about
               url
             }
+            circulars{
+              slug,
+              title,
+              about,
+              date,
+              url
+            }
             }
         `,
       }),
@@ -53,6 +60,7 @@ export default async function Home() {
     partners = data.data.partners
     quotes = data.data.quotes
     startups = data.data.startups
+    circulars = data.data.circulars
 
   } catch (error) {
     console.log(error)
@@ -64,7 +72,7 @@ export default async function Home() {
       <MainGraphic/>       
       {startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />}
       <ThirdFoldAlt/>                                 
-      <FourthFoldALT/>      
+      {circulars && <FourthFoldALT circulars={circulars}/>}      
       {quotes && <ScrollListener/>}          
       <IntersectionTransitions/>       
     </>

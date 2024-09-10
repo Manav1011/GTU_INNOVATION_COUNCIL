@@ -4,7 +4,7 @@ const quote_resolver = require('./quotes.resolver')
 const inquire_resolver = require('./inquire.resolver')
 const incubation_resolver = require('./incubation.resolver')
 const reachout_resolver = require('./reachout.resolver')
-const circular_resolver = require('./documents.reslover')
+const document_resolver = require('./documents.reslover')
 
 const rootResolver = {
     hello: ()=>{
@@ -17,6 +17,6 @@ const rootResolver = {
     ...inquire_resolver,
     ...incubation_resolver,
     ...reachout_resolver,
-    ...circular_resolver
+    ...document_resolver
 }
 module.exports = {rootResolver}
