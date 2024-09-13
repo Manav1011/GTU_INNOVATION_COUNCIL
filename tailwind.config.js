@@ -18,9 +18,18 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        parallax: {
+          '0%': {
+            objectPosition: 'center',
+          },
+          '100%': {
+            objectPosition: '0 0',
+          },
+        },
       },
       animation: {
         'fade-in-up': 'fade-in-up 0.5s ease-out',
+        parallax: 'parallax linear both',
       },
       screens: {
         'xss':'361px',

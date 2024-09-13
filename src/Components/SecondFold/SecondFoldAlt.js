@@ -55,6 +55,61 @@ async function SecondFoldAlt({startups,partners}) {
           </div>
         </div>
       </div>    
+      <div className="h-full w-full rounded-md sm:px-8 sm:my-8 px-0 my-0">
+      <div className="text-center space-y-4 mb-10  mx-5">
+          <div className="min-h-full text-zinc-950 font-generalSans">
+  <div className="slides overflow-scroll smooth-scroll w-full whitespace-nowrap touch-pan-x before:shrink-0 after:shrink-0 snap-mandatory flex snap-x">
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2023/01/Award-2022.jpg"
+        alt="Image 1"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2023/07/18.7.23-1-scaled.jpg"
+        alt="Image 2"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[35vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2023/07/18.7.23-4.jpeg"
+        alt="Image 3"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[45vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2023/07/18.7.23-3-scaled.jpg"
+        alt="Image 4"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2024/01/bff13dce-a66c-4dfe-a4a7-19223d86f160.jpg"
+        alt="Image 5"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+    <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <img
+        src="https://gsms.gtu.ac.in/wp-content/uploads/2022/06/6.-Class-room-scaled.jpg"
+        alt="Image 7"
+        className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+      />
+    </div>
+  </div>
+
+
+</div>
+
+         </div>
+          
+
+      </div>
       <div className="h-full w-full rounded-md " id="ThirdFoldContainer" style={{
         // backgroundImage: "url('/images/backgrounds/PartnersGIC.webp')",
         // backgroundPosition: "center",
