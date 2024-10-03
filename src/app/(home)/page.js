@@ -3,8 +3,9 @@ import ScrollListener from "@/Components/Client/ScrollListener";
 import ThirdFoldAlt from "@/Components/ThirdFold/ThirdFoldAlt";
 import SecondFoldAlt from "@/Components/SecondFold/SecondFoldAlt";
 import FourthFoldALT from "@/Components/FourthFold/FourthFoldALT";
+import ImageFoldAlts from "@/Components/ImageFold/ImageFoldAlts"
 import IntersectionTransitions from "@/Components/Client/IntersectionTransitions";
-
+import ImageGallaryScrollListener from "@/Components/Client/ImageGallaryScrollListener"
 export const dynamic = 'force-dynamic'
 export default async function Home() {
   let partners = null
@@ -70,7 +71,8 @@ export default async function Home() {
   return (
     <>          
       <MainGraphic/>       
-      {startups  && partners && <SecondFoldAlt startups={startups} partners={partners} />}
+      { startups && partners && <SecondFoldAlt startups={startups} partners={partners} />}
+      {startups && partners && <ImageGallaryScrollListener></ImageGallaryScrollListener>}
       <ThirdFoldAlt/>                                 
       {circulars && <FourthFoldALT circulars={circulars}/>}      
       {quotes && <ScrollListener/>}          
