@@ -5,6 +5,7 @@ const inquire_resolver = require('./inquire.resolver')
 const incubation_resolver = require('./incubation.resolver')
 const reachout_resolver = require('./reachout.resolver')
 const document_resolver = require('./documents.reslover')
+const image_gallery_resolver = require('./image_gallery.resolver')
 
 const rootResolver = {
     hello: ()=>{
@@ -17,6 +18,7 @@ const rootResolver = {
     ...inquire_resolver,
     ...incubation_resolver,
     ...reachout_resolver,
-    ...document_resolver
+    ...document_resolver,
+    ...image_gallery_resolver
 }
 module.exports = {rootResolver}

@@ -12,6 +12,7 @@ export default async function Home() {
   let startups = null
   let quotes = null
   let circulars = null
+  let image_gallery = null
   let response
   try {
      response = await fetch(`http://localhost:3000/api/manage`,{
@@ -48,6 +49,12 @@ export default async function Home() {
               date,
               url
             }
+            Home_image_gallery{
+              slug,
+              title,
+              image,
+              url
+            }
             }
         `,
       }),
@@ -62,6 +69,8 @@ export default async function Home() {
     quotes = data.data.quotes
     startups = data.data.startups
     circulars = data.data.circulars
+    image_gallery = data.data.Home_image_gallery
+
 
   } catch (error) {
     console.log(error)
@@ -71,8 +80,8 @@ export default async function Home() {
   return (
     <>          
       <MainGraphic/>       
-      { startups && partners && <SecondFoldAlt startups={startups} partners={partners} />}
-      {startups && partners && <ImageGallaryScrollListener></ImageGallaryScrollListener>}
+      { startups && partners && image_gallery && <SecondFoldAlt startups={startups} partners={partners} image_gallery={image_gallery} />}
+      {startups && partners && image_gallery  && <ImageGallaryScrollListener></ImageGallaryScrollListener>}
       <ThirdFoldAlt/>                                 
       {circulars && <FourthFoldALT circulars={circulars}/>}      
       {quotes && <ScrollListener/>}          
