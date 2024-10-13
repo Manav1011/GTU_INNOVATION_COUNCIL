@@ -31,7 +31,7 @@ h1#MainGraphicHeader{
 }
 
 .roller{
-  animation: slide 4s infinite;
+  /* animation: slide 4s infinite; */
   /* height: 4.25rem; */
   /* line-height: normal;
   position: relative;
@@ -59,24 +59,6 @@ h1#MainGraphicHeader{
   /* top: 10; */
   /* padding: 20px; */
   /* animation: slide 5s infinite;   */
-}
-
-@keyframes slide {
-  0%{
-    transform: translateY(0rem);
-  }
-  25%{
-    transform: translateY(-3.5rem);
-  }
-  50%{
-    transform: translateY(-7rem);    
-  }
-  /* 75%{
-    transform: translateY(0rem);    
-  } */
-  100%{
-    transform: translateY(0rem);    
-  }
 }
 
 @keyframes bottomUp {
@@ -262,4 +244,8 @@ path.two {
     100% {
         fill: black;
     }
+}
+
+.gallery-image{
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }

@@ -16,6 +16,16 @@
     }
 }
 
+/* @keyframes slideRightGallery {
+  from {
+    transform: translateX(-160%);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--spacing)));
+  }
+} */
+
+
 @keyframes bottomUP {
     from {
       opacity: 0;
@@ -64,6 +74,10 @@
     opacity: 100%;
   }
   }
+  
+.ImageGalleryAnimate{
+    animation: slideRightGallery 20s linear infinite alternate;
+}
   
 .FadeIN{
   animation: FadeIN 1s ease-in-out;

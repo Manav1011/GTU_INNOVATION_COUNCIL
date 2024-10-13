@@ -80,46 +80,46 @@ async function SecondFoldAlt({ startups, partners }) {
           </div>
         </div>
       </div>
-      <div className="h-full w-full rounded-md sm:px-8 sm:py-10 px-0 my-0 bg-slate-100">
-        <div className="text-center space-y-4 mx-5 ">
-          <div className="min-h-full text-zinc-950 font-generalSans">
-            <div className="slides overflow-scroll smooth-scroll w-full whitespace-nowrap touch-pan-x before:shrink-0 after:shrink-0 snap-mandatory flex snap-x ">
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+      <div className="h-full w-full rounded-md sm:pb-10 my-0 bg-slate-200">
+        <div className="text-center space-y-4">
+          <div className="min-h-full text-zinc-950 font-generalSans overflow-hidden">
+            <div className="slides smooth-scroll whitespace-nowrap touch-pan-x before:shrink-0 after:shrink-0 snap-mandatory flex snap-x ImageGalleryAnimate">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
                   alt="Image 1"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
               </div>
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_640.jpg"
                   alt="Image 2"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
               </div>
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[35vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg"
                   alt="Image 3"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
               </div>
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[45vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2018/01/15/09/20/waters-3083526_1280.jpg"
                   alt="Image 4"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
               </div>
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
                   alt="Image 5"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
               </div>
-              <div className="slide flex-shrink-0 w-[90vw] h-[calc(55vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[42vw] md:h-[calc(12vw*2.2)] overflow-clip relative mx-2 snap-center rounded-3xl">
+              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative mx-2 snap-center gallery-image">
                 <img
                   src="https://st5.depositphotos.com/19554348/71102/i/450/depositphotos_711021714-stock-photo-beautiful-autumn-scene-hintersee-lake.jpg"
                   alt="Image 7"
