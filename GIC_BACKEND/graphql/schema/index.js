@@ -53,6 +53,13 @@ module.exports = buildSchema(`
         url: String!
     }
 
+    type Home_imagegallery {
+        slug: ID!
+        title: String!
+        image: String!
+        url: String! 
+    }
+
     type Inquire {
         slug : ID!
         email: String!
@@ -163,7 +170,7 @@ module.exports = buildSchema(`
         reachouts: [Reachout!]!
         circulars: [Circular!]!
         Reports: [Report!]!
-        
+        Home_image_gallery: [Home_imagegallery!]!
     }
     type RootMutation{
         welcome: String!

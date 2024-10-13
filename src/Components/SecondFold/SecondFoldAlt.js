@@ -1,5 +1,5 @@
 import Image from "next/image";
-async function SecondFoldAlt({ startups, partners }) {
+async function SecondFoldAlt({ startups, partners , image_gallery}) {
   return (
     <section className="h-full w-full">
       <div className=" justify-center flex items-center bg-slate-200 bg-clip-padding py-14 0">
@@ -84,14 +84,23 @@ async function SecondFoldAlt({ startups, partners }) {
         <div className="text-center space-y-4">
           <div className="min-h-full text-zinc-950 font-generalSans overflow-hidden">
             <div className="slides smooth-scroll whitespace-nowrap touch-pan-x before:shrink-0 after:shrink-0 snap-mandatory flex snap-x ImageGalleryAnimate">
-              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
-                  alt="Image 1"
-                  className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
-                />
-              </div>
-              <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
+              
+              {
+                image_gallery.map((image,index)=>{
+                  return (
+                    <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image" key={index}>
+                    <img
+                      src={image.url}
+                      alt={image.title}
+                      className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+                    />
+                  </div>
+                  )
+                })
+              }
+              
+            
+              {/* <div className="slide flex-shrink-0 w-[80vw] h-[calc(50vw*1.2)] sm:w-[35vw] sm:h-[calc(35vw*1.2)] md:w-[30vw] md:h-[calc(10vw*2)] overflow-clip relative snap-center gallery-image">
                 <img
                   src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_640.jpg"
                   alt="Image 2"
@@ -125,7 +134,7 @@ async function SecondFoldAlt({ startups, partners }) {
                   alt="Image 7"
                   className="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
